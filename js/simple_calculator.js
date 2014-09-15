@@ -1044,6 +1044,8 @@
 					document.calculator.income.value = (0);
 				}
 
+                var income = parseInt(document.calculator.income.value);
+
                 if(income > 10000000)
                     {
                       var total_tax = Math.round((income/100)*30);
@@ -2126,6 +2128,8 @@
 				{
 					document.calculator.income.value = (0);
 				}
+
+                var income = parseInt(document.calculator.income.value);
 
                 if(income > 10000000)
                     {
