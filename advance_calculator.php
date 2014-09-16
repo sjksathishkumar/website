@@ -207,9 +207,13 @@
               <div class="row">
               <!-- <div class="envor-partner-1"> -->
                 <div class="col-lg-9 col-md-9">
+                <form>
+                  <input class="text-calculator" type="text" id="workcheck" name="workcheck" onblur="workcheck()" value="0">
+                </form>
+
                 <form name="calculator">
                     <p><label for="year" class="label-calculator">Assessment Year</label>
-                    <select name="year" id="year" onblur="test()">
+                    <select name="year" id="year" onblur="calculate()">
                       <option value="14_15">2014-2015 </option>
                       <option value="13_14">2015-2016</option>
                     </select>
@@ -244,12 +248,33 @@
                   <div class="vie select">
                    <div class="bassbiz-featured-box">
                       <p><div class="envor-toggle">
+
                         <article>
-                          <header>Income from Salary<input class="text-calculator" type="text" id="salary_box" value="0" readonly><i class="fa fa-plus"></i></header>
+                          <header>
+                              <table class="shoppin-cart-table">
+                                <thead>
+                                  <tr>
+                                    <td class="item" width="50%">Income from Salary</td>
+                                    <td class="price" width="35%"><input class="text-calculator" type="text" id="salary_box" value="0" readonly></td>
+                                    <td class="qty" width="15%"><i class="fa fa-plus"></i></td>
+                                  </tr>
+                                </thead>
+                              </table>
+                            </header>
                           <p style="display: block;"><label class="label-calculator">Income from Salary</label><input class="text-calculator" type="text" id="salary" name="salary" onblur="calculate()" onkeypress="return isNumber(event)" value="0"></p>
                         </article>
                         <article>
-                          <header><i class="fa fa-plus"></i> <input class="text-calculator" type="text" id="house_box" value="0" readonly>Income from House Property</header>
+                          <header>
+                            <table class="shoppin-cart-table">
+                              <thead>
+                                <tr>
+                                  <td class="item" width="50%">Income from House Property</td>
+                                  <td class="price" width="35%"><input class="text-calculator" type="text" id="house_box" value="0" readonly></td>
+                                  <td class="qty" width="15%"><i class="fa fa-plus"></i></td>
+                                </tr>
+                              </thead>
+                            </table>                          
+                          </header>
                           <p style="display: none;"><label class="label-calculator"><strong>a.   Income from Self-occupied Property</strong></label><br>
                           <label class="label-calculator">Interest Paid/Payable on Housing Loan</label><br>
                           <label class="label-calculator">  1.  Interest on Housing Loan </label><input class="text-calculator" type="text" id="interest_house_loan" name="interest_house_loan" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br><br>
@@ -266,7 +291,17 @@
                           </p>
                         </article>
                         <article>
-                          <header>Capital Gains <input class="text-calculator" type="text" id="capital_box" value="0" readonly><i class="fa fa-plus"></i></header>
+                          <header>
+                            <table class="shoppin-cart-table">
+                              <thead>
+                                <tr>
+                                  <td class="item" width="50%">Capital Gains</td>
+                                  <td class="price" width="35%"><input class="text-calculator" type="text" id="capital_box" value="0" readonly></td>
+                                  <td class="qty" width="15%"><i class="fa fa-plus"></i></td>
+                                </tr>
+                              </thead>
+                            </table>  
+                          </header>
                           <p style="display: none;"><label class="label-calculator">a.   Short Term Capital GainS (Other than covered under section 111A)</label><input type="text" id="short_capital" name="short_capital" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
                           <label class="label-calculator">b.   Short Term Capital GainS (Covered under section 111A)</label><input class="text-calculator" type="text" id="short_capital_111A" name="short_capital_111A" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
                           <label class="label-calculator"> Long Term Capital Gains (Charged to tax @ 20%) </label><input class="text-calculator" type="text" id="long_capital_20" name="long_capital_20" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br><br>
@@ -274,24 +309,66 @@
                           </p>
                         </article>
                         <article>
-                          <header>Income from Other Sources <input class="text-calculator" type="text" id="other_box" value="0" readonly><i class="fa fa-plus"></i></header>
+                          <header>
+                            <table class="shoppin-cart-table">
+                              <thead>
+                                <tr>
+                                  <td class="item" width="50%">Income from Other Sources</td>
+                                  <td class="price" width="35%"><input class="text-calculator" type="text" id="other_box" value="0" readonly></td>
+                                  <td class="qty" width="15%"><i class="fa fa-plus"></i></td>
+                                </tr>
+                              </thead>
+                            </table> 
+                        </header>
                           <p style="display: none;"><label class="label-calculator">Interest</label><input class="text-calculator" type="text" id="other_interest" name="other_interest" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
                           <label class="label-calculator">Commission/Other Income</label><input class="text-calculator" type="text" id="other_commission" name="other_commission" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
                           <label class="label-calculator">  Winnings from Lottery, Crossword Puzzles, etc. </label><input class="text-calculator" type="text" id="other_lottery" name="other_lottery" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
                           </p>
                         </article>
                         <article>
-                          <header>Profits and Gains of Business <input class="text-calculator" type="text" id="profit_box" value="0" readonly><i class="fa fa-plus"></i></header>
+                          <header>
+                            <table class="shoppin-cart-table">
+                              <thead>
+                                <tr>
+                                  <td class="item" width="50%">Profits and Gains of Business</td>
+                                  <td class="price" width="35%"><input class="text-calculator" type="text" id="profit_box" value="0" readonly></td>
+                                  <td class="qty" width="15%"><i class="fa fa-plus"></i></td>
+                                </tr>
+                              </thead>
+                            </table>                           
+                          </header>
                           <p style="display: none;"><label class="label-calculator">Profits and Gains of Business or Profession (enter profit only)</label><input type="text" id="profit" name="profit" onblur="calculate()" onkeypress="return isNumber(event)" value="0">
                           </p>
                         </article>
                         <article>
-                          <header>Agricultural Income <input class="text-calculator" type="text" id="agri_box" value="0" readonly><i class="fa fa-plus"></i></header>
-                          <p style="display: none;"><label class="label-calculator">Agricultural Income</label><input class="text-calculator" type="text" id="agri" name="agri" onblur="calculate()" onkeypress="return isNumber(event)" value="0">
+                          <header>
+                            <table class="shoppin-cart-table">
+                              <thead>
+                                <tr>
+                                  <td class="item" width="50%">Agricultural Income</td>
+                                  <td class="price" width="35%"><input class="text-calculator" type="text" id="agri_box" value="0" readonly></td>
+                                  <td class="qty" width="15%"><i class="fa fa-plus"></i></td>
+                                </tr>
+                              </thead>
+                            </table>                           
+                          </header>
+                          <p style="display: none;">
+                                <label class="label-calculator">Agricultural Income</label>
+                                <input class="text-calculator" type="text" id="agri" name="agri" onblur="calculate()" onkeypress="return isNumber(event)" value="0">
                           </p>
                         </article>
                         <article>
-                          <header>Deductions from Gross Total Income<input class="text-calculator" type="text" id="deduction_box" value="0" readonly> <i class="fa fa-plus"></i></header>
+                          <header>
+                           <table class="shoppin-cart-table">
+                              <thead>
+                                <tr>
+                                  <td class="item" width="50%">Deductions from Gross Total Income</td>
+                                  <td class="price" width="35%"><input class="text-calculator" type="text" id="deduction_box" value="0" readonly></td>
+                                  <td class="qty" width="15%"><i class="fa fa-plus"></i></td>
+                                </tr>
+                              </thead>
+                            </table>
+                          </header>
                           <p style="display: none;"><label class="label-calculator">Life Insurance premium paid</label><input class="text-calculator" type="text" id="life_insurance_premium" name="life_insurance_premium" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
                           <label class="label-calculator">Payment for annuity plan</label><input class="text-calculator" type="text" id="annuity" name="annuity" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
                           <label class="label-calculator">  Contribution toward provident fund / PPF </label><input class="text-calculator" type="text" id="pf" name="pf" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
@@ -312,13 +389,13 @@
                           <label class="label-calculator">  Donations (u/s 80G) </label><input class="text-calculator" type="text" id="donation" name="donation" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
                           <label class="label-calculator">  Donations to Political Party (u/s 80GGC) </label><input class="text-calculator" type="text" id="political_donation" name="political_donation" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
                           <label class="label-calculator">  Rent Paid (u/s 80GG) </label><input class="text-calculator" type="text" id="rent_paid" name="rent_paid" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
-                          <label class="label-calculator">  Deduction for maintenance / medical treatment of dependent (u/s 80DD) </label><input class="text-calculator" type="text" id="medical_treatment" name="medical_treatment" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly><br>
-                          <label><input type="checkbox" name="80dd" id="80dd" value="80dd" onblur="calculate()">Tick if 80DD is claimed</label>
-                          <label><input type="checkbox" name="80dd_severe" id="80dd_severe" value="80dd_severe" onblur="calculate()">Tick if severe disability</label>
+                          <label class="label-calculator">  Deduction for maintenance / medical treatment of dependent (u/s 80DD) </label><input class="text-calculator" type="text" size="2" id="medical_treatment" name="medical_treatment" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly><br>
+                          <label><input type="checkbox" name="80dd" id="80dd" value="80dd" onblur="calculate()">Tick if 80DD is claimed</label><br>
+                          <label><input type="checkbox" name="80dd_severe" id="80dd_severe" value="80dd_severe" onblur="calculate()">Tick if severe disability</label><br>
                           <br><label class="label-calculator">  Interest on loan for higher education (u/s 80E) </label><input class="text-calculator" type="text" id="interest_education_loan" name="interest_education_loan" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
                           <label class="label-calculator">  Interest on loan taken for Residential House (u/s 80EE) </label><input class="text-calculator" type="text" id="interest_first_home_loan" name="interest_first_home_loan" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
                           <label class="label-calculator">  Deduction in case of a person with disability (u/s 80U) </label><input class="text-calculator" type="text" id="disability" name="disability" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly><br>
-                          <label><input type="checkbox" name="80U" id="80U" value="80U" onblur="calculate()">Tick if 80U is claimed</label>
+                          <label><input type="checkbox" name="80U" id="80U" value="80U" onblur="calculate()">Tick if 80U is claimed</label><br>
                           <label><input type="checkbox" name="80U_severe" id="80U_severe" value="80U_severe" onblur="calculate()">Tick if severe disability</label>
                           <label class="label-calculator">  Interest on deposits in saving account (u/s 80TTA) </label><input class="text-calculator" type="text" id="interest_saving_acc" name="interest_saving_acc" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
                           <label class="label-calculator">  Any other deductions </label><input class="text-calculator" type="text" id="other_deduction_2" name="other_deduction_2" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
@@ -376,7 +453,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+    <script src="js/vendor/jquery-1.11.0.min.js"></script>
 
     <script src="js/vendor/core-1.0.5.js"></script>
 
@@ -408,8 +485,15 @@
     <script src="js/envor.js"></script>
 
     <!--Script for calculating Tax  -->
-    <script src="js/advance_calculator.js"></script>
-  
+    <script src="js/advance_calculator.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        function workcheck()
+        {
+          alert("Js called from remote file");
+        }
+
+    </script>
     <script type="text/javascript">
       $(document).ready(function(){
       $("#taxpayer").change(function(){

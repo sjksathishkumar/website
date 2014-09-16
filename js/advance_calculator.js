@@ -1,3 +1,8 @@
+  function test()
+  {
+    alert("Js called from remote file");
+  }
+
    function isNumber(evt) {
       alert("Number function called");
       evt = (evt) ? evt : window.event;
