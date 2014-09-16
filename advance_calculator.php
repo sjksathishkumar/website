@@ -207,10 +207,6 @@
               <div class="row">
               <!-- <div class="envor-partner-1"> -->
                 <div class="col-lg-9 col-md-9">
-                <form>
-                  <input class="text-calculator" type="text" id="workcheck" name="workcheck" onblur="workcheck()" value="0">
-                </form>
-
                 <form name="calculator">
                     <p><label for="year" class="label-calculator">Assessment Year</label>
                     <select name="year" id="year" onblur="calculate()">
@@ -409,7 +405,7 @@
                         <p><label for="income" class="label-calculator">Winnings from Lottery, Crossword Puzzles, etc.</label><input type="text" id="crossword" name="crossword" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly></p>                        
                     </div>
                   </div> 
-                  <p><label for="income" class="label-calculator">Income Liable to Tax at Normal Rate</label><input type="text" id="income" name="income" onblur="calculate()" onkeypress="return isNumber(event)" value="0"></p>    
+                  <p><label for="income" class="label-calculator">Income Liable to Tax at Normal Rate</label><input type="text" id="income" name="income" onblur="calculate()" onkeypress="return isNumber(event)" value="0"></p><hr>   
                   <p><label for="tax" class="label-calculator">Income Tax</label><input type="text" id="tax" name="tax" value="0" readonly></p>
                   <p><label for="surcharge" class="label-calculator">Surcharge</label><input type="text" id="surcharge" name="surcharge" value="0" readonly></p>
                   <p><label for="edu" class="label-calculator">Education Tax</label><input type="text" id="edu" name="edu" value="0" readonly></p>
@@ -420,7 +416,7 @@
             <!-- </div> -->
           </div>
               
-              
+              <input type="text" onblur="sathish()">
              
         
             </div>
@@ -487,13 +483,6 @@
     <!--Script for calculating Tax  -->
     <script src="js/advance_calculator.js" type="text/javascript"></script>
 
-    <script type="text/javascript">
-        function workcheck()
-        {
-          alert("Js called from remote file");
-        }
-
-    </script>
     <script type="text/javascript">
       $(document).ready(function(){
       $("#taxpayer").change(function(){
