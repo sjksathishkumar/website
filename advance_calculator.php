@@ -415,9 +415,6 @@
               </div>
             <!-- </div> -->
           </div>
-              
-              <input type="text" onblur="sathish()">
-             
         
             </div>
           </div>

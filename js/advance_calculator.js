@@ -1,7 +1,3 @@
-   function sathish()
-    {
-      alert("Js called from remote file");
-    }
     function isNumber(evt) {
           evt = (evt) ? evt : window.event;
           var charCode = (evt.which) ? evt.which : evt.keyCode;
@@ -2743,11 +2739,11 @@
 
                   var total_tax = Math.round(tax + 130000); // Tax for 10L< slab + 2nd and 3rd slab tax
 
-                  var surcharge_amount_one = total_tax * 0.1;
+                  var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                   var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                  var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                  var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                   if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                   {
@@ -2860,11 +2856,11 @@
 
                   var total_tax = Math.round(tax + 130000); // Tax for 10L< slab + 2nd and 3rd slab tax
 
-                  var surcharge_amount_one = total_tax * 0.1;
+                  var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                   var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                  var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                  var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                   if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                   {
