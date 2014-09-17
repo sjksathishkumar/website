@@ -322,8 +322,6 @@
 
                   var total_for_2000_waiver = Math.round((salary_box_value+house_box_value+capital_box_value+profit_box_value+other_box_value)-deduction_box);
 
-                  alert("total_for_2000_waiver =" + total_for_2000_waiver);
-
                   if(agri_box_value == 0)
                   {
 
@@ -456,7 +454,7 @@
                   
                   else   // calculations for agricultural tax
                   {
-                      alert("income = " + income);
+                      alert("agri_box_value = " + agri_box_value);
                       var income_validate_agri = income - agri_box_value;       // For reseting agriculture value to 0 if income lessthan slab value
 
                          // Normal slab tax calculations
@@ -665,7 +663,9 @@
                           }     // End of Income more than one crore
 
                           else
-                          {  
+                          { 
+                            alert("income is less than one crore");
+                            alert("income = " + income);
                             if(isNaN(document.calculator.income.value) || income<= "200000")
                             {
                               document.calculator.tax.value = ('0'); 
@@ -681,7 +681,7 @@
 
                               //var devided_income = Math.round(taxable_income/100);  
 
-                              alert(total_for_2000_waiver);
+                              alert("total_for_2000_waiver = " + total_for_2000_waiver);
 
                               if(total_for_2000_waiver <= 500000)
                               {
@@ -699,9 +699,23 @@
 
                               var taxable_income = Math.round(income - 500000);  // Reduct 2L for Non-Taxable + 3L for 2nd slab( 2nd slab tax 30000 will be added manually)
 
-                              var tax = Math.round(((taxable_income/100)*20)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword);
+                              alert("total_for_2000_waiver" + total_for_2000_waiver);
 
-                              var tax = Math.round(tax + 30000); // Tax for 5L< slab + 2 to 5L tax( 30000)
+                              if(total_for_2000_waiver <= 500000)
+                              {
+                                var tax = Math.round(((taxable_income/100)*20)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword);
+
+                                var tax = Math.round(tax + 28000); // Tax for 5L< slab + 2 to 5L tax( 30000)
+                              }
+                              else
+                              {
+                                var tax = Math.round(((taxable_income/100)*20)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword);
+
+                                var tax = Math.round(tax + 30000); // Tax for 5L< slab + 2 to 5L tax( 30000)
+
+                                alert("tax-"+tax);
+                              }
+
 
                             }
                             else 
