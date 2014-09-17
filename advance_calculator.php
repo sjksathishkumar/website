@@ -399,13 +399,14 @@
                         </article>
                       </div></p>
                         <p><label for="income" class="label-calculator">Net Taxable Income</label><input type="text" id="total_income" name="total_income" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly></p>    
+                        <p><label for="income" class="label-calculator">Income Liable to Tax at Normal Rate</label><input type="text" id="income_normal_rate" name="income_normal_rate" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly></p>  
                         <p><label for="income" class="label-calculator">Short Term Capital Gains (Covered u/s 111A)</label><input type="text" id="total_short_capital_111A" name="total_short_capital_111A" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly></p>    
                         <p><label for="income" class="label-calculator">Long Term Capital Gains (Charged to tax @ 20%)</label><input type="text" id="long_capital_20_final" name="long_capital_20_final" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly></p>    
                         <p><label for="income" class="label-calculator">Long Term Capital Gains (Charged to tax @ 10%)</label><input type="text" id="long_capital_gain_10" name="long_capital_gain_10" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly></p>                      
-                        <p><label for="income" class="label-calculator">Winnings from Lottery, Crossword Puzzles, etc.</label><input type="text" id="crossword" name="crossword" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly></p>                        
+                        <p><label for="income" class="label-calculator">Winnings from Lottery, Crossword Puzzles, etc.</label><input type="text" id="crossword" name="crossword" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly></p><hr>                        
                     </div>
                   </div> 
-                  <p><label for="income" class="label-calculator">Income Liable to Tax at Normal Rate</label><input type="text" id="income" name="income" onblur="calculate()" onkeypress="return isNumber(event)" value="0"></p><hr>   
+                  <p><label for="income" class="label-calculator">Income</label><input type="text" id="income" name="income" onblur="calculate()" onkeypress="return isNumber(event)" value="0"></p>  
                   <p><label for="tax" class="label-calculator">Income Tax</label><input type="text" id="tax" name="tax" value="0" readonly></p>
                   <p><label for="surcharge" class="label-calculator">Surcharge</label><input type="text" id="surcharge" name="surcharge" value="0" readonly></p>
                   <p><label for="edu" class="label-calculator">Education Tax</label><input type="text" id="edu" name="edu" value="0" readonly></p>

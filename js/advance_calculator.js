@@ -139,12 +139,12 @@
 
                   var deduction_box = parseInt(document.calculator.deduction_box.value);
 
-                  var income_temp = income;
+     /*             var income_temp = income;
 
                   if(income <= 500000 && income > 0)
                   {
                     income = income - 20000;
-                  }
+                  }*/
 
 
                   document.calculator.income.value = Math.round(income-deduction_box);
@@ -314,18 +314,22 @@
 
                   document.calculator.deduction_box.value = Math.round(total_deduction+detection_down);
 
-                  var income = parseInt(document.calculator.income.value);
+                  //var income = parseInt(document.calculator.income.value);
+
+                  var income = Math.round(salary_box_value+house_box_value+profit_box_value+short_capital+other_interest+other_commission+agri_box_value);
 
                   document.calculator.total_income.value = Math.round((salary_box_value+house_box_value+capital_box_value+profit_box_value+other_box_value+agri_box_value)-deduction_box);
+
+                  var total_for_2000_waiver = Math.round((salary_box_value+house_box_value+capital_box_value+profit_box_value+other_box_value)-(deduction_box+agri_box_value));
 
                   if(agri_box_value == 0)
                   {
 
                     // Normal slab tax calculations
-
                      if(isNaN(document.calculator.income.value) || income<= "200000")
                     {
                       document.calculator.tax.value = ('0'); 
+                      document.calculator.surcharge.value = ('0');
                       document.calculator.edu.value = ('0'); 
                       document.calculator.hedu.value = ('0'); 
                       document.calculator.total.value = ('0');
@@ -335,9 +339,17 @@
                       
                       var taxable_income = Math.round(income - 200000);
 
-                      var devided_income = Math.round(taxable_income/100);  
+                      //var devided_income = Math.round(taxable_income/100);  
 
-                      var tax = Math.round((devided_income*10)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword); 
+                      if(total_for_2000_waiver <= 500000)
+                      {
+                          var tax = Math.round((taxable_income*0.1)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword); 
+                          tax = tax - 2000;       // 2000 is reduced for if income is less than 5L
+                      }
+                      else
+                      {
+                          var tax = Math.round((taxable_income*0.1)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword); 
+                      }
 
                       var edu_tax = Math.round((tax/100)*2);
 
@@ -346,6 +358,7 @@
                       var total = Math.round(tax + edu_tax + higher_edu_tax);
 
                       document.calculator.tax.value = (tax); 
+                      document.calculator.surcharge.value = ('0');
                       document.calculator.edu.value = (edu_tax); 
                       document.calculator.hedu.value = (higher_edu_tax); 
                       document.calculator.total.value = (total); 
@@ -368,6 +381,7 @@
                       var total = Math.round(total_tax + edu_tax + higher_edu_tax);
 
                       document.calculator.tax.value = (total_tax); 
+                      document.calculator.surcharge.value = ('0');
                       document.calculator.edu.value = (edu_tax); 
                       document.calculator.hedu.value = (higher_edu_tax); 
                       document.calculator.total.value = (total); 
@@ -461,9 +475,17 @@
                               
                               var taxable_income = Math.round(income - 200000);
 
-                              var devided_income = Math.round(taxable_income/100);  
+                              //var devided_income = Math.round(taxable_income/100);  
 
-                              var tax = Math.round((devided_income*10)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword); 
+                              if(total_for_2000_waiver <= 500000)
+                                {
+                                    var tax = Math.round((taxable_income*0.1)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword); 
+                                    tax = tax - 2000;       // 2000 is reduced for if income is less than 5L
+                                }
+                                else
+                                {
+                                    var tax = Math.round((taxable_income*0.1)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword); 
+                                }
 
                             }
                             else if (income > "500000" && income < "1000000") 
@@ -652,9 +674,17 @@
                               
                               var taxable_income = Math.round(income - 200000);
 
-                              var devided_income = Math.round(taxable_income/100);  
+                              //var devided_income = Math.round(taxable_income/100);  
 
-                              var tax = Math.round((devided_income*10)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword); 
+                              if(total_for_2000_waiver <= 500000)
+                              {
+                                  var tax = Math.round((taxable_income*0.1)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword); 
+                                  tax = tax - 2000;       // 2000 is reduced for if income is less than 5L
+                              }
+                              else
+                              {
+                                  var tax = Math.round((taxable_income*0.1)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword); 
+                              }
 
                             }
                             else if (income > "500000" && income < "1000000") 
