@@ -320,7 +320,9 @@
 
                   document.calculator.total_income.value = Math.round((salary_box_value+house_box_value+capital_box_value+profit_box_value+other_box_value+agri_box_value)-deduction_box);
 
-                  var total_for_2000_waiver = Math.round((salary_box_value+house_box_value+capital_box_value+profit_box_value+other_box_value)-(deduction_box+agri_box_value));
+                  var total_for_2000_waiver = Math.round((salary_box_value+house_box_value+capital_box_value+profit_box_value+other_box_value)-deduction_box);
+
+                  alert("total_for_2000_waiver =" + total_for_2000_waiver);
 
                   if(agri_box_value == 0)
                   {
@@ -452,8 +454,9 @@
 
                   }   // end of agri_box_value = 0
                   
-                else   // calculations for agricultural tax
+                  else   // calculations for agricultural tax
                   {
+                      alert("income = " + income);
                       var income_validate_agri = income - agri_box_value;       // For reseting agriculture value to 0 if income lessthan slab value
 
                          // Normal slab tax calculations
@@ -481,10 +484,12 @@
                                 {
                                     var tax = Math.round((taxable_income*0.1)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword); 
                                     tax = tax - 2000;       // 2000 is reduced for if income is less than 5L
+                                    alert(tax);
                                 }
                                 else
                                 {
                                     var tax = Math.round((taxable_income*0.1)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword); 
+                                    alert(tax);
                                 }
 
                             }
@@ -675,6 +680,8 @@
                               var taxable_income = Math.round(income - 200000);
 
                               //var devided_income = Math.round(taxable_income/100);  
+
+                              alert(total_for_2000_waiver);
 
                               if(total_for_2000_waiver <= 500000)
                               {
