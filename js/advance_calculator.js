@@ -383,11 +383,11 @@
 
                         var total_tax = Math.round(tax + 130000); // Tax for 10L< slab + 2nd and 3rd slab tax
 
-                        var surcharge_amount_one = total_tax * 0.1;
+                        var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                         var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                        var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                        var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                         if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                         {
@@ -519,11 +519,11 @@
 
                               agri_tax = tax - agri_tax ;
 
-                              var surcharge_amount_one = agri_tax * 0.1;
+                              var surcharge_amount_one = Math.round(agri_tax * 0.1);
 
                               var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                              var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                              var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                               if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                               {
@@ -562,11 +562,11 @@
 
                               var agri_total_tax = Math.round(agri_tax); // Tax for 5L< slab + 2 to 5L tax( 30000)
 
-                              var surcharge_amount_one = agri_total_tax * 0.1;
+                              var surcharge_amount_one = Math.round(agri_total_tax * 0.1);
 
                               var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                              var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                              var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                               if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                               {
@@ -605,11 +605,11 @@
 
                               var agri_total_tax = Math.round(agri_tax); // Tax for 10L< slab + 2nd and 3rd slab tax
 
-                              var surcharge_amount_one = agri_total_tax * 0.1;
+                              var surcharge_amount_one = Math.round(agri_total_tax * 0.1);
 
                               var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                              var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                              var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                               if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                               {
@@ -1155,11 +1155,11 @@
 
                         var total_tax = Math.round(tax + 125000); // Tax for 10L< slab + 2nd and 3rd slab tax
 
-                        var surcharge_amount_one = total_tax * 0.1;
+                        var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                         var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                        var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                        var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                         if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                         {
@@ -1294,11 +1294,11 @@
 
                                 agri_tax = tax - agri_tax ;
 
-                                var surcharge_amount_one = agri_tax * 0.1;
+                                var surcharge_amount_one = Math.round(agri_tax * 0.1);
 
                                 var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                                var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                                var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                                 if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                                 {
@@ -1337,11 +1337,11 @@
 
                                 var agri_total_tax = Math.round(agri_tax); // Tax for 5L< slab + 2.5 to 5L tax( 30000)
 
-                                var surcharge_amount_one = agri_total_tax * 0.1;
+                                var surcharge_amount_one = Math.round(agri_total_tax * 0.1);
 
                                 var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                                var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                                var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                                 if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                                 {
@@ -1380,11 +1380,11 @@
 
                                 var agri_total_tax = Math.round(agri_tax); // Tax for 10L< slab + 2nd and 3rd slab tax
 
-                                var surcharge_amount_one = agri_total_tax * 0.1;
+                                var surcharge_amount_one = Math.round(agri_total_tax * 0.1);
 
                                 var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                                var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                                var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                                 if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                                 {
@@ -1932,11 +1932,11 @@
 
                         var total_tax = Math.round(tax + 120000); // Tax for 10L< slab + 2nd and 3rd slab tax
 
-                        var surcharge_amount_one = total_tax * 0.1;
+                        var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                         var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                        var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                        var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                         if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                         {
@@ -2492,11 +2492,11 @@
 
                         var total_tax = Math.round(tax + 100000); // Tax for 10L< slab + 2nd and 3rd slab tax
 
-                        var surcharge_amount_one = total_tax * 0.1;
+                        var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                         var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                        var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                        var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                         if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                         {
@@ -2964,11 +2964,11 @@
 
                       var total_tax = tax + 3000; // Tax for 20L< slab + 1st and 2nd slab tax (1000 + 2000)
 
-                      var surcharge_amount_one = total_tax * 0.1;
+                      var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                       var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                      var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                      var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                       if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                       {
@@ -3027,11 +3027,11 @@
                 {
                   var total_tax = Math.round((income/100)*40);
 
-                  var surcharge_amount_one = total_tax * 0.02;
+                  var surcharge_amount_one = Math.round(total_tax * 0.02);
 
                   var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                  var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                  var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                   if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                   {
@@ -3060,11 +3060,11 @@
                 {
                   var total_tax = Math.round((income/100)*40);
 
-                  var surcharge_amount_one = total_tax * 0.05;
+                  var surcharge_amount_one = Math.round(total_tax * 0.05);
 
                   var after_crore = income - 100000000;    // For find out the extra amount after ten crore
 
-                  var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                  var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                   if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                   {
@@ -3117,11 +3117,11 @@
                 {
                   var total_tax = Math.round((income/100)*30);
 
-                  var surcharge_amount_one = total_tax * 0.05;
+                  var surcharge_amount_one = Math.round(total_tax * 0.05);
 
                   var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                  var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                  var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                   if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                   {
@@ -3150,11 +3150,11 @@
                 {
                   var total_tax = Math.round((income/100)*30);
 
-                  var surcharge_amount_one = total_tax * 0.1;
+                  var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                   var after_crore = income - 100000000;    // For find out the extra amount after ten crore
 
-                  var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                  var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                   if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                   {
@@ -3206,11 +3206,11 @@
                     {
                       var total_tax = Math.round((income/100)*30);
 
-                      var surcharge_amount_one = total_tax * 0.1;
+                      var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                       var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                      var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                      var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                       if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                       {
@@ -3631,11 +3631,11 @@
 
                         var total_tax = Math.round(tax + 125000); // Tax for 10L< slab + 2nd and 3rd slab tax
 
-                        var surcharge_amount_one = total_tax * 0.1;
+                        var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                         var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                        var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                        var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                         if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                         {
@@ -3770,11 +3770,11 @@
 
                                 agri_tax = tax - agri_tax ;
 
-                                var surcharge_amount_one = agri_tax * 0.1;
+                                var surcharge_amount_one = Math.round(agri_tax * 0.1);
 
                                 var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                                var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                                var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                                 if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                                 {
@@ -3813,11 +3813,11 @@
 
                                 var agri_total_tax = Math.round(agri_tax); // Tax for 5L< slab + 2.5 to 5L tax( 30000)
 
-                                var surcharge_amount_one = agri_total_tax * 0.1;
+                                var surcharge_amount_one = Math.round(agri_total_tax * 0.1);
 
                                 var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                                var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                                var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                                 if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                                 {
@@ -3856,11 +3856,11 @@
 
                                 var agri_total_tax = Math.round(agri_tax); // Tax for 10L< slab + 2nd and 3rd slab tax
 
-                                var surcharge_amount_one = agri_total_tax * 0.1;
+                                var surcharge_amount_one = Math.round(agri_total_tax * 0.1);
 
                                 var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                                var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                                var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                                 if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                                 {
@@ -4410,11 +4410,11 @@
 
                         var total_tax = Math.round(tax + 125000); // Tax for 10L< slab + 2nd and 3rd slab tax
 
-                        var surcharge_amount_one = total_tax * 0.1;
+                        var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                         var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                        var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                        var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                         if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                         {
@@ -4549,11 +4549,11 @@
 
                                 agri_tax = tax - agri_tax ;
 
-                                var surcharge_amount_one = agri_tax * 0.1;
+                                var surcharge_amount_one = Math.round(agri_tax * 0.1);
 
                                 var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                                var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                                var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                                 if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                                 {
@@ -4592,11 +4592,11 @@
 
                                 var agri_total_tax = Math.round(agri_tax); // Tax for 5L< slab + 2.5 to 5L tax( 30000)
 
-                                var surcharge_amount_one = agri_total_tax * 0.1;
+                                var surcharge_amount_one = Math.round(agri_total_tax * 0.1);
 
                                 var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                                var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                                var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                                 if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                                 {
@@ -4635,11 +4635,11 @@
 
                                 var agri_total_tax = Math.round(agri_tax); // Tax for 10L< slab + 2nd and 3rd slab tax
 
-                                var surcharge_amount_one = agri_total_tax * 0.1;
+                                var surcharge_amount_one = Math.round(agri_total_tax * 0.1);
 
                                 var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                                var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                                var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                                 if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                                 {
@@ -5187,11 +5187,11 @@
 
                         var total_tax = Math.round(tax + 120000); // Tax for 10L< slab + 2nd and 3rd slab tax
 
-                        var surcharge_amount_one = total_tax * 0.1;
+                        var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                         var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                        var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                        var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                         if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                         {
@@ -5747,11 +5747,11 @@
 
                         var total_tax = Math.round(tax + 100000); // Tax for 10L< slab + 2nd and 3rd slab tax
 
-                        var surcharge_amount_one = total_tax * 0.1;
+                        var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                         var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                        var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                        var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                         if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                         {
@@ -5994,11 +5994,11 @@
 
                   var total_tax = Math.round(tax + 125000); // Tax for 10L< slab + 2nd and 3rd slab tax
 
-                  var surcharge_amount_one = total_tax * 0.1;
+                  var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                   var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                  var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                  var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                   if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                   {
@@ -6112,11 +6112,11 @@
 
                   var total_tax = Math.round(tax + 125000); // Tax for 10L< slab + 2nd and 3rd slab tax
 
-                  var surcharge_amount_one = total_tax * 0.1;
+                  var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                   var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                  var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                  var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                   if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                   {
@@ -6220,11 +6220,11 @@
 
                       var total_tax = tax + 3000; // Tax for 20L< slab + 1st and 2nd slab tax (1000 + 2000)
 
-                      var surcharge_amount_one = total_tax * 0.1;
+                      var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                       var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                      var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                      var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                       if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                       {
@@ -6283,11 +6283,11 @@
                 {
                   var total_tax = Math.round((income/100)*40);
 
-                  var surcharge_amount_one = total_tax * 0.02;
+                  var surcharge_amount_one = Math.round(total_tax * 0.02);
 
                   var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                  var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                  var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                   if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                   {
@@ -6316,11 +6316,11 @@
                 {
                   var total_tax = Math.round((income/100)*40);
 
-                  var surcharge_amount_one = total_tax * 0.05;
+                  var surcharge_amount_one = Math.round(total_tax * 0.05);
 
                   var after_crore = income - 100000000;    // For find out the extra amount after ten crore
 
-                  var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                  var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                   if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                   {
@@ -6373,11 +6373,11 @@
                 {
                   var total_tax = Math.round((income/100)*30);
 
-                  var surcharge_amount_one = total_tax * 0.05;
+                  var surcharge_amount_one = Math.round(total_tax * 0.05);
 
                   var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                  var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                  var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                   if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                   {
@@ -6406,11 +6406,11 @@
                 {
                   var total_tax = Math.round((income/100)*30);
 
-                  var surcharge_amount_one = total_tax * 0.1;
+                  var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                   var after_crore = income - 100000000;    // For find out the extra amount after ten crore
 
-                  var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                  var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                   if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                   {
@@ -6463,11 +6463,11 @@
                 {
                   var total_tax = Math.round((income/100)*30);
 
-                  var surcharge_amount_one = total_tax * 0.05;
+                  var surcharge_amount_one = Math.round(total_tax * 0.05);
 
                   var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                  var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                  var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                   if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                   {
@@ -6496,11 +6496,11 @@
                 {
                   var total_tax = Math.round((income/100)*30);
 
-                  var surcharge_amount_one = total_tax * 0.1;
+                  var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                   var after_crore = income - 100000000;    // For find out the extra amount after ten crore
 
-                  var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                  var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                   if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                   {
@@ -6551,11 +6551,11 @@
                     {
                       var total_tax = Math.round((income/100)*30);
 
-                      var surcharge_amount_one = total_tax * 0.1;
+                      var surcharge_amount_one = Math.round(total_tax * 0.1);
 
                       var after_crore = income - 10000000;    // For find out the extra amount after one crore
 
-                      var surcharge_amount = after_crore * 0.7;   // For find out the surcharge amount
+                      var surcharge_amount = Math.round(after_crore * 0.7);   // For find out the surcharge amount
 
                       if(surcharge_amount > surcharge_amount_one)   // For find out smaller surcharge amount
                       {
