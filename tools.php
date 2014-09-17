@@ -35,14 +35,14 @@
 
     <!-- Script for show hide option on select -->
 
-	<style type="text/css">
-	    .select{
-		display: none;
-	    }
-	    .vie{ 
-		   
-		}
-	</style>
+  <style type="text/css">
+      .select{
+    display: none;
+      }
+      .vie{ 
+       
+    }
+  </style>
 
     <!-- LayerSlider styles -->
     <link rel="stylesheet" href="css/layerslider/css/layerslider.css" type="text/css">
@@ -211,34 +211,34 @@
                         <option value="14_15">2014-2015 </option>
                         <option value="13_14">2015-2016</option>
                       </select>
-                    </p>		                
+                    </p>                    
                     <p><label for="taxpayer">Tax Payer</label>
                     <select name="taxpayer" id="taxpayer" onblur="calculate()">
-		                  <option value="huf">HUF</option>
+                      <option value="huf">HUF</option>
                       <option value="individual">Individual </option>
                       <option value="apo">AOPs/BOI</option>
-		                  <option value="company">Domestic Company </option>
+                      <option value="company">Domestic Company </option>
                       <option value="foreign_company">Foreign Company</option>
-		                  <option value="firm">Firms</option>
+                      <option value="firm">Firms</option>
                       <option value="llp">LLP</option>
-		                  <option value="society">Co-Operative Society</option>
+                      <option value="society">Co-Operative Society</option>
                     </select>
                   </p>
-		              <div class="vie select"><p><label for="person">Type</label>
+                  <div class="vie select"><p><label for="person">Type</label>
                     <select name="person" id="person" onblur="calculate()">
                       <option value="male">Male </option>
                       <option value="female">Female</option>
-            		      <option value="citizen">Senior Citizen</option>
-            		      <option value="s_citizen">Super Senior Citizen </option>
+                      <option value="citizen">Senior Citizen</option>
+                      <option value="s_citizen">Super Senior Citizen </option>
                     </select></p>
                   </div>
-		<p><label for="income">Net Taxable Income</label><input type="text" id="income" name="income" onblur="calculate()" onchange="test()" value="0" onkeypress="return isNumber(event)"></p>		
-		<p><label for="tax">Income Tax</label><input type="text" id="tax" name="tax" value="0" readonly></p>
+    <p><label for="income">Net Taxable Income</label><input type="text" id="income" name="income" onblur="calculate()" value="0" onkeypress="return isNumber(event)"></p>   
+    <p><label for="tax">Income Tax</label><input type="text" id="tax" name="tax" value="0" readonly></p>
     <p><label for="tax">Surcharge</label><input type="text" id="surcharge" name="surcharge" value="0" readonly></p>
-		<p><label for="edu">Education Tax</label><input type="text" id="edu" name="edu" value="0" readonly></p>
-		<p><label for="hedu">H.Education Tax</label><input type="text" id="hedu" name="hedu" value="0" readonly></p>
-		<p><label for="total">Total Tax Liability</label><input type="text" id="total" name="total" value="0" readonly></p>
-		</form>
+    <p><label for="edu">Education Tax</label><input type="text" id="edu" name="edu" value="0" readonly></p>
+    <p><label for="hedu">H.Education Tax</label><input type="text" id="hedu" name="hedu" value="0" readonly></p>
+    <p><label for="total">Total Tax Liability</label><input type="text" id="total" name="total" value="0" readonly></p>
+    </form>
             </div>
           </div>
               
@@ -309,46 +309,46 @@
     <!--Script for calculating Tax  -->
 
     <script src="js/simple_calculator.js"></script>
-	
+  
     <script type="text/javascript">
-    	$(document).ready(function(){
-	$("#taxpayer").change(function(){
-		    $( "select option:selected").each(function(){
-		        if($(this).attr("value")=="individual"){       
-			    $(".select").hide();
-		            $(".vie").show();
-		        }
-			if($(this).attr("value")=="huf"){          
-			    $(".select").hide();
-		        }
-			if($(this).attr("value")=="apo"){	          
-			    $(".select").hide();
-		        }
-			if($(this).attr("value")=="company"){          
-			    $(".select").hide();
-		        }
-			if($(this).attr("value")=="foreign_company"){          
-			    $(".select").hide();
-		        }
-			if($(this).attr("value")=="firm"){          
-			    $(".select").hide();
-		        }
-			if($(this).attr("value")=="llp"){          
-			    $(".select").hide();
-		        }
-			if($(this).attr("value")=="society"){       
-			    $(".select").hide();
-		        }
-			
-		    });
-		}).change();
-	});
+      $(document).ready(function(){
+  $("#taxpayer").change(function(){
+        $( "select option:selected").each(function(){
+            if($(this).attr("value")=="individual"){       
+          $(".select").hide();
+                $(".vie").show();
+            }
+      if($(this).attr("value")=="huf"){          
+          $(".select").hide();
+            }
+      if($(this).attr("value")=="apo"){           
+          $(".select").hide();
+            }
+      if($(this).attr("value")=="company"){          
+          $(".select").hide();
+            }
+      if($(this).attr("value")=="foreign_company"){          
+          $(".select").hide();
+            }
+      if($(this).attr("value")=="firm"){          
+          $(".select").hide();
+            }
+      if($(this).attr("value")=="llp"){          
+          $(".select").hide();
+            }
+      if($(this).attr("value")=="society"){       
+          $(".select").hide();
+            }
+      
+        });
+    }).change();
+  });
     </script>
 
     <script type="text/javascript">
       $('document').ready(function() {
 
-	
+  
         
   
           /*
