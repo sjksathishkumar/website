@@ -628,7 +628,7 @@
                               agri_tax = (tax - agri_tax)+(total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword) ;
 
                               var agri_total_tax = Math.round(agri_tax); // Tax for 10L< slab + 2nd and 3rd slab tax
-
+                           
                               var surcharge_amount_one = Math.round(agri_total_tax * 0.1);
 
                               var after_crore = income - 10000000;    // For find out the extra amount after one crore
