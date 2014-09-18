@@ -454,7 +454,6 @@
                   
                   else   // calculations for agricultural tax
                   {
-                      alert("agri_box_value = " + agri_box_value);
                       var income_validate_agri = income - agri_box_value;       // For reseting agriculture value to 0 if income lessthan slab value
 
                          // Normal slab tax calculations
@@ -480,14 +479,12 @@
 
                               if(total_for_2000_waiver <= 500000)
                                 {
-                                    var tax = Math.round((taxable_income*0.1)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword); 
+                                    var tax = Math.round(taxable_income*0.1); 
                                     tax = tax - 2000;       // 2000 is reduced for if income is less than 5L
-                                    alert(tax);
                                 }
                                 else
                                 {
-                                    var tax = Math.round((taxable_income*0.1)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword); 
-                                    alert(tax);
+                                    var tax = Math.round(taxable_income*0.1); 
                                 }
 
                             }
@@ -496,7 +493,7 @@
 
                               var taxable_income = Math.round(income - 500000);  // Reduct 2L for Non-Taxable + 3L for 2nd slab( 2nd slab tax 30000 will be added manually)
 
-                              var tax = Math.round(((taxable_income/100)*20)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword);
+                              var tax = Math.round((taxable_income/100)*20);
 
                               var tax = Math.round(tax + 30000); // Tax for 5L< slab + 2 to 5L tax( 30000)
 
@@ -507,7 +504,7 @@
 
                               var taxable_income = Math.round(income - 1000000);  // Reduct 2L for Non-Taxable + 3L for 2nd slab + 5L for 3rd slab ( 2nd & 3rd slab tax 30000 + 100000 will be added manually)
 
-                              var tax = Math.round(((taxable_income/100)*30)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword);
+                              var tax = Math.round((taxable_income/100)*30);
 
                               var tax = Math.round(tax + 130000); // Tax for 10L< slab + 2nd and 3rd slab tax
 
@@ -540,9 +537,9 @@
 
                               var agri_devided_income = Math.round(agri_taxable_income/100);  
 
-                              var agri_tax = Math.round((agri_devided_income*10)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword); 
+                              var agri_tax = Math.round(agri_devided_income*10); 
 
-                              agri_tax = tax - agri_tax ;
+                              agri_tax = (tax - agri_tax)+(total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword) ;
 
                               var surcharge_amount_one = Math.round(agri_tax * 0.1);
 
@@ -579,11 +576,11 @@
 
                               var agri_taxable_income = Math.round(agri_tax_input - 500000);  // Reduct 2L for Non-Taxable + 3L for 2nd slab( 2nd slab tax 30000 will be added manually)
 
-                              var agri_tax = Math.round(((agri_taxable_income/100)*20)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword);
+                              var agri_tax = Math.round((agri_taxable_income/100)*20);
 
                               agri_tax = agri_tax + 30000 ;
 
-                              agri_tax = tax - agri_tax ;
+                              agri_tax = (tax - agri_tax)+(total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword) ;
 
                               var agri_total_tax = Math.round(agri_tax); // Tax for 5L< slab + 2 to 5L tax( 30000)
 
@@ -622,11 +619,11 @@
 
                               var agri_taxable_income = Math.round(agri_tax_input - 1000000);  // Reduct 2L for Non-Taxable + 3L for 2nd slab + 5L for 3rd slab ( 2nd & 3rd slab tax 30000 + 100000 will be added manually)
 
-                              var agri_tax = Math.round(((agri_taxable_income/100)*30)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword);
+                              var agri_tax = Math.round((agri_taxable_income/100)*30);
 
                               agri_tax = agri_tax + 130000 ;
 
-                              agri_tax = tax - agri_tax ;
+                              agri_tax = (tax - agri_tax)+(total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword) ;
 
                               var agri_total_tax = Math.round(agri_tax); // Tax for 10L< slab + 2nd and 3rd slab tax
 
@@ -664,8 +661,6 @@
 
                           else
                           { 
-                            alert("income is less than one crore");
-                            alert("income = " + income);
                             if(isNaN(document.calculator.income.value) || income<= "200000")
                             {
                               document.calculator.tax.value = ('0'); 
@@ -680,8 +675,6 @@
                               var taxable_income = Math.round(income - 200000);
 
                               //var devided_income = Math.round(taxable_income/100);  
-
-                              alert("total_for_2000_waiver = " + total_for_2000_waiver);
 
                               if(total_for_2000_waiver <= 500000)
                               {
@@ -698,8 +691,6 @@
                             {
 
                               var taxable_income = Math.round(income - 500000);  // Reduct 2L for Non-Taxable + 3L for 2nd slab( 2nd slab tax 30000 will be added manually)
-
-                              alert("total_for_2000_waiver" + total_for_2000_waiver);
 
                               if(total_for_2000_waiver <= 500000)
                               {

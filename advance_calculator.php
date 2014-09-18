@@ -206,7 +206,7 @@
               <hr>
               <div class="row">
               <!-- <div class="envor-partner-1"> -->
-                <div class="col-lg-9 col-md-9">
+                <div class="col-lg-10 col-md-10">
                 <form name="calculator">
                     <p><label for="year" class="label-calculator">Assessment Year</label>
                     <select name="year" id="year" onblur="calculate()">
@@ -264,9 +264,9 @@
                             <table class="shoppin-cart-table">
                               <thead>
                                 <tr>
-                                  <td class="item" width="50%">Income from House Property</td>
-                                  <td class="price" width="35%"><input class="text-calculator" type="text" id="house_box" value="0" readonly></td>
-                                  <td class="qty" width="15%"><i class="fa fa-plus"></i></td>
+                                  <td width="50%">Income from House Property</td>
+                                  <td width="35%"><input class="text-calculator" type="text" id="house_box" value="0" readonly></td>
+                                  <td width="15%"><i class="fa fa-plus"></i></td>
                                 </tr>
                               </thead>
                             </table>                          
@@ -291,9 +291,9 @@
                             <table class="shoppin-cart-table">
                               <thead>
                                 <tr>
-                                  <td class="item" width="50%">Capital Gains</td>
-                                  <td class="price" width="35%"><input class="text-calculator" type="text" id="capital_box" value="0" readonly></td>
-                                  <td class="qty" width="15%"><i class="fa fa-plus"></i></td>
+                                  <td width="50%">Capital Gains</td>
+                                  <td width="35%"><input class="text-calculator" type="text" id="capital_box" value="0" readonly></td>
+                                  <td width="15%"><i class="fa fa-plus"></i></td>
                                 </tr>
                               </thead>
                             </table>  
@@ -309,9 +309,9 @@
                             <table class="shoppin-cart-table">
                               <thead>
                                 <tr>
-                                  <td class="item" width="50%">Income from Other Sources</td>
-                                  <td class="price" width="35%"><input class="text-calculator" type="text" id="other_box" value="0" readonly></td>
-                                  <td class="qty" width="15%"><i class="fa fa-plus"></i></td>
+                                  <td width="50%">Income from Other Sources</td>
+                                  <td width="35%"><input class="text-calculator" type="text" id="other_box" value="0" readonly></td>
+                                  <td width="15%"><i class="fa fa-plus"></i></td>
                                 </tr>
                               </thead>
                             </table> 
@@ -326,9 +326,9 @@
                             <table class="shoppin-cart-table">
                               <thead>
                                 <tr>
-                                  <td class="item" width="50%">Profits and Gains of Business</td>
-                                  <td class="price" width="35%"><input class="text-calculator" type="text" id="profit_box" value="0" readonly></td>
-                                  <td class="qty" width="15%"><i class="fa fa-plus"></i></td>
+                                  <td width="50%">Profits and Gains of Business</td>
+                                  <td width="35%"><input class="text-calculator" type="text" id="profit_box" value="0" readonly></td>
+                                  <td width="15%"><i class="fa fa-plus"></i></td>
                                 </tr>
                               </thead>
                             </table>                           
@@ -341,9 +341,9 @@
                             <table class="shoppin-cart-table">
                               <thead>
                                 <tr>
-                                  <td class="item" width="50%">Agricultural Income</td>
-                                  <td class="price" width="35%"><input class="text-calculator" type="text" id="agri_box" value="0" readonly></td>
-                                  <td class="qty" width="15%"><i class="fa fa-plus"></i></td>
+                                  <td width="50%">Agricultural Income</td>
+                                  <td width="35%"><input class="text-calculator" type="text" id="agri_box" value="0" readonly></td>
+                                  <td width="15%"><i class="fa fa-plus"></i></td>
                                 </tr>
                               </thead>
                             </table>                           
@@ -358,9 +358,9 @@
                            <table class="shoppin-cart-table">
                               <thead>
                                 <tr>
-                                  <td class="item" width="50%">Deductions from Gross Total Income</td>
-                                  <td class="price" width="35%"><input class="text-calculator" type="text" id="deduction_box" value="0" readonly></td>
-                                  <td class="qty" width="15%"><i class="fa fa-plus"></i></td>
+                                  <td width="50%">Deductions from Gross Total Income</td>
+                                  <td width="35%"><input class="text-calculator" type="text" id="deduction_box" value="0" readonly></td>
+                                  <td width="15%"><i class="fa fa-plus"></i></td>
                                 </tr>
                               </thead>
                             </table>
@@ -385,7 +385,7 @@
                           <label class="label-calculator">  Donations (u/s 80G) </label><input class="text-calculator" type="text" id="donation" name="donation" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
                           <label class="label-calculator">  Donations to Political Party (u/s 80GGC) </label><input class="text-calculator" type="text" id="political_donation" name="political_donation" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
                           <label class="label-calculator">  Rent Paid (u/s 80GG) </label><input class="text-calculator" type="text" id="rent_paid" name="rent_paid" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
-                          <label class="label-calculator">  Deduction for maintenance / medical treatment of dependent (u/s 80DD) </label><input class="text-calculator" type="text" size="2" id="medical_treatment" name="medical_treatment" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly><br>
+                          <label class="label-calculator">  Deduction for medical treatment (u/s 80DD) </label><input class="text-calculator" type="text" size="2" id="medical_treatment" name="medical_treatment" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly><br>
                           <label><input type="checkbox" name="80dd" id="80dd" value="80dd" onblur="calculate()">Tick if 80DD is claimed</label><br>
                           <label><input type="checkbox" name="80dd_severe" id="80dd_severe" value="80dd_severe" onblur="calculate()">Tick if severe disability</label><br>
                           <br><label class="label-calculator">  Interest on loan for higher education (u/s 80E) </label><input class="text-calculator" type="text" id="interest_education_loan" name="interest_education_loan" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
