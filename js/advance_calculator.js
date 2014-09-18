@@ -318,7 +318,9 @@
 
                   var income = Math.round(salary_box_value+house_box_value+profit_box_value+short_capital+other_interest+other_commission+agri_box_value);
 
-                  document.calculator.total_income.value = Math.round((salary_box_value+house_box_value+capital_box_value+profit_box_value+other_box_value+agri_box_value)-deduction_box);
+                  document.calculator.income.value = (income - agri_box_value);
+
+                  document.calculator.total_income.value = Math.round((salary_box_value+house_box_value+capital_box_value+profit_box_value+other_box_value)-deduction_box);
 
                   var total_for_2000_waiver = Math.round((salary_box_value+house_box_value+capital_box_value+profit_box_value+other_box_value)-deduction_box);
 
@@ -1263,7 +1265,6 @@
                           
                         if(income_validate_agri > 10000000)
                           {
-
                               // Normal slab tax calculations
 
                               if(isNaN(document.calculator.income.value) || income<= "250000")

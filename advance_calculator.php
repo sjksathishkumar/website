@@ -206,7 +206,7 @@
               <hr>
               <div class="row">
               <!-- <div class="envor-partner-1"> -->
-                <div class="col-lg-10 col-md-10">
+                <div class="col-lg-9 col-md-9">
                 <form name="calculator">
                     <p><label for="year" class="label-calculator">Assessment Year</label>
                     <select name="year" id="year" onblur="calculate()">
@@ -274,16 +274,16 @@
                           <p style="display: none;"><label class="label-calculator"><strong>a.   Income from Self-occupied Property</strong></label><br>
                           <label class="label-calculator">Interest Paid/Payable on Housing Loan</label><br>
                           <label class="label-calculator">  1.  Interest on Housing Loan </label><input class="text-calculator" type="text" id="interest_house_loan" name="interest_house_loan" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br><br>
-                          <label class="label-calculator">2.  Income from Self-occupied House Property</label><input class="text-calculator" type="text" id="self_occupied_house" name="self_occupied_house" onblur="calculate()" onkeypress="return isNumber(event)" readonly><br>
+                          <label class="label-calculator">2.  Income from Self-occupied House Property</label><input class="text-calculator" type="text" id="self_occupied_house" name="self_occupied_house" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly><br>
                           <label class="label-calculator"><strong>b.   Income from Let-out Property</strong></label><br>
                           <label class="label-calculator">  1.  Annual Letable Value/Rent Received or Receivable</label><input class="text-calculator" type="text" id="let_out_rent" name="let_out_rent" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
                           <label class="label-calculator">  2.  Less: Municipal Taxes Paid During the Year</label><input class="text-calculator" type="text" id="let_out_tax" name="let_out_tax" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
                           <label class="label-calculator">3.  Less:Unrealized Rent</label><input class="text-calculator" type="text" id="unreal_rent" name="unreal_rent" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
-                          <label class="label-calculator">4.  Net Annual Value (1-(2+3))</label><input class="text-calculator" type="text" id="net_rent" name="net_rent" onblur="calculate()" onkeypress="return isNumber(event)" readonly><br>
+                          <label class="label-calculator">4.  Net Annual Value (1-(2+3))</label><input class="text-calculator" type="text" id="net_rent" name="net_rent" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly><br>
                           <label class="label-calculator">5.  Less: Deductions from Net Annual Value</label><br>
-                          <label class="label-calculator">i.  Standard Deduction @ 30% of Net Annual Value</label><input class="text-calculator" type="text" id="house_standard_deduction" name="house_standard_deduction" onblur="calculate()" onkeypress="return isNumber(event)" readonly><br>
+                          <label class="label-calculator">i.  Standard Deduction @ 30% of Net Annual Value</label><input class="text-calculator" type="text" id="house_standard_deduction" name="house_standard_deduction" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly><br>
                           <label class="label-calculator">ii.  Interest on Housing Loan</label><input class="text-calculator" type="text" id="let_out_interest_house_loan" name="let_out_interest_house_loan" onblur="calculate()" onkeypress="return isNumber(event)" value="0"><br>
-                          <label class="label-calculator">6  Income from Let-out House Property</label><input class="text-calculator" type="text" id="income_let_out" name="income_let_out" onblur="calculate()" onkeypress="return isNumber(event)" readonly><br>
+                          <label class="label-calculator">6  Income from Let-out House Property</label><input class="text-calculator" type="text" id="income_let_out" name="income_let_out" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly><br>
                           </p>
                         </article>
                         <article>
