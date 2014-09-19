@@ -528,6 +528,8 @@
 
                   document.calculator.deduction_box.value = Math.round(total_deduction+detection_down);
 
+                  //var deduction_box_value = parseInt(document.calculator.deduction_box.value)
+
                   //var income = parseInt(document.calculator.income.value);
 
                   var income = Math.round(salary_box_value+house_box_value+profit_box_value+short_capital+other_interest+other_commission+agri_box_value);
@@ -956,7 +958,7 @@
 
                             var agri_tax_input = agri_box_value + 200000;   // Exemption on 2L as per slab 
 
-                            if(agri_tax_input <= "200000")
+                            if(agri_tax_input <= "205000")
                             {
                               document.calculator.tax.value = ('0'); 
                               document.calculator.surcharge.value = ('0');
@@ -964,7 +966,7 @@
                               document.calculator.hedu.value = ('0'); 
                               document.calculator.total.value = ('0');
                             }
-                            else if(agri_tax_input > "200000" && agri_tax_input <= "500000")
+                            else if(agri_tax_input > "205000" && agri_tax_input <= "500000")
                             {
                               
                               var agri_taxable_income = Math.round(agri_tax_input - 200000);
