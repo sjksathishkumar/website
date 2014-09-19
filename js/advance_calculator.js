@@ -242,11 +242,11 @@
 
                   var agri_box_value = parseInt(document.calculator.agri_box.value);
 
-                  var income = Math.round(salary_box_value+house_box_value+profit_box_value+short_capital+other_interest+other_commission+agri_box_value);
-
                   var deduction_box = parseInt(document.calculator.deduction_box.value);
 
-                  document.calculator.income.value = Math.round(income-deduction_box);
+                  var income = Math.round(salary_box_value+house_box_value+profit_box_value+short_capital+other_interest+other_commission+agri_box_value);
+
+                  document.calculator.income.value = Math.round(income);
 
                   // Calculations for Detections
 
@@ -528,11 +528,11 @@
 
                   document.calculator.deduction_box.value = Math.round(total_deduction+detection_down);
 
-                  //var deduction_box_value = parseInt(document.calculator.deduction_box.value)
+                  var deduction_box_value = parseInt(document.calculator.deduction_box.value)
 
                   //var income = parseInt(document.calculator.income.value);
 
-                  var income = Math.round(salary_box_value+house_box_value+profit_box_value+short_capital+other_interest+other_commission+agri_box_value);
+                  var income = Math.round((salary_box_value+house_box_value+profit_box_value+short_capital+other_interest+other_commission+agri_box_value)-deduction_box_value);
 
                   if(income < 0)
                   {
