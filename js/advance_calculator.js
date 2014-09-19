@@ -347,6 +347,10 @@
                       {
                           var tax = Math.round((taxable_income*0.1)+total_short_capital_111A+long_capital_20_final+long_capital_gain_10+crossword); 
                           tax = tax - 2000;       // 2000 is reduced for if income is less than 5L
+                          if(tax < 0)
+                          {
+                            tax = 0;
+                          }
                       }
                       else
                       {
