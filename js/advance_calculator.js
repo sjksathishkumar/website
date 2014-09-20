@@ -960,11 +960,11 @@
 
                             if(agri_tax_input <= "205000")
                             {
-                              document.calculator.tax.value = ('0'); 
+                              /*document.calculator.tax.value = ('0'); 
                               document.calculator.surcharge.value = ('0');
                               document.calculator.edu.value = ('0'); 
                               document.calculator.hedu.value = ('0'); 
-                              document.calculator.total.value = ('0');
+                              document.calculator.total.value = ('0');*/
                             }
                             else if(agri_tax_input > "205000" && agri_tax_input <= "500000")
                             {

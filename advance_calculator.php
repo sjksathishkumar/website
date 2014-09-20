@@ -398,7 +398,6 @@
                           </p>
                         </article>
                       </div></p>
-                        <p><label for="income" class="label-calculator">Net Taxable Income</label><input type="text" id="total_income" name="total_income" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly></p>    
                         <p><label for="income" class="label-calculator">Income Liable to Tax at Normal Rate</label><input type="text" id="income_normal_rate" name="income_normal_rate" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly></p>  
                         <p><label for="income" class="label-calculator">Short Term Capital Gains (Covered u/s 111A)</label><input type="text" id="total_short_capital_111A" name="total_short_capital_111A" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly></p>    
                         <p><label for="income" class="label-calculator">Long Term Capital Gains (Charged to tax @ 20%)</label><input type="text" id="long_capital_20_final" name="long_capital_20_final" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly></p>    
@@ -411,7 +410,7 @@
                   <p><label for="surcharge" class="label-calculator">Surcharge</label><input type="text" id="surcharge" name="surcharge" value="0" readonly></p>
                   <p><label for="edu" class="label-calculator">Education Tax</label><input type="text" id="edu" name="edu" value="0" readonly></p>
                   <p><label for="hedu" class="label-calculator">H.Education Tax</label><input type="text" id="hedu" name="hedu" value="0" readonly></p>
-                  <p><label for="total" class="label-calculator">Total Tax Liability</label><input type="text" id="total" name="total" value="0" readonly></p>
+                  <p><label for="total" class="label-calculator">Total Tax Liability</label><input type="text" id="total" name="total" value="0" readonly></p><hr>
                 </form>
               </div>
             <!-- </div> -->
