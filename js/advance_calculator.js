@@ -539,9 +539,9 @@
                     income = 0;
                   }
 
-                  document.calculator.income.value = (income - agri_box_value);
+                  document.calculator.income.value = (Math.round((income+short_capital_111A+long_capital_20+long_capital_10+other_lottery)-agri_box_value));
 
-                  document.calculator.total_income.value = Math.round((salary_box_value+house_box_value+capital_box_value+profit_box_value+other_box_value)-deduction_box);
+                  //document.calculator.total_income.value = Math.round((salary_box_value+house_box_value+capital_box_value+profit_box_value+other_box_value)-deduction_box);
 
                   var total_for_2000_waiver = Math.round((salary_box_value+house_box_value+capital_box_value+profit_box_value+other_box_value)-deduction_box);
 
@@ -6870,4 +6870,4 @@
 
               }   // End of other calculations   
           } // End of 2015-2016 year
-  } 
+  }  

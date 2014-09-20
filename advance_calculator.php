@@ -410,7 +410,7 @@
                   <p><label for="surcharge" class="label-calculator">Surcharge</label><input type="text" id="surcharge" name="surcharge" value="0" readonly></p>
                   <p><label for="edu" class="label-calculator">Education Tax</label><input type="text" id="edu" name="edu" value="0" readonly></p>
                   <p><label for="hedu" class="label-calculator">H.Education Tax</label><input type="text" id="hedu" name="hedu" value="0" readonly></p>
-                  <p><label for="total" class="label-calculator">Total Tax Liability</label><input type="text" id="total" name="total" value="0" readonly></p><hr>
+                  <p><label for="total" class="label-calculator">Total Tax Liability</label><input type="text" id="total" name="total" value="0" readonly></p>
                 </form>
               </div>
             <!-- </div> -->
