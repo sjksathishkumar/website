@@ -3,7 +3,7 @@
 	Secondary Color
 
 *********************************************/
-.envor-header-1 .envor-top-bar, .jspTrack, .envor-mobile-menu, .envor-layerslider .envor-layerslider-block, footer.envor-footer, #envor-mobile-menu-btn, #envor-mobile-cart-btn, .envor-btn-secondary,
+.envor-header-1 .envor-top-bar, .jspTrack, .envor-mobile-menu, .envor-layerslider .envor-layerslider-block, .envor-btn-primary, footer.envor-footer, #envor-mobile-menu-btn, #envor-mobile-cart-btn, .envor-btn-secondary,
 .envor-project figure figcaption i:hover, .envor-controls span, #to-the-top, .envor-header-2 .envor-header-bg .header-search form button[type=submit].focus,
 .envor-header-2 .envor-header-bg .social-buttons ul li a.envor-cart, .envor-header-2 .envor-desktop-dark-menu-bg, .envor-testimonials-2-inner, .envor-testimonials-2 .arrow,
 .envor-estate-form .envor-estate-search-type span, .envor-estate-form .envor-estate-form-item i.fa-caret-down, .envor-header-1 .envor-dark-header-bg, .envor-header-2 .envor-dark-header-bg,
@@ -60,7 +60,7 @@ p.contact-item i, .envor-side-navi ul li:hover i, .envor-pricing-2 .envor-pricin
 .envor-section-cart ul.order-total li span.total, .payment-option span {
 	color: #f16829;
 }
-.envor-header-1 .envor-top-bar p i, .envor-header-1 .envor-top-bar ul.social-btns li a.hover, .envor-header-1 .envor-top-bar .shopping-cart > span i.hover, .envor-btn-primary,
+.envor-header-1 .envor-top-bar p i, .envor-header-1 .envor-top-bar ul.social-btns li a.hover, .envor-btn:hover, #to-the-top:hover, .envor-header-1 .envor-top-bar .shopping-cart > span i.hover, 
 .jspDrag, .envor-scroller > i:hover, i.clicked, .envor-feature header i, .arrow-color, .envor-controls span.active, .envor-section-st2, .envor-header-2 .envor-header-bg .social-buttons ul li a:hover,
 .envor-header-2 .envor-header-bg .social-buttons ul li a.envor-cart span, .envor-estate-form .envor-estate-search-type span.active, .envor-header-2 .envor-dark-header-bg .header-search form.focus button[type=submit],
 .envor-about-widget p.links a:hover,.envor-property-1 span, .envor-header-3 .envor-header-bg .social-buttons a:hover, .ls-label-primary, .envor-section-st3, .envor-feature-2-color header .arrow,
@@ -114,11 +114,11 @@ select:focus, textarea:focus,
 
 *********************************************/
 
-.envor-header-1 .envor-top-bar .shopping-cart > span i.regular, .envor-btn:hover, .envor-controls span:hover, #to-the-top:hover, .envor-tags-widget a.envor-tag-item:hover {
-	background-color: #9AD03E;
+.envor-header-1 .envor-top-bar .shopping-cart > span i.regular, .envor-controls span:hover, .envor-tags-widget a.envor-tag-item:hover {
+	background-color: #363b3f;
 }
 .envor-btn-primary-border:hover, .envor-btn-secondary-border:hover {
-	border-color: #9AD03E !important;
+	border-color: #363b3f !important;
 }
 
 

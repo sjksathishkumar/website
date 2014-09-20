@@ -187,7 +187,7 @@ input[type=submit], input[type=file], input[type=button], button[type=submit], b
 	transition-duration: 0.2s;
 }
 #to-the-top:hover {
-	color: #333;
+	color: #fff;
 }
 #to-the-top i {
 	width: 40px;
