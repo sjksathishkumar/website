@@ -117,7 +117,7 @@
           <!--LayerSlider layer-->
           <div class="ls-layer" style="transition3d: 1,4,5,11; transition2d: 2,8,30;">
             <!--LayerSlider background-->
-            <img class="ls-bg" src="img/bassbiz-accounting-internal-auditing.png" alt="layer1-background">
+            <img class="ls-bg" src="img/slider-bg.jpg" alt="layer1-background">
             <div class="envor-layerslider-block ls-s1" style="top: 300px; left: 15px; transition2d: all; slidedelay: 6000; durationin: 1000; easingin: easeOutExpo;">
               <h3>LET'S </h3>
               <h2>Create</h2>
@@ -127,7 +127,7 @@
           <!--LayerSlider layer-->
           <div class="ls-layer" style="transition3d: 2,3,6,14; transition2d: 4,5,23;">
             <!--LayerSlider background-->
-            <img class="ls-bg" src="img/bassbiz-ask-experts.png" alt="layer1-background">
+            <img class="ls-bg" src="img/slider-bg.jpg" alt="layer1-background">
             <div class="envor-layerslider-block ls-s1" style="top: 300px; left: 15px; transition2d: all; slidedelay: 6000; durationin: 1000; easingin: easeOutExpo;">
               <h3>DISCOVER</h3>
               <h2>biz</h2>
@@ -137,7 +137,7 @@
           <!--LayerSlider layer-->
           <div class="ls-layer" style="transition3d: 2,3,6,14; transition2d: 4,5,23;">
             <!--LayerSlider background-->
-            <img class="ls-bg" src="img/bassbiz-accounting-internal-auditing-1.png" alt="layer1-background">
+            <img class="ls-bg" src="img/slider-bg.jpg" alt="layer1-background">
             <div class="envor-layerslider-block ls-s1" style="top: 300px; left: 15px; transition2d: all; slidedelay: 6000; durationin: 1000; easingin: easeOutExpo;">
               <h3>LET'S</h3> 
               <h2>PLAN</h2>
