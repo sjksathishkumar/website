@@ -223,12 +223,12 @@
                     <h3><strong>Corporate</strong> Office</h3>
                     <p class="contact-item"><i class="fa fa-map-marker"></i> No 60/5, Ground Floor, 28th Cross Street, Indira Nagar, Adyar, Chennai, Tamilnadu-600020, India</p>
                     <p class="contact-item"><i class="fa fa-mobile"></i> +91 98840 40580 </p>
-		    <p class="contact-item"><i class="fa fa-phone"></i> +91 44 64572123  </p>
+        <p class="contact-item"><i class="fa fa-phone"></i> +91 44 64572123  </p>
                     <p class="contact-item"><i class="fa fa-envelope"></i> <a href="mailto:info@bassbiz.in" target="_top">info@bassbiz.in</a></p>
                   </div>
-		</div>			
-		<div class="row">
-		  <div class="col-lg-6 col-md-6">
+    </div>      
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
                     <h3><strong>Trichy</strong> Office</h3>
                     <p class="contact-item"><i class="fa fa-map-marker"></i> Near Vannakovil Bus Stop, Opp. to Snehalaya School Navalur Kuttapattu, Tiruchirappalli, Tamilnadu-620009, India</p>
                     <p class="contact-item"><i class="fa fa-mobile"></i> +91 98840 40580 </p>
@@ -368,7 +368,7 @@ Salem, Tamilnadu-636010, India</p>
                   <p><label for="rt3-mobile">Mobile</label><input type="text" id="mobile" name="mobile"></p>
                   <p><label for="rt3-email">Email</label><input type="email" id="email" name="email"></p>
                   <p><label for="rt3-details">Feedback</label><textarea id="feedback" name="feedback"></textarea></p>
-                  <p><label for="rt3-attachment">Attachment</label><input type="file" id="file" name="file"></p>
+                  <p><label for="rt3-attachment">Attachment</label><input type="file" id="feedback_file" name="feedback_file"></p>
                   <p><input type="submit" value="Submit" class="envor-btn envor-btn-normal envor-btn-primary"></p>
                 </form>
               </div>
@@ -600,7 +600,7 @@ Salem, Tamilnadu-636010, India</p>
             maxlength: 10
           },
           feedback: "required",
-	  file: {
+    file: {
             extension: "doc|docx|pdf"
           }
         },
@@ -616,7 +616,7 @@ Salem, Tamilnadu-636010, India</p>
             required: "Please enter Mobile Number"
           },
           feedback: "Please give your Feedback",
-	  file: "Please select docx,doc,pdf only"
+    file: "Please select docx,doc,pdf only"
         },
         submitHandler:
             function(){
@@ -694,8 +694,8 @@ Salem, Tamilnadu-636010, India</p>
         var styledMap = new google.maps.StyledMapType(styles,
           {name: "Bass Biz"});
         var myLatlng = new google.maps.LatLng(12.991165, 80.252699);
-	var trichy = new google.maps.LatLng(10.759670, 78.601692);
-	var salem = new google.maps.LatLng(11.632186, 78.129402);
+  var trichy = new google.maps.LatLng(10.759670, 78.601692);
+  var salem = new google.maps.LatLng(11.632186, 78.129402);
         var mapOptions = {
           zoom: 6,
           center: myLatlng,
@@ -709,13 +709,13 @@ Salem, Tamilnadu-636010, India</p>
             map: map,
             title:"Bass Biz Services Pvt Limited"
         });
-	// To add the marker to the map, use the 'map' property
+  // To add the marker to the map, use the 'map' property
         var marker = new google.maps.Marker({
             position: trichy,
             map: map,
             title:"Bass Biz Services Pvt Limited - Trichy"
         });
-	// To add the marker to the map, use the 'map' property
+  // To add the marker to the map, use the 'map' property
         var marker = new google.maps.Marker({
             position: salem,
             map: map,

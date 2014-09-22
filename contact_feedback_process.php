@@ -16,14 +16,16 @@ $feedback = $sql->real_escape_string($_POST['feedback']);
  //$info = pathinfo($_FILES['file']['name']);
  //$ext = $info['extension']; // get the extension of the file
 //$ext = pathinfo($_FILES['file'], PATHINFO_EXTENSION);
-$path = $_FILES['file']['name'];
-$ext = pathinfo($path, PATHINFO_EXTENSION);
-echo $ext;
-echo $path;
+echo "$mobile";
+$path = $_FILE['feedback_file']['name'];
+echo "Path-".$path;
+/*$ext = pathinfo($path, PATHINFO_EXTENSION);
+echo "extension-".$ext;
+
 
  $newname = rand().".".$ext; 
  $target = 'feedback_files/'.$newname;
- move_uploaded_file( $_FILES['file']['tmp_name'], $target);
+ move_uploaded_file( $_FILES['file']['tmp_name'], $target);*/
 
  //echo $target;
 
@@ -40,7 +42,7 @@ echo "<br>feedback";
 echo htmlspecialchars($_POST['feedback']);
 echo "<br>".$file;*/
 
-$query ="INSERT INTO `feedback_contact` (`id`, `who`, `what`, `name`, `designation`, `company`, `email`, `mobile`, `feedback`, `file`, `date`) VALUES (NULL, '$who', '$what', '$name', '$designation', '$company', '$email', '$mobile', '$feedback', '$target', CURRENT_TIMESTAMP);";
+/*$query ="INSERT INTO `feedback_contact` (`id`, `who`, `what`, `name`, `designation`, `company`, `email`, `mobile`, `feedback`, `file`, `date`) VALUES (NULL, '$who', '$what', '$name', '$designation', '$company', '$email', '$mobile', '$feedback', '$target', CURRENT_TIMESTAMP);";
 
 if ( !$sql->query($query) ) {
     echo "Error code ({$sql->errno}): {$sql->error}";
@@ -51,6 +53,6 @@ if ( !$sql->query($query) ) {
 }
 
 $sql->close();
-
+*/
 
 ?>
