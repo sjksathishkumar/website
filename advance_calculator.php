@@ -398,7 +398,6 @@
                           </p>
                         </article>
                       </div></p>
-                        <p><label for="income" class="label-calculator">Income Liable to Tax at Normal Rate</label><input type="text" id="income_normal_rate" name="income_normal_rate" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly></p>  
                         <p><label for="income" class="label-calculator">Short Term Capital Gains (Covered u/s 111A)</label><input type="text" id="total_short_capital_111A" name="total_short_capital_111A" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly></p>    
                         <p><label for="income" class="label-calculator">Long Term Capital Gains (Charged to tax @ 20%)</label><input type="text" id="long_capital_20_final" name="long_capital_20_final" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly></p>    
                         <p><label for="income" class="label-calculator">Long Term Capital Gains (Charged to tax @ 10%)</label><input type="text" id="long_capital_gain_10" name="long_capital_gain_10" onblur="calculate()" onkeypress="return isNumber(event)" value="0" readonly></p>                      
