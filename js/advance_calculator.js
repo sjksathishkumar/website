@@ -339,7 +339,7 @@
 
                   var employer_nps = parseInt(document.calculator.employer_nps.value);
 
-                  var equity_data = Math.round(salary_box_value+house_box_value+capital_box_value+profit_box_value+other_box_value+agri_box_value);
+                  var equity_data = Math.round(salary_box_value+house_box_value+capital_box_value+profit_box_value+other_box_value);
 
                   if(isNaN(parseInt(document.calculator.equity.value)))
                       {
@@ -350,7 +350,7 @@
 
                     if(equity >= 50000)
                     {
-                      if(equity_data > 1000000)
+                      if(equity_data < 1000000)
                       {
                         equity = 25000;
                       }
