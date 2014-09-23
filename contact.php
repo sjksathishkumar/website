@@ -231,15 +231,15 @@
       <div class="col-lg-6 col-md-6">
                     <h3><strong>Trichy</strong> Office</h3>
                     <p class="contact-item"><i class="fa fa-map-marker"></i> Near Vannakovil Bus Stop, Opp. to Snehalaya School Navalur Kuttapattu, Tiruchirappalli, Tamilnadu-620009, India</p>
-                    <p class="contact-item"><i class="fa fa-mobile"></i> +91 98840 40580 </p>
-                    <p class="contact-item"><i class="fa fa-envelope"></i> <a href="mailto:antony@bassbiz.in" target="_top">antony@bassbiz.in</a></p>
+                    <p class="contact-item"><i class="fa fa-mobile"></i> +91 72990 40580 </p>
+                    <p class="contact-item"><i class="fa fa-envelope"></i> <a href="mailto:antony@bassbiz.in" target="_top">trichy@bassbiz.in</a></p>
                   </div>
                   <div class="col-lg-6 col-md-6">
                     <h3><strong>Salem</strong> Office</h3>
                     <p class="contact-item"><i class="fa fa-map-marker"></i> No 131/2, Behind Sowdeswari College, Nadu Street, Kondalampatti,
 Salem, Tamilnadu-636010, India</p>
                     <p class="contact-item"><i class="fa fa-mobile"></i></i> +91 86820 50777 </p>
-                    <p class="contact-item"><i class="fa fa-envelope"></i> <a href="mailto:girish@bassbiz.in" target="_top">girish@bassbiz.in</a></p>
+                    <p class="contact-item"><i class="fa fa-envelope"></i> <a href="mailto:girish@bassbiz.in" target="_top">salem@bassbiz.in</a></p>
                   </div>
                 </div>
               </div>
