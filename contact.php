@@ -10,9 +10,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Envor HTML5/CSS3 Template">
     <meta name="author" content="Suono Libero ( @rivathemes.com )">
-    <link rel="shortcut icon" href="favicon.ico">
 
-    <title>Contact Us | Bass Biz | Accounting, Internal Auditing service provider in Chennai</title>
+    <title>Call +919884040580 Mail info@bassbiz.in | Bass Biz Services Private Limited </title> 
+    <meta name="ROBOTS" content="INDEX,FOLLOW"/>
+    <meta name="description" content="Bass Biz gives you quicker and smarter response to all your queries when call them on +919884040580 or mail info@bassbiz.in" />
+    <meta name="abstract" content="call us +919884040580 for your accounting, internal auditing, tax consulting, business advisory, CFO requirements " />
+    <meta name="keywords" content="+919884040580, info@bassbiz.in, www.bassbiz.in, accounting, internal auditing, tax consulting, bass biz, trichy, chennai, salem" />
+    <meta name="author" content="Bass Biz" />
+    <meta name="publisher" content="Bass Desio" />
+    <meta name="copyright" content="Bass Biz" />
+    <meta http-equiv="Reply-to" content="antony@bassbiz.in" />
+    <meta name="creation_Date" content="10/06/2012" />
+    <meta name="expires" content="11 June 2222" />
+    <meta name="language" content="EN" />
+    <meta name="rating" content="general" />
+    <meta name="revisit-after" content="2 days" />
+    <link rel="shortcut icon" href="favicon.ico">
 
     <!--
     * Google Fonts
@@ -216,8 +229,8 @@
                 <div id="map-canvas-2"></div>
                 <div class="row">
                   <div class="col-lg-6 col-md-6">
-                    <h3>few <strong>words</strong> about</h3>
-                    <p>Nullam volutpat sed libero at viverra. Donec ornare viverra quam, sit amet hendrerit nisi suscipit et. Nunc luctus nulla eget neque tempus faucibus. Nunc porttitor ante lacus, quis vulputate felis aliquet sit amet. Aliquam eu arcu dictum, volutpat ligula non, consequat orci.</p>
+                    <h3>Leave us <strong>Feedback</strong></h3>
+                    <p>Bass Biz works with the goal of growing with its clients. We believes on win-win situation, so leave us comments on  our google+, justdial, zomato, facebook page.</p>
                   </div>
                   <div class="col-lg-6 col-md-6">
                     <h3><strong>Corporate</strong> Office</h3>
@@ -663,7 +676,7 @@ Salem, Tamilnadu-636010, India</p>
     <script src="js/layerslider/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
     <script src="js/jquery.rivathemes.js"></script>
     <!-- <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script> AIzaSyCmQVgjRLEEC4F21fYL0jxKXExvXlCyeiM-->
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCmQVgjRLEEC4F21fYL0jxKXExvXlCyeiM&sensor=false"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC7UVgXP06OTuy0rph5IbnWi9w9UJCASBM&sensor=false"></script>
     <script type="text/javascript">
       function initialize() {
         // Create an array of styles.
