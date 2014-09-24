@@ -613,7 +613,7 @@ Salem, Tamilnadu-636010, India</p>
             maxlength: 10
           },
           feedback: "required",
-    file: {
+    feedback_file: {
             extension: "doc|docx|pdf"
           }
         },
@@ -629,7 +629,7 @@ Salem, Tamilnadu-636010, India</p>
             required: "Please enter Mobile Number"
           },
           feedback: "Please give your Feedback",
-    file: "Please select docx,doc,pdf only"
+    feedback_file: "Please select docx,doc,pdf only"
         },
         submitHandler:
             function(){
