@@ -12,7 +12,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Envor HTML5/CSS3 Template">
     <meta name="author" content="Suono Libero ( @rivathemes.com )">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="../favicon.ico">
 
     <title>Ask Xperts | Bass Biz | Accounting, Internal Auditing service provider in Chennai</title>
 
@@ -22,22 +22,22 @@ session_start();
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <!-- Custom CSS -->
-    <link href="css/animate.css" rel="stylesheet" type="text/css">
-    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/colorbox-skins/4/colorbox.css" type="text/css">
-        <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/animate.css" rel="stylesheet" type="text/css">
+    <link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/colorbox-skins/4/colorbox.css" type="text/css">
+        <link href="../css/main.css" rel="stylesheet" type="text/css">
     
 
-    <link href="css/header/h1.css" rel="stylesheet" type="text/css">
-    <link href="css/responsive.css" rel="stylesheet" type="text/css">
-    <link href="css/color1.css" rel="stylesheet" type="text/css" id="envor-site-color">
-    <link href="css/rivathemes.css" rel="stylesheet" type="text/css">
+    <link href="../css/header/h1.css" rel="stylesheet" type="text/css">
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/color1.css" rel="stylesheet" type="text/css" id="envor-site-color">
+    <link href="../css/rivathemes.css" rel="stylesheet" type="text/css">
 
     <!-- LayerSlider styles -->
-    <link rel="stylesheet" href="css/layerslider/css/layerslider.css" type="text/css">
+    <link rel="stylesheet" href="../css/layerslider/css/layerslider.css" type="text/css">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="js/vendor/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -48,11 +48,11 @@ session_start();
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
     <!-- Stylesheet for Magic Suggest -->
 
-    <link href="css/magicsuggest.css" rel="stylesheet">
+    <link href="../css/magicsuggest.css" rel="stylesheet">
 
 
     
@@ -108,7 +108,7 @@ session_start();
       //-->
       <?php
        
-        require "header.php";
+        require "xpert-header.php";
       ?>
     <!--
 
@@ -151,7 +151,7 @@ session_start();
           <div class="row">
             <div class="col-lg-12">
               <div class="envor-desktop-breadscrubs-inner">
-                <a href="index.php">Home</a><i class="fa fa-angle-double-right"></i>Ask Xperts
+                <a href="../index.php">Home</a><i class="fa fa-angle-double-right"></i>Ask Xperts
               </div>
             </div>
           </div>
@@ -171,7 +171,7 @@ session_start();
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i>Ask Xperts
+              <a href="../index.html">Home</a><i class="fa fa-angle-double-right"></i>Ask Xperts
             </div>
           </div>
         </div>
@@ -195,7 +195,7 @@ session_start();
                 <h2>Ask to <strong> Xperts</strong></h2>
                 <?php
                 if (isset($_SESSION['UNAME']) && !(empty($_SESSION['UNAME']))){
-                  echo '<br><a href="assets/google_login/logout.php"><i class="fa fa-sign-out"></i><b>Logout</b></a><br/><br/>';
+                  echo '<br><a href="../assets/google_login/logout.php"><i class="fa fa-sign-out"></i><b>Logout</b></a><br/><br/>';
                   echo "Welcome <strong>".$_SESSION['UNAME']." !</strong><br/><br/>";
                   echo '<form class="envor-f1" name="ask_form" id="ask_form" method="post" action="ask_expert_process.php">';
                   echo '<p><label for="rt2-job">Mobile</label><input type="text" id="mobile" name="mobile"></p>';
@@ -208,7 +208,7 @@ session_start();
                   echo '</form>';
                 }else{
                   echo '<div class="envor-msg envor-msg-error"><header>For ask question you must login !</header></div><p>&nbsp;</p>';
-                  echo '<a href="javascript:login()"><img src="assets/google_login/image/google_plus_signin_1_130x35.png"></a>';
+                  echo '<a href="javascript:login()"><img src="../assets/google_login/image/google_plus_signin_1_130x35.png"></a>';
                 }
                 ?>
                 
@@ -238,7 +238,7 @@ session_start();
                 <ul>
                   <?php
 
-                    require 'db_connect.php';
+                    require '../db_connect.php';
                     $query ="select * from questions_tag";
 
                     $result = $sql->query($query);
@@ -249,7 +249,7 @@ session_start();
 
                   ?>
                   <li>
-                    <p><a href="expert_tag_view.php?tag_id=<?php echo $row['tag_id']; ?>"><i class="glyphicon glyphicon-folder-open"></i> <?php echo $row['tag_name']; ?></a> <a href="expert_tag_view.php?tag_id=<?php echo $row['tag_id']; ?>">
+                    <p><a href="xpert-topics.php?tag_id=<?php echo $row['tag_id']; ?>"><i class="glyphicon glyphicon-folder-open"></i> <?php echo $row['tag_name']; ?></a> <a href="expert_tag_view.php?tag_id=<?php echo $row['tag_id']; ?>">
                       <i class="fa fa-rss"></i></a> 
                     </p>                  
                   </li>
@@ -299,38 +299,38 @@ session_start();
     Envor footer start
 
     //-->
-    <?php require 'footer.php'; ?>
+    <?php require '../footer.php'; ?>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the FAQ load faster -->
-        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script src="../js/vendor/jquery-1.11.0.min.js"></script>
 
-    <script src="js/vendor/core-1.0.5.js"></script>
+    <script src="../js/vendor/core-1.0.5.js"></script>
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.mCustomScrollbar.min.js"></script>
-    <script src="js/jquery.mousewheel.min.js"></script>
-    <script src="js/jquery.colorbox-min.js"></script>
-    <script src="js/preloadCssImages.jQuery_v5.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../js/jquery.mousewheel.min.js"></script>
+    <script src="../js/jquery.colorbox-min.js"></script>
+    <script src="../js/preloadCssImages.jQuery_v5.js"></script>
+    <script src="../js/jquery.stellar.min.js"></script>
     <!--
     * jQuery with jQuery Easing, and jQuery Transit JS
     //-->
-    <script src="js/layerslider/jquery-easing-1.3.js" type="text/javascript"></script>
-    <script src="js/layerslider/jquery-transit-modified.js" type="text/javascript"></script>
+    <script src="../js/layerslider/jquery-easing-1.3.js" type="text/javascript"></script>
+    <script src="../js/layerslider/jquery-transit-modified.js" type="text/javascript"></script>
     <!--
     * LayerSlider from Kreatura Media with Transitions
     -->
-    <script src="js/layerslider/layerslider.transitions.js" type="text/javascript"></script>
-    <script src="js/layerslider/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
-    <script src="js/jquery.rivathemes.js"></script>
+    <script src="../js/layerslider/layerslider.transitions.js" type="text/javascript"></script>
+    <script src="../js/layerslider/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+    <script src="../js/jquery.rivathemes.js"></script>
 
     <!-- Script for magic auto fill -->
 
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>  -->
-    <script src="js/magicsuggest.js"></script>
-    <script src="js/expert_magic_suggest_script.js"></script>
+    <script src="../js/magicsuggest.js"></script>
+    <script src="../js/expert_magic_suggest_script.js"></script>
 
 	
 
@@ -347,7 +347,7 @@ session_start();
 	function login() 
 	{
 	  var myParams = {
-	    'clientid' : '206512750088-rd64pfkkjtu2k5r8iiaej9tfj03699f5.apps.googleusercontent.com',
+	    'clientid' : '206512750088-re54u9smcmi0sr5t2a80o4n2b77jivu7.apps.googleusercontent.com',
 	    'cookiepolicy' : 'single_host_origin',
 	    'callback' : 'loginCallback',
 	    'approvalprompt':'force',
@@ -394,7 +394,7 @@ session_start();
 	}
 	function onLoadCallback()
 	{
-	    gapi.client.setApiKey('AIzaSyCmQVgjRLEEC4F21fYL0jxKXExvXlCyeiM');
+	    gapi.client.setApiKey('AIzaSyC7UVgXP06OTuy0rph5IbnWi9w9UJCASBM');
 	    gapi.client.load('plus', 'v1',function(){});
 	}
 	 
@@ -452,13 +452,13 @@ session_start();
                   if(msg == "success")
                   {
                    $(form).fadeOut(800, function(){
-                            form.html('<div class="envor-msg envor-msg-error"><header>Your Application submited Successfully!</header><p>We will give you answer shortly. If you have queries please mail to <strong>info@bassbiz.in</strong></p></div>').fadeIn().delay(2000);
+                            form.html('<div class="envor-msg envor-msg-error"><header>Your Application submitted Successfully!</header><p>We will give you answer shortly. If you have queries please mail to <strong>info@bassbiz.in</strong></p></div>').fadeIn().delay(2000);
                          });
                  }
                  else
                  {
                   $(form).fadeOut(800, function(){
-                            form.html('<div class="envor-msg envor-msg-error"><header>Your Application submition Failed!</header><p>Please try again! If you have queries please mail to <strong>info@bassbiz.in</strong></p></div>').fadeIn().delay(2000);
+                            form.html('<div class="envor-msg envor-msg-error"><header>Your Application submittion Failed!</header><p>Please try again! If you have queries please mail to <strong>info@bassbiz.in</strong></p></div>').fadeIn().delay(2000);
                          });
                  }
                   
@@ -472,7 +472,7 @@ session_start();
 
      <!-- Script for Google Search -->
 
-    <script src="js/google_search_script.js"></script>
+    <script src="../js/google_search_script.js"></script>
     
     
     <!-- End of Validation Script for Form -->  
@@ -496,7 +496,7 @@ session_start();
          
       });
     </script>
-    <script src="js/envor.js"></script>
+    <script src="../js/envor.js"></script>
     <script type="text/javascript">
       $('document').ready(function() {
           /*
