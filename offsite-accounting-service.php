@@ -8,9 +8,9 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; iso-8859-1"/>
     <meta name="ROBOTS" content="INDEX, FOLLOW"/>
-    <meta name="description" content="To cut down your call us on 9884040580  for onsite accounting maintenance"/>
-    <meta name="abstract" content="Bass Biz offers onsite accounting maintenance for small and medium scale industries."/>
-    <meta name="keywords" content="onsite accounting, part time professional accountant, accounting service at your door step, accounting maintenance,   tiruchirappalli, chennai, salem"/>
+    <meta name="description" content="Receive a customized professional accounting and book-keeping services with Bass Biz using the model of onsite, offsite and offshore accounts maintenance"/>
+    <meta name="abstract" content="Bass Biz offers customized solutions to your Accounting and Book-keeping requirements"/>
+    <meta name="keywords" content="Accounting Firm in Chennai, Accounting Service provider in Chennai, Accounting and Bookkeeping Services, onsite accounts maintenance, offsite accounts maintenance, offshore accounting team"/>
     <meta name="author" content="Bass Biz"/>
     <meta name="publisher" content="Bass Desio"/>
     <meta name="copyright" content="Bass Biz"/>
@@ -23,7 +23,7 @@
 
     <link rel="shortcut icon" href="favicon.ico">
 
-    <title> Onsite accounts maintenance | Accounting service at your office | Accountant at your door step | Bass Biz </title>
+    <title> Accountant for start-ups |  Accountant for professional | Accounting service | Affsite accounting maintenance | Bass Biz </title>
 
     <!--
     * Google Fonts
@@ -131,7 +131,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-9 col-md-9 col-sm-9">
-              <h1>Onsite</h1>
+              <h1>Offsite</h1>
             </div>
           </div>
         </div>
@@ -190,7 +190,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <h2><strong>ONSITE ACCOUNTING SERVICE</strong></h2>
+              <h2><strong>OFFSITE ACCOUNTING SERVICE</strong></h2>
 
             </div>
             <div class="col-lg-6 col-md-6">
