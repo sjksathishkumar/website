@@ -4,15 +4,6 @@ var EditableTable = function () {
 
         //main function to initiate the module
         init: function () {
-         
-     
-
-          // jQuery('#editable-sample_wrapper .dataTables_filter input').addClass("form-control medium"); // modify table search input
-          // jQuery('#editable-sample_wrapper .dataTables_length select').addClass("form-control xsmall"); // modify table per page dropdown
-
-       
-     
-
 
 
       var nCloneTh = document.createElement( 'th' );
@@ -148,7 +139,7 @@ var EditableTable = function () {
             oTable.fnDeleteRow( nTr );    
             oTable.fnDraw();
             //alert("Updated");
-            //location.reload(true);
+            location.reload(true);
             }
             else  
             {

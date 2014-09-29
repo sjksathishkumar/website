@@ -19,7 +19,26 @@ while ( $row = $result->fetch_assoc() )
   	$resume .= $row['resume'];
 }
 
-$del = unlink($resume);
+if(unlink($resume))
+{
+
+$query = "DELETE FROM `jobs` WHERE `candidate_id` = '$id'";
+	if($sql->query( $query ))
+	{
+		echo 'success';	
+		$sql->commit();
+		$sql->close();	
+	}
+	else
+	{
+		echo 'error';
+		$sql->rollback();
+	  	$sql->close();	
+	}
+
+}
+
+/*$del = unlink($resume);
 
 if($del)
 {
@@ -41,7 +60,7 @@ else
 	$sql->rollback();
   	$sql->close();
 }
-
+*/
 
 ?>
 

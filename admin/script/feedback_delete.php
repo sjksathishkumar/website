@@ -19,31 +19,23 @@ while ( $row = $result->fetch_assoc() )
   	$file .= $row['file'];
 }
 
-//echo $file."<br>";
-
-$del = unlink($file);
-
-//echo $del;
-
-if($del)
+if(unlink($file))
 {
 
 $query = "DELETE FROM `feedback_contact` WHERE `id` = '$id'";
-$result_del = $sql->query( $query );
+	if($sql->query( $query ))
+	{
+		echo 'success';	
+		$sql->commit();
+		$sql->close();	
+	}
+	else
+	{
+		echo 'error';
+		$sql->rollback();
+	  	$sql->close();	
+	}
 
-}
-
-if($result_del)
-{
-	echo 'success';	
-	$sql->commit();
-	$sql->close();
-}	
-else
-{ 
-    	echo 'error';
-	$sql->rollback();
-  	$sql->close();
 }
 
 ?>
