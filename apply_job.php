@@ -187,7 +187,7 @@
             <div class="col-lg-3 col-md-3">
               <nav class="envor-side-navi">
                 <ul>
-                  <li> <a href="careers.php"><i class="glyphicon glyphicon-arrow-left"></i>Back to Careers</a></li>
+                  <li> <a href="bassbiz-workwithus.php"><i class="glyphicon glyphicon-arrow-left"></i>Back to Careers</a></li>
                 </ul>
               </nav>
             <!--
@@ -335,13 +335,16 @@
         submitHandler:
             function(){
             var form = $("#job_form");
-            var postData = $("#job_form").serializeArray();
+            var formData = new FormData($("#job_form")[0]);
             var formURL = $("#job_form").attr("action");
             $.ajax(
             {
-                url : formURL,
-                type: "POST",
-                data : postData,
+                  url : formURL,
+                  cache: false,
+                  data: formData,
+                  processData: false,
+                  contentType: false,
+                  type: 'POST',
                 success:function(msg) 
                 {
                   if(msg == "success")
