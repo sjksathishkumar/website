@@ -263,7 +263,7 @@ Salem, Tamilnadu-636010, India</p>
               //-->
               <div class="riva-toggle-tab">
                 <h2><strong>Sales</strong> Enquiry</h2>
-                <form name="sales_form" id="sales_form" class="envor-f1" method="post" action="contact_process.php">
+                <form name="sales_form" id="sales_form" class="envor-f1" method="post" action="contact-sales-process.php">
                   <p><label for="rt1-first-name">Name</label><input type="text" id="name" name="name"></p>
                   <p><label for="rt1-last-name">Designation</label><input type="text" id="designation" name="designation"></p>
                   <p><label for="rt1-company">Company</label><input type="text" id="company" name="company"></p>
@@ -321,7 +321,7 @@ Salem, Tamilnadu-636010, India</p>
               //-->
               <div class="riva-toggle-tab">
                 <h2><strong>Partner</strong> Enquiry</h2>
-                <form class="envor-f1" name="partner_form" id="partner_form" method="post" action="contact_partner_process.php">
+                <form class="envor-f1" name="partner_form" id="partner_form" method="post" action="contact-partner-process.php">
                   <p><label for="rt2-first-name">Name</label><input type="text" id="name" name="name"></p>
                   <p><label for="rt2-last-name">Designation</label><input type="text" id="designation" name="designation"></p>
                   <p><label for="rt2-company">Company</label><input type="text" id="company" name="company"></p>
@@ -351,7 +351,7 @@ Salem, Tamilnadu-636010, India</p>
               //-->
               <div class="riva-toggle-tab">
                 <h2><strong>Voice It</strong> Form</h2>
-                <form class="envor-f1" name="feedback_form" id="feedback_form" method="post" action="contact_feedback_process.php" enctype='multipart/form-data'>
+                <form class="envor-f1" name="feedback_form" id="feedback_form" method="post" action="contact-feedback-process.php" enctype="multipart/form-data">
                   <p><label for="rt3-areyou">Are you?</label>
                     <select name="who" id="who">
                       <option>Business Partner </option>
@@ -444,223 +444,227 @@ Salem, Tamilnadu-636010, India</p>
     <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
     
     <script type="text/javascript">
-       $(document).ready(function(){
+      $(document).ready(function(){
         $("#sales_form").validate({
-        rules: {
-          name: "required",
-          designation: "required",
-          company: "required",
-          email: {
-            required: true,
-            email: true
+          rules: {
+            name: "required",
+            designation: "required",
+            company: "required",
+            email: {
+              required: true,
+              email: true
+            },
+            mobile: {
+              required: true,
+              digits: true,
+              minlength: 10,
+              maxlength: 10
+            },
+            city: "required",
+            state: "required",
+            country: "required",
+            postal_code: {
+              required: true,
+              digits: true,
+              minlength: 6,
+              maxlength: 6
+            },
+            description: "required"
           },
-          mobile: {
-            required: true,
-            digits: true,
-            minlength: 10,
-            maxlength: 10
-          },
-          city: "required",
-          state: "required",
-          country: "required",
-          postal_code: {
-            required: true,
-            digits: true,
-            minlength: 6,
-            maxlength: 6
-          },
-          description: "required"
-        },
-        messages: {
-          name: "Please specify your Name",
-          designation: "Please specify your Designation",
-          company: "Please enter your company name",
-          email: {
-            required: "Please Enter your Email.",
-            email: "Your email address must be in the format of name@domain.com"
-          },
-          mobile: {
-            required: "Please enter Mobile Number"
+          messages: {
+            name: "Please specify your Name",
+            designation: "Please specify your Designation",
+            company: "Please enter your company name",
+            email: {
+              required: "Please Enter your Email.",
+              email: "Your email address must be in the format of name@domain.com"
+            },
+            mobile: {
+              required: "Please enter Mobile Number"
 
+            },
+            city: "Please enter your city",
+            state: "Please enter your state",
+            country: "Please enter your country",
+            postal_code:{
+              required: "Please enter postal code"
+            },
+            description: "Please enter Description"
           },
-          city: "Please enter your city",
-          state: "Please enter your state",
-          country: "Please enter your country",
-          postal_code:{
-            required: "Please enter postal code"
-          },
-          description: "Please enter Description"
-        },
-        submitHandler:
-            function(){
-            var form = $("#sales_form");
-            var postData = $("#sales_form").serializeArray();
-            var formURL = $("#sales_form").attr("action");
-            $.ajax(
-            {
-                url : formURL,
-                type: "POST",
-                data : postData,
-                success:function(msg) 
-                {
-                  if(msg == "success")
+          submitHandler:
+              function(){
+              var form = $("#sales_form");
+              var postData = $("#sales_form").serializeArray();
+              var formURL = $("#sales_form").attr("action");
+              $.ajax(
+              {
+                  url : formURL,
+                  type: "POST",
+                  data : postData,
+                  success:function(msg) 
                   {
-                   $(form).fadeOut(800, function(){
-                            form.html('<div class="envor-msg envor-msg-error"><header>Your Application submited Successfully!</header><p>We will contact you shortly. If you have queries please mail to <strong>info@bassbiz.in</strong></p></div>').fadeIn().delay(2000);
-                         });
-                 }
-                 else
-                 {
-                  $(form).fadeOut(800, function(){
-                            form.html('<div class="envor-msg envor-msg-error"><header>Your Application submition Failed!</header><p>Please try again! If you have queries please mail to <strong>info@bassbiz.in</strong></p></div>').fadeIn().delay(2000);
-                         });
-                 }
-                  
-                }
-            });
-        }
-      });
-      
-      $("#partner_form").validate({
-        rules: {
-          name: "required",
-          designation: "required",
-          company: "required",
-          email: {
-            required: true,
-            email: true
-          },
-          mobile: {
-            required: true,
-            digits: true,
-            minlength: 10,
-            maxlength: 10
-          },
-          city: "required",
-          state: "required",
-          country: "required",
-          postal_code: {
-            required: true,
-            digits: true,
-            minlength: 6,
-            maxlength: 6
-          },
-          reason: "required"
-        },
-        messages: {
-          name: "Please specify your Name",
-          designation: "Please specify your Designation",
-          company: "Please enter your company name",
-          email: {
-            required: "Please Enter your Email.",
-            email: "Your email address must be in the format of name@domain.com"
-          },
-          mobile: {
-            required: "Please enter Mobile Number"
-
-          },
-          city: "Please enter your city",
-          state: "Please enter your state",
-          country: "Please enter your country",
-          postal_code:{
-            required: "Please enter postal code"
-          },
-          reason: "Why you need parnership?"
-        },
-        submitHandler:
-            function(){
-            var form = $("#partner_form");
-            var postData = $("#partner_form").serializeArray();
-            var formURL = $("#partner_form").attr("action");
-            $.ajax(
-            {
-                url : formURL,
-                type: "POST",
-                data : postData,
-                success:function(msg) 
-                {
-                  if(msg == "success")
-                  {
-                   $(form).fadeOut(800, function(){
-                            form.html('<div class="envor-msg envor-msg-error"><header>Your Application submited Successfully!</header><p>We will contact you shortly. If you have queries please mail to <strong>info@bassbiz.in</strong></p></div>').fadeIn().delay(2000);
-                         });
-                 }
-                 else
-                 {
-                  $(form).fadeOut(800, function(){
-                            form.html('<div class="envor-msg envor-msg-error"><header>Your Application submition Failed!</header><p>Please try again! If you have queries please mail to <strong>info@bassbiz.in</strong></p></div>').fadeIn().delay(2000);
-                         });
-                 }
-                  
-                }
-            });
-        }
-      });
-
-    $("#feedback_form").validate({
-        rules: {
-          name: "required",
-          designation: "required",
-          company: "required",
-          email: {
-            required: true,
-            email: true
-          },
-          mobile: {
-            required: true,
-            digits: true,
-            minlength: 10,
-            maxlength: 10
-          },
-          feedback: "required",
-    feedback_file: {
-            extension: "doc|docx|pdf"
+                    if(msg == "success")
+                    {
+                     $(form).fadeOut(800, function(){
+                              form.html('<div class="envor-msg envor-msg-error"><header>Your Application submited Successfully!</header><p>We will contact you shortly. If you have queries please mail to <strong>info@bassbiz.in</strong></p></div>').fadeIn().delay(2000);
+                           });
+                   }
+                   else
+                   {
+                    $(form).fadeOut(800, function(){
+                              form.html('<div class="envor-msg envor-msg-error"><header>Your Application submition Failed!</header><p>Please try again! If you have queries please mail to <strong>info@bassbiz.in</strong></p></div>').fadeIn().delay(2000);
+                           });
+                   }
+                    
+                  }
+              });
           }
-        },
-        messages: {
-          name: "Please specify your Name",
-          designation: "Please specify your Designation",
-          company: "Please enter your company name",
-          email: {
-            required: "Please Enter your Email.",
-            email: "Your email address must be in the format of name@domain.com"
+        });
+      
+        $("#partner_form").validate({
+          rules: {
+            name: "required",
+            designation: "required",
+            company: "required",
+            email: {
+              required: true,
+              email: true
+            },
+            mobile: {
+              required: true,
+              digits: true,
+              minlength: 10,
+              maxlength: 10
+            },
+            city: "required",
+            state: "required",
+            country: "required",
+            postal_code: {
+              required: true,
+              digits: true,
+              minlength: 6,
+              maxlength: 6
+            },
+            reason: "required"
           },
-          mobile: {
-            required: "Please enter Mobile Number"
+          messages: {
+            name: "Please specify your Name",
+            designation: "Please specify your Designation",
+            company: "Please enter your company name",
+            email: {
+              required: "Please Enter your Email.",
+              email: "Your email address must be in the format of name@domain.com"
+            },
+            mobile: {
+              required: "Please enter Mobile Number"
+
+            },
+            city: "Please enter your city",
+            state: "Please enter your state",
+            country: "Please enter your country",
+            postal_code:{
+              required: "Please enter postal code"
+            },
+            reason: "Why you need parnership?"
           },
-          feedback: "Please give your Feedback",
-    feedback_file: "Please select docx,doc,pdf only"
-        },
-        submitHandler:
-            function(){
-            var form = $("#feedback_form");
-            var postData = $("#feedback_form").serializeArray();
-            var formURL = $("#feedback_form").attr("action");
-            $.ajax(
-            {
-                url : formURL,
-                type: "POST",
-                data : postData,
-                success:function(msg) 
-                {
-                  if(msg == "success")
+          submitHandler:
+              function(){
+              var form = $("#partner_form");
+              var postData = $("#partner_form").serializeArray();
+              var formURL = $("#partner_form").attr("action");
+              $.ajax(
+              {
+                  url : formURL,
+                  type: "POST",
+                  data : postData,
+                  success:function(msg) 
                   {
-                   $(form).fadeOut(800, function(){
-                            form.html('<div class="envor-msg envor-msg-error"><header>Your Application submited Successfully!</header><p>We will contact you shortly. If you have queries please mail to <strong>info@bassbiz.in</strong></p></div>').fadeIn().delay(2000);
-                         });
-                 }
-                 else
-                 {
-                  $(form).fadeOut(800, function(){
-                            form.html('<div class="envor-msg envor-msg-error"><header>Your Application submition Failed!</header><p>Please try again! If you have queries please mail to <strong>info@bassbiz.in</strong></p></div>').fadeIn().delay(2000);
-                         });
-                 }
-                  
-                }
-            });
-        }
-      });
-       
+                    if(msg == "success")
+                    {
+                     $(form).fadeOut(800, function(){
+                              form.html('<div class="envor-msg envor-msg-error"><header>Your Application submited Successfully!</header><p>We will contact you shortly. If you have queries please mail to <strong>info@bassbiz.in</strong></p></div>').fadeIn().delay(2000);
+                           });
+                   }
+                   else
+                   {
+                    $(form).fadeOut(800, function(){
+                              form.html('<div class="envor-msg envor-msg-error"><header>Your Application submition Failed!</header><p>Please try again! If you have queries please mail to <strong>info@bassbiz.in</strong></p></div>').fadeIn().delay(2000);
+                           });
+                   }
+                    
+                  }
+              });
+          }
+        });
+
+        $("#feedback_form").validate({
+            rules: {
+              name: "required",
+              designation: "required",
+              company: "required",
+              email: {
+                required: true,
+                email: true
+              },
+              mobile: {
+                required: true,
+                digits: true,
+                minlength: 10,
+                maxlength: 10
+              },
+              feedback: "required",
+            feedback_file: {
+                extension: "doc|docx|pdf"
+              }
+            },
+            messages: {
+              name: "Please specify your Name",
+              designation: "Please specify your Designation",
+              company: "Please enter your company name",
+              email: {
+                required: "Please Enter your Email.",
+                email: "Your email address must be in the format of name@domain.com"
+              },
+              mobile: {
+                required: "Please enter Mobile Number"
+              },
+              feedback: "Please give your Feedback",
+            feedback_file: "Please select docx,doc,pdf only"
+            },
+            submitHandler:
+                function(){
+                var form = $("#feedback_form");
+                var formData = new FormData($("#feedback_form")[0]);
+                //formData.append('feedback_file', $('#feedback_file')[0].files[0]); 
+                var formURL = $("#feedback_form").attr("action");
+                $.ajax(
+                {
+                    url : formURL,
+                    cache: false,
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    type: 'POST',
+                    success:function(msg) 
+                    {
+                      if(msg == "success")
+                      {
+                       $(form).fadeOut(800, function(){
+                                form.html('<div class="envor-msg envor-msg-error"><header>Your Application submited Successfully!</header><p>We will contact you shortly. If you have queries please mail to <strong>info@bassbiz.in</strong></p></div>').fadeIn().delay(2000);
+                             });
+                     }
+                     else
+                     {
+                      $(form).fadeOut(800, function(){
+                                form.html('<div class="envor-msg envor-msg-error"><header>Your Application submition Failed!</header><p>Please try again! If you have queries please mail to <strong>info@bassbiz.in</strong></p></div>').fadeIn().delay(2000);
+                             });
+                     }
+                      
+                    }
+                });
+            }
+        });
+
       });
      </script>
 

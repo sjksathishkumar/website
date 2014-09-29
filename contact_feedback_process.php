@@ -9,50 +9,52 @@ $company = $sql->real_escape_string($_POST['company']);
 $email = $sql->real_escape_string($_POST['email']);
 $mobile = $sql->real_escape_string($_POST['mobile']);
 $feedback = $sql->real_escape_string($_POST['feedback']);
-//$file = $sql->real_escape_string($_POST['file']);
 
-//$file = $_FILE['file'];
-//echo $file;
- //$info = pathinfo($_FILES['file']['name']);
- //$ext = $info['extension']; // get the extension of the file
-//$ext = pathinfo($_FILES['file'], PATHINFO_EXTENSION);
-echo "$mobile";
-$path = $_FILE['feedback_file']['name'];
-echo "Path-".$path;
-/*$ext = pathinfo($path, PATHINFO_EXTENSION);
-echo "extension-".$ext;
+$sql->autocommit(FALSE); 
 
+if(isset($_FILES["feedback_file"]) && $_FILES["feedback_file"]["error"]== UPLOAD_ERR_OK)
+{
+	############ Edit settings ##############
+	$UploadDirectory	= 'feedback_files/'; //specify upload directory ends with / (slash)
+	##########################################
 
- $newname = rand().".".$ext; 
- $target = 'feedback_files/'.$newname;
- move_uploaded_file( $_FILES['file']['tmp_name'], $target);*/
+	//check if this is an ajax request
+	if (!isset($_SERVER['HTTP_X_REQUESTED_WITH'])){
+		die();
+	}
+	
+	
+	$File_Name          = strtolower($_FILES['feedback_file']['name']);
+	$File_Ext           = substr($File_Name, strrpos($File_Name, '.')); //get file extention
+	$Random_Number      = rand(0, 9999999999); //Random number to be added to name.
+	$NewFileName 		= $Random_Number.$File_Ext; //new file name
+	$path				= $UploadDirectory.$NewFileName; // Full path for file
 
- //echo $target;
-
-
-/*echo "Who-".$who."<br>";
-echo "What-".$what."<br>";
-echo 'Name-'.$name.'<br>';
-echo 'designation-'.$designation.'<br>';
-echo 'company-'.$company.'<br>';
-echo 'email-'.$email.'<br>';
-echo 'mobile-'.$mobile.'<br>';
-echo "<br>feedback";
-
-echo htmlspecialchars($_POST['feedback']);
-echo "<br>".$file;*/
-
-/*$query ="INSERT INTO `feedback_contact` (`id`, `who`, `what`, `name`, `designation`, `company`, `email`, `mobile`, `feedback`, `file`, `date`) VALUES (NULL, '$who', '$what', '$name', '$designation', '$company', '$email', '$mobile', '$feedback', '$target', CURRENT_TIMESTAMP);";
-
-if ( !$sql->query($query) ) {
-    echo "Error code ({$sql->errno}): {$sql->error}";
-    //header('Location: ' . $_SERVER['HTTP_REFERER']);
-} else {
-    echo 'success';
-    //header('Location: ' . $_SERVER['HTTP_REFERER']);
+	if(move_uploaded_file($_FILES['feedback_file']['tmp_name'], $path ))
+	{
+	   	$query ="INSERT INTO `feedback_contact` (`id`, `who`, `what`, `name`, `designation`, `company`, `email`, `mobile`, `feedback`, `file`, `date`) VALUES (NULL, '$who', '$what', '$name', '$designation', '$company', '$email', '$mobile', '$feedback', '$path', CURRENT_TIMESTAMP);";
+	   	if($sql->query($query))
+	   	{
+	   		echo "success";
+	   		$sql->commit();
+			$sql->close();
+	   	}
+	   	else
+	   	{
+	   		echo 'error';
+			$sql->rollback();
+		  	$sql->close();
+	   	}
+	}
+	else
+	{
+		echo "error";
+	}
+	
 }
-
-$sql->close();
-*/
+else
+{
+	echo "error";
+}
 
 ?>
