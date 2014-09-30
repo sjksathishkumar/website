@@ -8,7 +8,7 @@ $id = $_REQUEST['id'];
 
 $sql->autocommit(FALSE); 
 
-$query = "SELECT * FROM `jobs` WHERE `id` = '$id'";
+$query = "SELECT * FROM `jobs` WHERE `candidate_id` = '$id'";
 
 $result = $sql->query( $query );
 
@@ -17,7 +17,7 @@ $file = "/home/bassbiz1/public_html/";
 while ( $row = $result->fetch_assoc() ) 
 {
   	$file .= $row['resume'];
-}
+} 
 
 if(unlink($file))
 {
@@ -37,6 +37,7 @@ $query = "DELETE FROM `jobs` WHERE `candidate_id` = '$id'";
 	}
 
 }
+
 
 ?>
 
