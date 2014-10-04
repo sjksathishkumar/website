@@ -281,9 +281,9 @@ Indira Nagar, Adyar Chennai , Tamilnadu, India Pin : 600020.
           //-->
           <div class="col-lg-12">
             <div class="envor-widget envor-copyright-widget">
-              <div class="envor-widget-inner">
-                <p>© Copyright 2014 by <a href="">Bass Biz</a>. All Rights Reserved.</p>
-                <p><a href="">home</a> / <a href="">faq</a> / <a href="">contacts</a></p>
+               <div class="envor-widget-inner"  align="left">
+                <p>© 2011-2014 <a href="http://www.bassbiz.in">Bass Biz</a>. All Rights Reserved.</p>
+                
               </div>
             </div>
           <!--

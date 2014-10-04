@@ -59,7 +59,7 @@
                 //-->
                 <a href="../index.php">
                 <div class="envor-logo">
-                  <img src="../img/site-logo.png" alt="Envor Logo">
+                  <img src="../img/site-logo.png" alt="Bassbiz Logo">
                   
                 <!--
 
@@ -79,28 +79,29 @@
                       <a href="../index.php"><strong>HOME</strong></a>
                     </li>
                     <li>
-                      <a href="../about_us.php"><strong>ABOUTUS</strong></a>
+                      <a href="../about-us.php"><strong>ABOUTUS</strong></a>
                       <ul>
-                            <li><a href="../careers.php"><strong>Careers</strong></a></li>
+                            <li><a href="../bassbiz-workwithus.php"><strong>Careers</strong></a></li>
                       </ul>
                     </li>
                     <li>
                       <a href="../services.php"><strong>SERVICES</strong></a>
                       <ul>
-                        <li><a href="../account.php"><strong>Accountings</strong></a></li>
-                        <li><a href="../payroll.php"><strong>Payroll</strong></a></li>
-                        <li><a href="../internal_audit.php"><strong>Internal Auditing</strong></a></li>
-                        <li><a href="../tax_consulting.php"><strong>Tax Consulting</strong></a></li>
-                        <li><a href="../legal_secretarial.php"><strong>Legal &amp; Secretarial</strong></a></li>
-                        <li><a href="../business_advisory.php"><strong>Business Advisory</strong></a></li>
-                        <li><a href="../cfo_controller.php"><strong>CFO &amp; Controller</strong></a></li>
-                        <li><a href="../digital_signature.php"><strong>Digital Signature</strong></a></li>
+                        <li><a href="../accounting-services.php"><strong>Accountings</strong></a></li>
+                        <li><a href="../payroll-services.php"><strong>Payroll</strong></a></li>
+                        <li><a href="../internal-auditor.php"><strong>Internal Auditing</strong></a></li>
+                        <li><a href="../tax-consultant.php"><strong>Tax Consulting</strong></a></li>
+                        <li><a href="../business-registration-service.php"><strong>Business Registration</strong></a></li>
+                        <li><a href="../secretarial-services.php"><strong>Legal &amp; Secretarial</strong></a></li>
+                        <li><a href="../business-advisory-services.php"><strong>Business Advisory</strong></a></li>
+                        <li><a href="../cfo-controller-services.php"><strong>CFO &amp; Controller</strong></a></li>
+                        <li><a href="../digital-signature-dsc.php"><strong>Digital Signature</strong></a></li>
                      </ul>
                     </li>
                     <li>
                       <a href=""><strong>RESOURCES</strong></a>
                         <ul>
-                            <li><a href="../ask_experts.php"><strong>Ask Xperts</strong></a></li>
+                            <li><a href="../askxperts/ask-bassbiz-xperts.php"><strong>Ask Xperts</strong></a></li>
                             <li><a href="../useful_links.php"><strong>Useful Links</strong></a></li>
                             <li><a href="../kc_useful_links.php"><strong>Knowledge Center</strong></a></li>
                             <li><a href="index.php"><strong>News &amp; Updates</strong></a></li>
