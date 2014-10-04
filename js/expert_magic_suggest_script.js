@@ -2,9 +2,12 @@ $(function() {
 
     $('#tag').magicSuggest({
 	required: true,
-        data: '../script/expert_get_tags.php',
-        valueField: 'tag_id',
-        displayField: 'tag_name',
+    data: '../script/expert_get_tags.php',
+    placeholder: 'Please Select Tags or Enter Manually !',
+    valueField: 'tag_id',
+    displayField: 'tag_name',
+    expandOnFocus: true,
+    maxSuggestions: 5,
 	defaultValues: ['income tax'],
 	value: 'income tax'
     });
