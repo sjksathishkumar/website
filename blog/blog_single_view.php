@@ -6,13 +6,40 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Envor HTML5/CSS3 Template">
-    <meta name="author" content="Suono Libero ( @rivathemes.com )">
-    <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="ROBOTS" content="INDEX, FOLLOW"/>
+    <meta name="abstract" content="Bass Biz has dynamic team to manage your accouting and internal auditing, tax consulting requirements"/>
+    <meta name="author" content="Bass Biz"/>
+    <meta name="publisher" content="Bass Desio"/>
+    <meta name="copyright" content="Bass Biz"/>
+    <meta http-equiv="Reply-to" content=antony@bassbiz.in/>
+    <meta name="creation_Date" content="12/06/2011"/>
+    <meta name="expires" content="11 June 2222"/>
+    <meta name="language" content="EN"/>
+    <meta name="rating" content="general"/>
+    <meta name="revisit-after" content="2 days"/> 
 
-    <title>Blog | Bass Biz | Accounting, Internal Auditing service provider in Chennai</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+ 
+ <?php
+
+      require '../db_connect.php';
+
+      $post_id = $_GET['post_id'];
+
+      $query= "select * from article where post_id=$post_id ";
+
+      $result = $sql->query($query);
+
+      $row = $result->fetch_assoc();
+
+      echo "<meta name='description' content='".$row['description']."'/>";
+
+      echo "<meta name='keywords' content='".$row['keyword']."'/>";
+
+      echo "<title>".$row['post_title']."</title>";
+
+?> 
 
     <!--
     * Google Fonts
@@ -26,9 +53,8 @@
     <link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
     <link href="../css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/colorbox-skins/4/colorbox.css" type="text/css">
-        <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
     <link href="../css/settings.css" rel="stylesheet" type="text/css">
-
     <link href="../css/header/h1.css" rel="stylesheet" type="text/css">
     <link href="../css/responsive.css" rel="stylesheet" type="text/css">
     <link href="../css/color1.css" rel="stylesheet" type="text/css" id="envor-site-color">
@@ -36,15 +62,6 @@
 
     <!-- LayerSlider styles -->
     <link rel="stylesheet" href="../css/layerslider/css/layerslider.css" type="text/css">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="js/vendor/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
     <!-- Toast Script for alear -->
 
@@ -79,17 +96,8 @@
     </style>
   </head>
 
-    <body>
+  <body>
 
-
-    <!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
-    <!--
-
-    Scroll to the top
-
-    //-->
     <div id="to-the-top"><i class="fa fa-chevron-up"></i></div>
     <!--
 
@@ -106,41 +114,12 @@
     Envor mobile menu start
 
     //-->
-  <?php
-      require "blog_mobile_header.php";
-      ?>
+    <?php require "blog_mobile_header.php";  ?>
 
-    <!-- Envor header start -->
-
+    <?php require "blog_header.php";  ?>
     
-   
-      <!--
-
-      Top bar start
-
-      //-->
-     <?php
-    
-        require "blog_header.php";
-      ?>
-    <!--
-
-    Envor header end
-
-    //-->
-    
-    <!--
-
-    Envor site content start
-
-    //-->
-   
     <div class="envor-content">
-      <!--
 
-      Page Title start
-
-      //-->
       <section class="envor-page-title-1" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row">
@@ -254,7 +233,6 @@
 
                   <?php 
 
-
                     require '../db_connect.php';
                     $post_id = $_GET['post_id'];
                     $related_tag_id = '0';
@@ -270,98 +248,74 @@
                   ?>
                 </p>
                 
-              
-              <!--
-
-              Post end
-
-              //-->
-              
-
               </article>
 
               <h3><strong>related</strong> posts</h3>
               <div class="envor-relative" id="related-posts">
 
-             <?php
-                  //echo $related_tag_id."<br>";
-                  //echo $post_id;
+              <?php
 
                   $query= "select post_id from article_tag_map where tag_id=$related_tag_id ";
 
                   $posts = get_posts($query); 
+
                   $result = $sql->query($query);
+
                   if($result->num_rows > 0)
                   {
                      foreach($posts as $post)
                       {
                         $id = $post['post_id'];
-                        //echo $id;
+
+                        $query = "select * from article where post_id =$id";
                   
+                        $posts = get_posts($query); 
 
-                  $query = "select * from article where post_id =$id";
-                  $posts = get_posts($query); 
-                  //echo $post_id;
-                     foreach($posts as $post)
-                      {
+                          foreach($posts as $post)
+                          {
                         
-                        if($post['post_id']!=$post_id)
-                        {
-             ?>
+                            if($post['post_id']!=$post_id)
+                            {
+              ?>
 
-              
-
-                <!--
-
-                News Item start
-
-                //-->
                 <article class="envor-post-preview envor-padding-left-30">
                   <div class="envor-post-preview-inner">
                     <header>
                       <div class="date">
                         <span class="day"><?php  $timestamp = $post['post_date'];
-                    
-                    echo $data = date('d',strtotime($timestamp));  ?></span><span class="month"><?php  $timestamp = $post['post_date'];
-                    echo $data = date('M',strtotime($timestamp));
-                    echo ",";
-                    echo $data = date('y',strtotime($timestamp));  ?></span>
+                          echo $data = date('d',strtotime($timestamp));  ?></span><span class="month"><?php  $timestamp = $post['post_date'];
+                          echo $data = date('M',strtotime($timestamp));
+                          echo ",";
+                          echo $data = date('y',strtotime($timestamp));  ?></span>
                       </div>
                       <a href="blog_single_view.php?post_id=<?php echo $post['post_id']; ?>"><?php $content=$post['post_title']; 
-                      // strip tags to avoid breaking any html
                         $string = strip_tags($content);
 
-                      if (strlen($string) > 35) {
+                        if (strlen($string) > 35) {
 
-                          // truncate string
-                          $stringCut = substr($string, 0, 35);
+                            // truncate string
+                            $stringCut = substr($string, 0, 35);
 
-                          // make sure it ends in a word so assassinate doesn't become ass...
-                          $string = substr($stringCut, 0, strrpos($stringCut, ' ')).'....'; 
-                      }
-                      echo $string;
-                ?></a>
-                    </header>
-                    <p><?php $content=$post['post_content']; 
-                      // strip tags to avoid breaking any html
-                        $string = strip_tags($content);
+                            // make sure it ends in a word so assassinate doesn't become ass...
+                            $string = substr($stringCut, 0, strrpos($stringCut, ' ')).'....'; 
+                        }
+                        echo $string;
+                        ?>
+                      </a>
+                      </header>
+                      <p><?php $content=$post['post_content']; 
+                      $string = strip_tags($content);
 
                       if (strlen($string) > 100) {
 
-                          // truncate string
                           $stringCut = substr($string, 0, 100);
 
-                          // make sure it ends in a word so assassinate doesn't become ass...
                           $string = substr($stringCut, 0, strrpos($stringCut, ' ')).'....'; 
                       }
                       echo $string;
-                ?></p>
+                      ?>
+                      </p>
                   </div>
-                <!--
-
-                News Item end
-
-                //-->
                 </article>
           <?php
                       }
@@ -375,22 +329,9 @@
           }
 
           ?>
-                
-                
-                
-                <!--
-
-                Navigation News Item start
-
-                //-->
                 <div class="envor-navigation envor-navigation-left rivaslider-navigation">
                   <a href="" class="back"><i class="glyphicon glyphicon-chevron-left"></i></a>
                   <a href="" class="forward"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                <!--
-
-                Navigation News Item end
-
-                //-->
                 </div>
               </div>
               <!-- Script for comments. -->
@@ -410,17 +351,9 @@
                          
                                     
             </div>
-            <!--
 
-            Right Sidebar start
-
-            //-->
             <div class="col-lg-3 col-md-3">
-              <!--
 
-              Search Widget
-
-              //-->
               <aside class="envor-widget envor-search-widget">
                 <h3><strong>Search</strong> Widget</h3>
                 <div class="envor-widget-inner">
@@ -444,7 +377,6 @@
 
                     $posts = get_tags($query);
 
-
                      foreach($posts as $post)
                       {
                   ?>
@@ -452,9 +384,6 @@
                   <li>
                     <p><a href="tag_view.php?tag_id=<?php echo $post['tag_id']; ?>"><i class="glyphicon glyphicon-folder-open"></i> <?php echo $post['tag_name']; ?></a> <a href="tag_view.php?tag_id=<?php echo $post['tag_id']; ?>">
                       <i class="fa fa-rss"></i></a> 
-
-                      
-
                     </p>
                     
                   </li>
@@ -539,17 +468,12 @@
                         }
                             $result->free();
 
-
-                        /* and close up */
                         $sql->close();
 
                       ?>
-
-                      
-                      
+                    
                     </div>
-                    
-                    
+
                   </article>
                   <article>
                     <!--
@@ -608,12 +532,6 @@
                     
                   </article>
                   <article>
-                    <!--
-
-                    Sidebar Comment Item
-
-                    //-->
-                    
                       <?php
                       require '../db_connect.php';
                       $query= "  select * from questions where ans_rply = '1' ORDER BY qus_date DESC limit 3;";
@@ -665,41 +583,19 @@
                   </article>                </div>
               </div>
             </aside>
-            <!--
-
-            Twitter Widget
-
-            //-->
-            
-            <!--
-
-            Right Sidebar end
-
-            //-->
             </div>
           </div>
         </div>
-      <!--
-
-      Main Content start
-
-      //-->
+ 
       </section>
-    <!--
-
-    Envor site content end
-
-    //-->
+ 
     </div>
-    <!--
 
-    Envor footer start
+    <?php
 
-    //-->
- <?php
-  require 'blog_footer_top.php';
-  require 'blog_footer.php';
-  ?>
+      require 'blog_footer_top.php';
+      require 'blog_footer.php';
+    ?>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -730,9 +626,6 @@
     * LayerSlider from Kreatura Media with Transitions
     -->
 
- 
-
-
     <!-- Validation Script for Form -->
 
     <script type="text/javascript" src="../js/form_validator.js"></script>
@@ -758,22 +651,15 @@
             visible : 3,
             selector : 'envor-post-preview'
           });
-          /*
-
-          Footer News Slider
-
-          */
          
       });
     </script>
 
-    
     <!-- AddThis Pro BEGIN -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-536c8238652029b5"></script>
     <!-- AddThis Pro END -->
 
    <!-- Script for Tree View Blog -->
-
 
     <script>
         $(document).ready(function (e) {

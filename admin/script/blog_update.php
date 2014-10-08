@@ -12,86 +12,99 @@ $post_keywords = $_POST['post_keywords'];
 $post_description = $_POST['post_description'];
 $tags = isset($_POST['tags']) ? $_POST['tags'] : array();
 
-/*$sql->autocommit(FALSE); 
+$sql->autocommit(FALSE); 
 
 $query_delete = "DELETE FROM `article_tag_map` WHERE `post_id` = $post_id";
-$result = $sql->query($query_delete);
 
+$result = $sql->query($query_delete);
 
 $query_update = "UPDATE `article` SET `post_title` = '$post_title', `post_content` = '$post_content', `keyword` = '$post_keywords', `description` = '$post_description' WHERE `post_id` = $post_id";
 
-$result = $sql->query($query_update); */
+$result = $sql->query($query_update); 
 
-foreach ($tags as $tag) {
+foreach ($tags as $tag) 
+{
+  if(!is_numeric($tag))
+  {
+    $match = false;
 
-	if(!is_numeric($tag))
-	{
-		/*$query = "INSERT INTO `article_tag` (`tag_id`, `tag_name`) VALUES (NULL, '$tag')";
+    $query= "select * from article_tag";
 
-		$result = $sql->query($query);
+        $result = $sql->query($query);
+                    
+        while ( $row = $result->fetch_assoc() ) 
+            {
+                $tag_data = $row['tag_name'];
 
-		$last_tag_id = $sql->insert_id;
+              if($tag == $tag_data)
+              {
+                $query = "SELECT * FROM `article_tag` WHERE `tag_name` = '$tag';";
+                
+                $result = $sql->query($query);
+                
+                while ( $row = $result->fetch_assoc() ) 
+                {
+                  $find_tag_id = $row['tag_id'];
+            
+                  //echo "Find ID - $find_tag_id";
 
-		$query = "INSERT INTO `article_tag_map` (`tag_id`, `post_id`) VALUES ('$last_tag_id', '$post_id')";
+                }
+              
+                $query = "INSERT IGNORE INTO `article_tag_map` (`tag_id`, `post_id`) VALUES ('$find_tag_id', '$post_id')";
 
-		$result = $sql->query($query);*/
+          $result = $sql->query($query);
 
-			$query= "select * from article_tag";
+          echo "Result - $result";
 
-	                 $result = $sql->query($query);
-                     
-                        
-                     while ( $row = $result->fetch_assoc() ) 
-                        {
-                        	$tag_data = $row['tag_name'];
-                      		//echo "Tag-id : $tag_data";
+              echo "Find ID - $find_tag_id";
 
-                      		if($tag == $tag_data)
-                      		{
-                      			//echo "Tag - $tag";
-                      			//echo "Tag-Data - $tag_data";
-                      			$query = "SELECT * FROM `article_tag` WHERE `tag_name` = '$tag';";
-                      			$result = $sql->query($query);
-                      			while ( $row = $result->fetch_assoc() ) 
-                        		{
-                      				echo "Select Id -". $row['tag_id'];
-                      			}
-                      		}
-                      		elseif($tag != $tag_data)
-                      		{
-                      			// Do Nothing
-                      		}
-                      		else
-                      		{
-                      			echo "Tag - $tag";
-                      		}
-                      	}
-                      			
-                    //echo "Tag - $tag";
 
-	}
-	else
-	{
-	/*	$query = "INSERT INTO `article_tag_map` (`tag_id`, `post_id`) VALUES ('$tag', '$post_id')";
+              $match = true;
+              }
+              else
+              {
+                $match = false;
+              }
+            }
 
-		$result = $sql->query($query);*/
+        if($match == false)
+        {
+      $query = "INSERT IGNORE INTO `article_tag` (`tag_id`, `tag_name`) VALUES (NULL, '$tag')";
 
-		echo "Tag-id".$tag;
+      $result = $sql->query($query);
 
-	}
+      $last_tag_id = $sql->insert_id;
+
+      $query = "INSERT IGNORE INTO `article_tag_map` (`tag_id`, `post_id`) VALUES ('$last_tag_id', '$post_id')";
+
+      $result = $sql->query($query);
+
+      echo "$tag";
+
+        }
+
+  }
+  else
+  {
+    $query = "INSERT IGNORE INTO `article_tag_map` (`tag_id`, `post_id`) VALUES ('$tag', '$post_id')";
+
+    $result = $sql->query($query);
+    echo "$tag";
+
+  }
 }
 
-/*if($result)
+if($result)
 {
-	echo 'success';	
-	$sql->commit();
-	$sql->close();
-}	
+  echo 'success'; 
+  $sql->commit();
+  $sql->close();
+} 
 else
 { 
-   	echo 'error';
-	$sql->rollback();
-  	$sql->close();
-}*/
+    echo 'error';
+  $sql->rollback();
+    $sql->close();
+}
 
 ?>
