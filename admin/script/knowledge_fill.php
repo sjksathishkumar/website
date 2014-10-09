@@ -48,7 +48,7 @@ $rResult = $sql->query( $sQuery) or fatal_error( 'MySQL Error1: ' . mysqli_errno
 while ( $aRow = mysqli_fetch_array( $rResult ) )
 {
     
-	$output = array('kc_id' => $aRow['id'],'kc_title' => $aRow['title'],'kc_category' => $aRow['category'],'kc_content' => $aRow['content']);
+	$output = array('kc_id' => $aRow['id'],'kc_title' => $aRow['title'],'kc_category' => $aRow['category'],'update_content' => $aRow['content']);
 	
 	
 	

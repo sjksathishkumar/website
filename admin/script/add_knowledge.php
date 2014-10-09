@@ -6,7 +6,7 @@ include_once("../include/config.php");
 //getting all input given from user
 
 $title = $_POST['kc_title'];
-$content = $_POST['kc_content'];
+$content = $_POST['add_content'];
 $category = $_POST['kc_category'];
 
 //echo $category;

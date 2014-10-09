@@ -7,7 +7,7 @@ include_once("../include/config.php");
 
 $kc_id = $_POST['kc_id'];
 $kc_title = $_POST['kc_title'];
-$kc_content = $_POST['kc_content'];
+$kc_content = $_POST['update_content'];
 $kc_category = $_POST['kc_category'];
 
 $sql->autocommit(FALSE); 
