@@ -6,13 +6,23 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Envor HTML5/CSS3 Template">
-    <meta name="author" content="Suono Libero ( @rivathemes.com )">
-    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="ROBOTS" content="INDEX, FOLLOW"/>
+    <meta name="description" content="Bass Biz offers accounting, internal auditing, tax consulting, CFO services in Chennai, Trichy, Salem, Tanjavur"/>
+    <meta name="abstract" content="Bass Biz has dynamic team to manage your accouting and internal auditing, tax consulting requirements"/>
+    <meta name="keywords" content="Accounting Firm in Chennai, Accounting Service provider in Chennai, Accounting and Bookkeeping Services, internal auditing, trichy, tanjavur, salem"/>
+    <meta name="author" content="Bass Biz"/>
+    <meta name="publisher" content="Bass Desio"/>
+    <meta name="copyright" content="Bass Biz"/>
+    <meta http-equiv="Reply-to" content="antony@bassbiz.in"/>
+    <meta name="creation_Date" content="12/06/2011"/>
+    <meta name="expires" content="11 June 2222"/>
+    <meta name="language" content="EN"/>
+    <meta name="rating" content="general"/>
+    <meta name="revisit-after" content="2 days"/>    
 
-    <title>Bass Biz | Accounting, Internal Auditing service provider in Chennai</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Bass Biz | Accounting, Bookkeeping, Internal Auditing, Tax Consulting, CFO Services</title>
 
     <!--
     * Google Fonts
@@ -161,6 +171,7 @@
           <div class="row">
             <div class="col-lg-12">
               <h2>our main <strong>features</strong></h2>
+              
               <div class="envor-relative" id="our-features">
             <!--
 
@@ -177,7 +188,7 @@
                   </header>
 
                   <p>Bass Biz offers comprehensive professional accounting and book-keeping services to various forms of business organizations like Proprietorship Firms, Partnership Firms, Companies, Trust, NGOs and also Professionals like Lawyers, Doctors, Consultants, Trainers, etc.,</p>
-                  <div><a href="account.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  <div><a href="accounting-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
             
@@ -194,7 +205,7 @@
                     Payroll
                   </header>
                   <p>Bass Biz is one of the leading payroll service providers in South India. Bass Biz is mainly focusing on end to end offshore payroll processing solutions starting from pay slips to filling of IT Returns.</p>
-                  <div><a href="payroll.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  <div><a href="payroll-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
             
@@ -211,7 +222,7 @@
                     Internal Auditing
                   </header>
                   <p>Bass Biz Internal Auditing Service helps an organization accomplish its objectives by bringing a systematic, disciplined approach to evaluate and improve the effectiveness of risk management, control and governance processes."</p>
-                  <div><a href="internal_audit.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  <div><a href="internal-auditor.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
             
@@ -229,10 +240,27 @@
                     Tax Consulting
                   </header>
                   <p>Bass Biz is known for its ability to craft tailored solutions. Our well balanced approach has helped organizations accomplish intended objectives by continually minimizing threats and maximizing opportunities.</p>
-                  <div><a href="tax_consulting.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  <div><a href="tax-consultant.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
 
+
+            <!--
+
+            Feature
+
+            //-->
+            
+                <article class="envor-feature envor-padding-left-30">
+                  <div class="envor-feature-inner">
+                  <header>
+                    <i class="fa fa-book"></i>
+                    Business Registration
+                  </header>
+                  <p>Bass Biz experts and experienced professionals’ offers specialized advise on setting up the business in India. Bass Biz business setup services will helps entrepreneur to understand the various aspects of compliance in terms setting up the business and the taxation.</p>
+                  <div><a href="business-registration-service.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  </div>
+                </article>
                 <!--
 
             Feature
@@ -246,7 +274,7 @@
                     Legal & Secretarial
                   </header>
                   <p>Bass Biz business legal and secretarial team provides highly professional and practical support for all kinds of corporate secretarial matters.</p>
-                  <div><a href="legal_secretarial.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  <div><a href="secretarial-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
             
@@ -264,7 +292,7 @@
                     Business Advisory
                   </header>
                   <p>Bass Biz offer broader and deeper research into existing processes, track them into structured and systematized patterns that would minimize the challenge of gathering and evaluating information.</p>
-                  <div><a href="business_advisory.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  <div><a href="business-advisory-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
             
@@ -282,7 +310,7 @@
                     CFO & Controller
                   </header>
                   <p>Bass Biz offers CFO and Financial Controller support provides specialized support to Micro, Small and Medium (MSME) scale organizations that require experts to handle account and finance department with economical cost. Our CFO and Controller support reduces the cost of Board of Management.</p>
-                  <div><a href="cfo_controller.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  <div><a href="cfo-controller-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
 
@@ -299,7 +327,7 @@
                     Digital Signature
                   </header>
                   <p>Digital Signature Certificate (DSC) useful for Income Tax e-filing, CERSAI – Signing, RoC (MCA21) filing, e-TDS, e-Tendering, e-Auction, e-Bidding, e-Procurement, Patent and Copyright e-filing, IPO e-filing, CA, CMA, CS and Advocates, etc., Bass Biz is one of the RAA under e-mudhra CA.</p>
-                  <div><a href="digital_signature.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  <div><a href="digital-signature-dsc.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
             
@@ -320,6 +348,8 @@
           
 
           </div>
+
+
         </div>
         </div>
         </div>
@@ -340,9 +370,9 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <h2>Case <strong>Study</strong></h2>
-              <p class="block-description">Nullam condimentum nibh at lorem feugiat, at pulvinar orci luctus.</p>
-              <p>Etiam in ante ac velit imperdiet vestibulum ac quis nisi. Morbi sed fringilla nisl, a lacinia justo. Mauris vitae pellentesque felis. Nam placerat turpis eu mauris dignissim, in fringilla odio lobortis. Suspendisse venenatis sit amet lorem faucibus eleifend.</p>
+              <h2>Success <strong>Stories</strong></h2>
+              <p class="block-description">Learning and Exploring from our experience</p>
+              <p>Our case studies gives you a feel about our work, team strength and experience. The case studies listed below will you give real experience of our team, and the mentioned company names are modified to save privacy of the organization.</p>
               <div class="envor-relative" id="latest-projects">
                 <!--
 
@@ -351,30 +381,10 @@
                 //-->
                 <article class="envor-project envor-padding-left-30">
                   <div class="envor-project-inner">
-                    <figure><a href=""><img src="img/img1.png" alt=""></a><figcaption><a href="img/img1.png" title="Morbi sagittis lacinia" class="colorbox"><i class="fa fa-plus"></i></a></figcaption></figure>
+                    <figure><img src="img/img1.png" alt="growth-image"></figure>
                     <div class="envor-project-details">
                       <div class="envor-project-likes"><i class="fa fa-thumbs-o-up"></i> 14</div>
-                      <p class="link"><a href="">Morbi sagittis lacinia</a></p>
-                      <p class="filter">javascript, html</p>
-                    </div>
-                  </div>
-                <!--
-
-                Projects Item end
-
-                //-->
-                </article>
-                <!--
-
-                Projects Item start
-
-                //-->
-                <article class="envor-project envor-padding-left-30">
-                  <div class="envor-project-inner">
-                    <figure><a href=""><img src="img/img1.png" alt=""></a><figcaption><a href="img/img1.png" title="Morbi sagittis lacinia" class="colorbox"><i class="fa fa-plus"></i></a></figcaption></figure>
-                    <div class="envor-project-details">
-                      <div class="envor-project-likes"><i class="fa fa-thumbs-o-up"></i> 21</div>
-                      <p class="link"><a href="">turpis lobortis</a></p>
+                      <p class="link">Growing with employee growth</p>
                       <p class="filter">web, photo</p>
                     </div>
                   </div>
@@ -391,10 +401,30 @@
                 //-->
                 <article class="envor-project envor-padding-left-30">
                   <div class="envor-project-inner">
-                    <figure><a href=""><img src="img/img1.png" alt=""></a><figcaption><a href="img/img1.png" title="Morbi sagittis lacinia" class="colorbox"><i class="fa fa-plus"></i></a></figcaption></figure>
+                    <figure><img src="img/img1.png" alt="business-success-image"></figure>
+                    <div class="envor-project-details">
+                      <div class="envor-project-likes"><i class="fa fa-thumbs-o-up"></i> 21</div>
+                      <p class="link">Business success starts with  planning of accounts and finance</p>
+                      <p class="filter">web, photo</p>
+                    </div>
+                  </div>
+                <!--
+
+                Projects Item end
+
+                //-->
+                </article>
+                <!--
+
+                Projects Item start
+
+                //-->
+                <article class="envor-project envor-padding-left-30">
+                  <div class="envor-project-inner">
+                    <figure><img src="img/img1.png" alt="becoming-star-image"></figure>
                     <div class="envor-project-details">
                       <div class="envor-project-likes"><i class="fa fa-thumbs-o-up"></i> 6</div>
-                      <p class="link"><a href="">Vestibulum tincidunt</a></p>
+                      <p class="link">Becoming a star is not possible without the compliance planning</p>
                       <p class="filter">css, media</p>
                     </div>
                   </div>
@@ -411,10 +441,10 @@
                 //-->
                 <article class="envor-project envor-padding-left-30">
                   <div class="envor-project-inner">
-                    <figure><a href=""><img src="img/img1.png" alt=""></a><figcaption><a href="img/img1.png" title="Morbi sagittis lacinia" class="colorbox"><i class="fa fa-plus"></i></a></figcaption></figure>
+                    <figure><img src="img/img1.png" alt="say-hi"></figure>
                     <div class="envor-project-details">
                       <div class="envor-project-likes"><i class="fa fa-thumbs-o-up"></i> 30</div>
-                      <p class="link"><a href="">mauris non egestas</a></p>
+                      <p class="link">Say, hi! to any officers</p>
                       <p class="filter">html, photo</p>
                     </div>
                   </div>
@@ -431,10 +461,10 @@
                 //-->
                 <article class="envor-project envor-padding-left-30">
                   <div class="envor-project-inner">
-                    <figure><a href=""><img src="img/img1.png" alt=""></a><figcaption><a href="img/img1.png" title="Morbi sagittis lacinia" class="colorbox"><i class="fa fa-plus"></i></a></figcaption></figure>
+                    <figure><img src="img/img1.png" alt=""></figure>
                     <div class="envor-project-details">
                       <div class="envor-project-likes"><i class="fa fa-thumbs-o-up"></i> 17</div>
-                      <p class="link"><a href="">Nam mollis felis</a></p>
+                      <p class="link">Nam mollis felis</p>
                       <p class="filter">javascript, design</p>
                     </div>
                   </div>
@@ -451,10 +481,10 @@
                 //-->
                 <article class="envor-project envor-padding-left-30">
                   <div class="envor-project-inner">
-                    <figure><a href=""><img src="img/img1.png" alt=""></a><figcaption><a href="img/img1.png" title="Morbi sagittis lacinia" class="colorbox"><i class="fa fa-plus"></i></a></figcaption></figure>
+                    <figure><img src="img/img1.png" alt=""></figure>
                     <div class="envor-project-details">
                       <div class="envor-project-likes"><i class="fa fa-thumbs-o-up"></i> 25</div>
-                      <p class="link"><a href="">et diam commodo</a></p>
+                      <p class="link">et diam commodo</p>
                       <p class="filter">develpopment, css</p>
                     </div>
                   </div>

@@ -8,10 +8,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Envor HTML5/CSS3 Template">
-    <meta name="author" content="Suono Libero ( @rivathemes.com )">
-
-    <title>Call +919884040580 Mail info@bassbiz.in | Bass Biz Services Private Limited </title> 
     <meta name="ROBOTS" content="INDEX,FOLLOW"/>
     <meta name="description" content="Bass Biz gives you quicker and smarter response to all your queries when call them on +919884040580 or mail info@bassbiz.in" />
     <meta name="abstract" content="call us +919884040580 for your accounting, internal auditing, tax consulting, business advisory, CFO requirements " />
@@ -26,6 +22,8 @@
     <meta name="rating" content="general" />
     <meta name="revisit-after" content="2 days" />
     <link rel="shortcut icon" href="favicon.ico">
+
+    <title>Call +919884040580 Mail info@bassbiz.in | Bass Biz Services Private Limited </title> 
 
     <!--
     * Google Fonts
@@ -47,8 +45,7 @@
     <link href="css/color1.css" rel="stylesheet" type="text/css" id="envor-site-color">
     <link href="css/rivathemes.css" rel="stylesheet" type="text/css">
 
-    <!-- For Country Auto Complete -->
-    <link href="css/country_auto.css" rel="stylesheet" />
+  
 
     <!-- LayerSlider styles -->
     <link rel="stylesheet" href="css/layerslider/css/layerslider.css" type="text/css">
@@ -66,16 +63,7 @@
   </head>
 
     <body>
-  
 
-    <!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
-    <!--
-
-    Scroll to the top
-
-    //-->
     <div id="to-the-top"><i class="fa fa-chevron-up"></i></div>
     <!--
 
@@ -92,45 +80,17 @@
     Envor mobile menu start
 
     //-->
-     <?php require 'mobile_header.php'; ?>
-   
-    <!--
-
-    Envor header start
-
-    //-->
-
-      <!--
-
-      Top bar start
-
-      //-->
-    
-      <!--
-
-      Logo & Menu start
-
-      //-->
-       <?php 
+          <?php 
              require 'header.php';
+             require 'mobile_header.php';
       ?>
-    <!--
-
-    Envor header end
-
-    //-->
-
-    <!--
+        <!--
 
     Envor site content start
 
     //-->
     <div class="envor-content">
-      <!--
 
-      Page Title start
-
-      //-->
       <section class="envor-page-title-1" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row">
@@ -139,17 +99,8 @@
             </div>
           </div>
         </div>
-      <!--
-
-      Page Title end
-
-      //-->
       </section>
-      <!--
 
-      Desktop breadscrubs start
-
-      //-->
       <section class="envor-desktop-breadscrubs">
         <div class="container">
           <div class="row">
@@ -159,18 +110,8 @@
               </div>
             </div>
           </div>
-        </div>
-      <!--
-
-      Desktop breadscrubs end
-
-      //-->
       </section>
-      <!--
 
-      Mobile breadscrubs start
-
-      //-->
       <section class="envor-mobile-breadscrubs">
         <div class="container">
           <div class="row">
@@ -179,25 +120,11 @@
             </div>
           </div>
         </div>
-      <!--
-
-      Mobile breadscrubs end
-
-      //-->
       </section>
-      <!--
 
-      Main Content start
-
-      //-->
       <section class="envor-section">
         <div class="container">
           <div class="row">
-            <!--
-
-            Sidebar Navigation start
-
-            //-->
             <div class="col-lg-3 col-md-3">
               <nav class="envor-side-navi" id="rivaToggleTabs">
                 <ul>
@@ -207,23 +134,9 @@
                   <li><i class="glyphicon glyphicon-arrow-right"></i> <a href="">Voice It Form</a></li>
                 </ul>
               </nav>
-            <!--
-
-            Sidebar Navigation end
-
-            //-->
             </div>
-            <!--
 
-            Map & Form start
-
-            //-->
             <div class="col-lg-9 col-md-9">
-              <!--
-
-              Contact Details tab
-
-              //-->
               <div class="riva-toggle-tab">
                 <h2>Contact <strong>Details</strong></h2>
                 <div id="map-canvas-2"></div>
@@ -236,12 +149,13 @@
                     <h3><strong>Corporate</strong> Office</h3>
                     <p class="contact-item"><i class="fa fa-map-marker"></i> No 60/5, Ground Floor, 28th Cross Street, Indira Nagar, Adyar, Chennai, Tamilnadu-600020, India</p>
                     <p class="contact-item"><i class="fa fa-mobile"></i> +91 98840 40580 </p>
-        <p class="contact-item"><i class="fa fa-phone"></i> +91 44 64572123  </p>
+                    <p class="contact-item"><i class="fa fa-phone"></i> +91 44 64572123  </p>
                     <p class="contact-item"><i class="fa fa-envelope"></i> <a href="mailto:info@bassbiz.in" target="_top">info@bassbiz.in</a></p>
                   </div>
-    </div>      
-    <div class="row">
-      <div class="col-lg-6 col-md-6">
+                </div>    
+
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
                     <h3><strong>Trichy</strong> Office</h3>
                     <p class="contact-item"><i class="fa fa-map-marker"></i> Near Vannakovil Bus Stop, Opp. to Snehalaya School Navalur Kuttapattu, Tiruchirappalli, Tamilnadu-620009, India</p>
                     <p class="contact-item"><i class="fa fa-mobile"></i> +91 72990 40580 </p>
@@ -256,11 +170,7 @@ Salem, Tamilnadu-636010, India</p>
                   </div>
                 </div>
               </div>
-              <!--
 
-              Sales Enquiry tab
-
-              //-->
               <div class="riva-toggle-tab">
                 <h2><strong>Sales</strong> Enquiry</h2>
                 <form name="sales_form" id="sales_form" class="envor-f1" method="post" action="contact-sales-process.php">
@@ -279,7 +189,7 @@ Salem, Tamilnadu-636010, India</p>
                       <option>Government Companies</option>
                     </select>
                   </p>
-                  <p><label for="rt1-email">Email</label><input type="email" id="email" name="email"></p>
+                  <p><label for="rt1-email">Email</label><input type="text" id="email" name="email"></p>
                   <p><label for="rt1-mobile">Mobile</label><input type="text" id="mobile" name="mobile"></p>
                   <p><label for="rt1-mobile">City</label><input type="text" id="city" name="city"></p>
                   <p><label for="rt1-mobile">State</label><input type="text" id="state" name="state"></p>
@@ -314,11 +224,7 @@ Salem, Tamilnadu-636010, India</p>
                   <p><input type="submit" value="Submit Enquiry" class="envor-btn envor-btn-normal envor-btn-primary"></p>
                 </form>
               </div>
-              <!--
 
-              General Enquiry tab
-
-              //-->
               <div class="riva-toggle-tab">
                 <h2><strong>Partner</strong> Enquiry</h2>
                 <form class="envor-f1" name="partner_form" id="partner_form" method="post" action="contact-partner-process.php">
@@ -335,7 +241,7 @@ Salem, Tamilnadu-636010, India</p>
                     </select>
                   </p>                  
                   <p><label for="rt2-job">Mobile</label><input type="text" id="mobile" name="mobile"></p>
-                  <p><label for="rt2-email">Email</label><input type="email" id="email" name="email"></p>
+                  <p><label for="rt2-email">Email</label><input type="text" id="email" name="email"></p>
                   <p><label for="rt2-city">City</label><input type="text" id="city" name="city"></p>
                   <p><label for="rt2-email">State</label><input type="text" id="state" name="state"></p>
                   <p><label for="rt2-country">Country</label><input type="text" id="autocomplete-dynamic-2" name="country"></p>
@@ -344,11 +250,7 @@ Salem, Tamilnadu-636010, India</p>
                   <p><input type="submit" value="Submit Enquiry" class="envor-btn envor-btn-normal envor-btn-primary"></p>
                 </form>
               </div>
-              <!--
 
-              Voice It Form tab
-
-              //-->
               <div class="riva-toggle-tab">
                 <h2><strong>Voice It</strong> Form</h2>
                 <form class="envor-f1" name="feedback_form" id="feedback_form" method="post" action="contact-feedback-process.php" enctype="multipart/form-data">
@@ -379,17 +281,13 @@ Salem, Tamilnadu-636010, India</p>
                     </select>
                   </p>
                   <p><label for="rt3-mobile">Mobile</label><input type="text" id="mobile" name="mobile"></p>
-                  <p><label for="rt3-email">Email</label><input type="email" id="email" name="email"></p>
+                  <p><label for="rt3-email">Email</label><input type="text" id="email" name="email"></p>
                   <p><label for="rt3-details">Feedback</label><textarea id="feedback" name="feedback"></textarea></p>
                   <p><label for="rt3-attachment">Attachment</label><input type="file" id="feedback_file" name="feedback_file"></p>
                   <p><input type="submit" value="Submit" class="envor-btn envor-btn-normal envor-btn-primary"></p>
                 </form>
               </div>
-            <!--
 
-            Map & Form end
-
-            //-->
             </div>
           </div>
         </div>
@@ -405,8 +303,8 @@ Salem, Tamilnadu-636010, India</p>
 
     //-->
     </div>
-
-    <?php require 'footer_top.php'; ?>
+    
+     <?php require 'footer_top.php'; ?>
     <!--
 
     Envor footer start
@@ -414,7 +312,7 @@ Salem, Tamilnadu-636010, India</p>
     //-->
     <?php require 'footer.php'; ?>
 
-    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNAMsgY07MAFW8ZgObmwAo2PvZjPyiUYg&sensor=true"></script> -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7UVgXP06OTuy0rph5IbnWi9w9UJCASBM&sensor=false"></script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the Contacts Advanced load faster -->
@@ -428,18 +326,11 @@ Salem, Tamilnadu-636010, India</p>
     <script src="js/jquery.colorbox-min.js"></script>
     <script src="js/preloadCssImages.jQuery_v5.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
     
-    <!-- For Country Auto Fill -->
-    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mockjax.js"></script>
-    <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
-    <script type="text/javascript" src="js/countries.js"></script>
-    <script type="text/javascript" src="js/country_auto.js"></script>
-
     <!-- Script for Validation Form -->
 
-    
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
     <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
     
@@ -668,9 +559,11 @@ Salem, Tamilnadu-636010, India</p>
       });
      </script>
 
+
     <!--
     * jQuery with jQuery Easing, and jQuery Transit JS
     //-->
+
     <script src="js/layerslider/jquery-easing-1.3.js" type="text/javascript"></script>
     <script src="js/layerslider/jquery-transit-modified.js" type="text/javascript"></script>
     <!--
@@ -679,8 +572,6 @@ Salem, Tamilnadu-636010, India</p>
     <script src="js/layerslider/layerslider.transitions.js" type="text/javascript"></script>
     <script src="js/layerslider/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
     <script src="js/jquery.rivathemes.js"></script>
-    <!-- <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script> AIzaSyCmQVgjRLEEC4F21fYL0jxKXExvXlCyeiM-->
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC7UVgXP06OTuy0rph5IbnWi9w9UJCASBM&sensor=false"></script>
     <script type="text/javascript">
       function initialize() {
         // Create an array of styles.
@@ -744,45 +635,23 @@ Salem, Tamilnadu-636010, India</p>
       }
       google.maps.event.addDomListener(window, 'load', initialize);
       $('document').ready(function() {
+          var $container = $('body');
+          $container.imagesLoaded( function() {
           $('#rivaToggleTabs').rivaToggleTabs();
           /*
 
           Footer News Slider
 
           */
-          
+
+            $('#envor-preload').hide();
+       });
       });
     </script>
 
-    <!-- Validation Script for Form -->
-
-    <script type="text/javascript" src="js/form_validator.js"></script>
-    
-    <!-- End of Validation Script for Form -->    
-    
     <script src="js/envor.js"></script>
     <script type="text/javascript">
-      $('document').ready(function() {
-          /*
-
-          Preload Images
-
-          */
-          var imgs = new Array(), $imgs = $('img');
-          for (var i = 0; i < $imgs.length; i++) {
-            imgs[i] = new Image();
-            imgs[i].src = $imgs.eq(i).attr('src');
-          }
-          Core.preloader.queue(imgs).preload(function() {
-            var images = $('a').map(function() {
-                    return $(this).attr('href');
-            }).get();
-            Core.preloader.queue(images).preload(function() {
-                  $.preloadCssImages();
-            })
-          })
-                  $('#envor-preload').hide();
-      });
+      
       /*
 
       Google Analytics Code
@@ -809,4 +678,3 @@ Salem, Tamilnadu-636010, India</p>
     </script>
   </body>
 </html>
-
