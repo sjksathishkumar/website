@@ -6,6 +6,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="ROBOTS" content="INDEX, FOLLOW"/>
     <meta name="description" content="Bass Biz offers excise consulting services including excise registration, excise return filing, excise audit, excise dealer"/>
@@ -14,7 +15,7 @@
     <meta name="author" content="Bass Biz"/>
     <meta name="publisher" content="Bass Desio"/>
     <meta name="copyright" content="Bass Biz"/>
-    <meta http-equiv="Reply-to" content=antony@bassbiz.in/>
+    <meta http-equiv="Reply-to" content="antony@bassbiz.in"/>
     <meta name="creation_Date" content="12/06/2011"/>
     <meta name="expires" content="11 June 2222"/>
     <meta name="language" content="EN"/>
@@ -269,26 +270,28 @@
           <div class="row">
             <div class="col-lg-12">
               <h2>Other <strong>Services</strong></h2>
-              <div class="envor-relative" id="our-features">
-                        
+              
+               <div class="envor-relative" id="our-features">
             <!--
 
             Feature
 
             //-->
             
-                  <article class="envor-feature envor-padding-left-30">
+                <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
+                  
                   <header>
                     <i class="fa fa-suitcase"></i>
                     Accounting
                   </header>
+
                   <p>Bass Biz offers comprehensive professional accounting and book-keeping services to various forms of business organizations like Proprietorship Firms, Partnership Firms, Companies, Trust, NGOs and also Professionals like Lawyers, Doctors, Consultants, Trainers, etc.,</p>
-                  <div><a href="account.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  <div><a href="accounting-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
-
-                <!--
+            
+            <!--
 
             Feature
 
@@ -301,10 +304,9 @@
                     Payroll
                   </header>
                   <p>Bass Biz is one of the leading payroll service providers in South India. Bass Biz is mainly focusing on end to end offshore payroll processing solutions starting from pay slips to filling of IT Returns.</p>
-                  <div><a href="payroll.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  <div><a href="payroll-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
-            
             
             <!--
 
@@ -319,12 +321,45 @@
                     Internal Auditing
                   </header>
                   <p>Bass Biz Internal Auditing Service helps an organization accomplish its objectives by bringing a systematic, disciplined approach to evaluate and improve the effectiveness of risk management, control and governance processes."</p>
-                  <div><a href="internal_audit.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  <div><a href="internal-auditor.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
             
 
+            <!--
+
+            Feature
+
+            //-->
             
+                <article class="envor-feature envor-padding-left-30">
+                  <div class="envor-feature-inner">
+                  <header>
+                    <i class="fa fa-comments-o"></i>
+                    Tax Consulting
+                  </header>
+                  <p>Bass Biz is known for its ability to craft tailored solutions. Our well balanced approach has helped organizations accomplish intended objectives by continually minimizing threats and maximizing opportunities.</p>
+                  <div><a href="tax-consultant.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  </div>
+                </article>
+
+
+            <!--
+
+            Feature
+
+            //-->
+            
+                <article class="envor-feature envor-padding-left-30">
+                  <div class="envor-feature-inner">
+                  <header>
+                    <i class="fa fa-book"></i>
+                    Business Registration
+                  </header>
+                  <p>Bass Biz experts and experienced professionals’ offers specialized advise on setting up the business in India. Bass Biz business setup services will helps entrepreneur to understand the various aspects of compliance in terms setting up the business and the taxation.</p>
+                  <div><a href="business-registration-service.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  </div>
+                </article>
                 <!--
 
             Feature
@@ -338,7 +373,7 @@
                     Legal & Secretarial
                   </header>
                   <p>Bass Biz business legal and secretarial team provides highly professional and practical support for all kinds of corporate secretarial matters.</p>
-                  <div><a href="legal_secretarial.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  <div><a href="secretarial-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
             
@@ -356,7 +391,7 @@
                     Business Advisory
                   </header>
                   <p>Bass Biz offer broader and deeper research into existing processes, track them into structured and systematized patterns that would minimize the challenge of gathering and evaluating information.</p>
-                  <div><a href="business_advisory.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  <div><a href="business-advisory-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
             
@@ -374,7 +409,7 @@
                     CFO & Controller
                   </header>
                   <p>Bass Biz offers CFO and Financial Controller support provides specialized support to Micro, Small and Medium (MSME) scale organizations that require experts to handle account and finance department with economical cost. Our CFO and Controller support reduces the cost of Board of Management.</p>
-                  <div><a href="cfo_controller.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  <div><a href="cfo-controller-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
 
@@ -391,7 +426,7 @@
                     Digital Signature
                   </header>
                   <p>Digital Signature Certificate (DSC) useful for Income Tax e-filing, CERSAI – Signing, RoC (MCA21) filing, e-TDS, e-Tendering, e-Auction, e-Bidding, e-Procurement, Patent and Copyright e-filing, IPO e-filing, CA, CMA, CS and Advocates, etc., Bass Biz is one of the RAA under e-mudhra CA.</p>
-                  <div><a href="digital_signature.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
+                  <div><a href="digital-signature-dsc.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
             

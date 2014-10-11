@@ -104,28 +104,28 @@ if (login_check($mysqli) == true) : ?>
                                     <textarea class="ckeditor" cols="120" id="add_content" name="add_content" rows="15">
                                     </textarea>
                                   </div>
-          <div>
-          <br>
-                    <label for="kc_category"><b>Type</b></label>&ensp;&ensp;&ensp;
-                          <select id="kc_category" name="kc_category">
-                            <option value="service_tax">Service Tax</option>
-                            <option value="custom_duty">Customs Tax</option>
-            <option value="excise_duty">Excise Duty</option>
-            <option value="income_tax">Income Tax</option>
-                            <option value="esi">ESI</option>
-                            <option value="professional_tax">PT</option>
-            <option value="vat">VAT</option>
-            <option value="cst">CST</option>
-                            <option value="pf">PF</option>
-                            <option value="gst">GST</option>
-            <option value="company_act">Companies Act</option>
-            <option value="labour_act">Labour Act</option>
-             <option value="llp">LLP</option>
-            <option value="firm">Firm</option>
-            <option value="start_up">Start Up's</option>
-            <option value="other">Other's</option>
-                          </select>
-          </div>
+					<div>
+					<br>
+				            <label for="kc_category"><b>Type</b></label>&ensp;&ensp;&ensp;
+			                    <select id="kc_category" name="kc_category">
+			                      <option value="service_tax">Service Tax</option>
+			                      <option value="custom_duty">Customs Tax</option>
+						<option value="excise_duty">Excise Duty</option>
+						<option value="income_tax">Income Tax</option>
+			                      <option value="esi">ESI</option>
+			                      <option value="professional_tax">PT</option>
+						<option value="vat">VAT</option>
+						<option value="cst">CST</option>
+			                      <option value="pf">PF</option>
+			                      <option value="gst">GST</option>
+						<option value="company_act">Companies Act</option>
+						<option value="labour_act">Labour Act</option>
+						 <option value="llp">LLP</option>
+						<option value="firm">Firm</option>
+						<option value="start_up">Start Up's</option>
+						<option value="other">Other's</option>
+			                    </select>
+					</div>
                                   <div align="center"><br><button type="submit" class="btn btn-primary btn-sm" id="kc_new_submit">Submit</button></div>
                           </form>
                         </section>
@@ -147,7 +147,7 @@ if (login_check($mysqli) == true) : ?>
                       <section class="panel">
                           <form role="form" id="update_knowledge" method="post" action="script/knowledge_update.php">
                                   <div>
-            <input id="kc_id" name="kc_id" type="hidden">
+				    <input id="kc_id" name="kc_id" type="hidden">
                                     <label for="kc_title"><b>Title</b></label>
                                     <input type="text" class="form-control" id="kc_title" name="kc_title" required>
                                   </div>
@@ -157,28 +157,28 @@ if (login_check($mysqli) == true) : ?>
                                     <textarea class="ckeditor" cols="120" id="update_content" name="update_content" rows="15">
                                     </textarea>
                                   </div>
-          <div>
-          <br>
-                    <label for="kc_category"><b>Type</b></label>&ensp;&ensp;&ensp;
-                          <select id="kc_category" name="kc_category">
-                            <option value="service_tax">Service Tax</option>
-                            <option value="custom_duty">Customs Tax</option>
-            <option value="excise_duty">Excise Duty</option>
-            <option value="income_tax">Income Tax</option>
-                            <option value="esi">ESI</option>
-                            <option value="professional_tax">PT</option>
-            <option value="vat">VAT</option>
-            <option value="cst">CST</option>
-                            <option value="pf">PF</option>
-                            <option value="gst">GST</option>
-            <option value="company_act">Companies Act</option>
-            <option value="labour_act">Labour Act</option>
-             <option value="llp">LLP</option>
-            <option value="firm">Firm</option>
-            <option value="start_up">Start Up's</option>
-            <option value="other">Other's</option>
-                          </select>
-          </div>
+					<div>
+					<br>
+				            <label for="kc_category"><b>Type</b></label>&ensp;&ensp;&ensp;
+			                    <select id="kc_category" name="kc_category">
+			                      <option value="service_tax">Service Tax</option>
+			                      <option value="custom_duty">Customs Tax</option>
+						<option value="excise_duty">Excise Duty</option>
+						<option value="income_tax">Income Tax</option>
+			                      <option value="esi">ESI</option>
+			                      <option value="professional_tax">PT</option>
+						<option value="vat">VAT</option>
+						<option value="cst">CST</option>
+			                      <option value="pf">PF</option>
+			                      <option value="gst">GST</option>
+						<option value="company_act">Companies Act</option>
+						<option value="labour_act">Labour Act</option>
+						 <option value="llp">LLP</option>
+						<option value="firm">Firm</option>
+						<option value="start_up">Start Up's</option>
+						<option value="other">Other's</option>
+			                    </select>
+					</div>
                                   <div align="center"><br><button type="submit" class="btn btn-primary btn-sm" id="kc_update">Update</button></div>
                           </form>
                         </section>

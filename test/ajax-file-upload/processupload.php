@@ -18,7 +18,7 @@ if(isset($_FILES["FileInput"]) && $_FILES["FileInput"]["error"]== UPLOAD_ERR_OK)
 	}
 	
 	
-	
+	$name 				= $_POST['user'];
 	$File_Name          = strtolower($_FILES['FileInput']['name']);
 	$File_Ext           = substr($File_Name, strrpos($File_Name, '.')); //get file extention
 	$Random_Number      = rand(0, 9999999999); //Random number to be added to name.
@@ -26,7 +26,7 @@ if(isset($_FILES["FileInput"]) && $_FILES["FileInput"]["error"]== UPLOAD_ERR_OK)
 	
 	if(move_uploaded_file($_FILES['FileInput']['tmp_name'], $UploadDirectory.$NewFileName ))
 	   {
-		echo "Success! File Uploaded.";
+		echo "success";
 	}else{
 		echo "error uploading File!";
 	}
@@ -34,6 +34,5 @@ if(isset($_FILES["FileInput"]) && $_FILES["FileInput"]["error"]== UPLOAD_ERR_OK)
 }
 else
 {
-	echo "Something wrong with upload! Is upload_max_filesize set correctly?";
+	echo 'Something wrong with upload! Is "upload_max_filesize" set correctly?';
 }
-?>

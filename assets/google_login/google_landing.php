@@ -17,16 +17,7 @@ session_start();
 	}
 	$_SESSION['UNAME']=$_GET['name'];
 	$_SESSION['UEMAIL']=$_GET['email'];
-	//header('Location: ' . $_SERVER['HTTP_REFERER']);
 
-//$name = $mysqli->real_escape_string($_GET['name']);
-//$name = $_GET['name'];
-//$email = $_GET['email'];
-
-//echo $_SESSION['UNAME']."<br>";
-//echo $_SESSION['UEMAIL'];
-//header('Location: "http://www.bassbizindia.com/test/google_login.php"]);
-//header( "Location: http://www.bassbizindia.com/ask_expert_form.php" );
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+	header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 ?>

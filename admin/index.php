@@ -56,10 +56,7 @@ sec_session_start();
               
             </label>
             <button type="submit" class="btn btn-lg btn-login btn-block" onclick="formhash(this.form, this.form.password);">Sign In</button> 
-              <spn class="pull-right">
-                    <a data-toggle="modal" href="#myModal"> Forgot Password?</a>
 
-                </span>
           
         </div>
            </form>

@@ -6,7 +6,7 @@ var EditableTable = function () {
         init: function () {
 
 
-      var nCloneTh = document.createElement( 'th' );
+			var nCloneTh = document.createElement( 'th' );
           var nCloneTd = document.createElement( 'td' );
           nCloneTd.innerHTML = '<img src="assets/advanced-datatable/examples/examples_support/details_open.png">';
           nCloneTd.className = "center";
@@ -27,20 +27,20 @@ var EditableTable = function () {
                   { "bSortable": false, "aTargets": [ 0 ] }
               ],
               "aaSorting": [[1, 'asc']],
-        "aLengthMenu": [
+			  "aLengthMenu": [
                     [5, 15, 20, -1],
                     [5, 15, 20, "All"] // change per page values here
                 ],
-        
+				
                 // set the initial value
                 "iDisplayLength": 5,
                 "sDom": "<'row'<'col-lg-6'l><'col-lg-6'f>r>t<'row'<'col-lg-6'i><'col-lg-12'T><'col-lg-6'p>>",
-        
-        "bProcessing": true,
-    "bServerSide": true,
-    "sAjaxSource": "script/feedback_view.php",
-    "sServerMethod": "POST",
-    
+				
+				"bProcessing": true,
+		"bServerSide": true,
+		"sAjaxSource": "script/feedback_view.php",
+		"sServerMethod": "POST",
+	  
          "sPaginationType": "bootstrap",
          "oLanguage": {
          "sLengthMenu": "_MENU_ records per page",
@@ -49,28 +49,28 @@ var EditableTable = function () {
           "sNext": "Next"
                     }
                 },
-        "oColReorder": {
+				"oColReorder": {
                         "iFixedColumns": 1
                     },
-        "aoColumns": [                           //Row control
+				"aoColumns": [                           //Row control
                         { "sName": "button", "bSortable": false, "sWidth": "5%"},
                         { "sName": "id", "sWidth": "10%"},
                         { "sName": "who", "sWidth": "20%"},
-                        { "sName": "what", "sWidth": "20%"},
-                        { "sName": "name", "sWidth": "15%", "bSortable": false},
+						            { "sName": "what", "sWidth": "20%"},
+						            { "sName": "name", "sWidth": "15%", "bSortable": false},
                         { "sName": "company", "sWidth": "15%", "bSortable": false},
                         { "sName": "date", "sWidth": "15%"}
-            
+						
                     ],
-          "oColVis": {
-      "aiExclude": [ 0 ]
-    },
-          "oTableTools": {
+					"oColVis": {
+			"aiExclude": [ 0 ]
+		},
+					"oTableTools": {
             "aButtons": [
                 
              ]
-    
-    }
+		
+		}
           });
 
           /* Add event listener for opening and closing details
@@ -92,10 +92,10 @@ var EditableTable = function () {
                   oTable.fnOpen( nTr, fnFormatDetails(oTable, nTr), 'details' );
               }
           } );
-      
-      
-      
-      function fnFormatDetails ( oTable, nTr )
+		  
+		  
+		  
+		  function fnFormatDetails ( oTable, nTr )
       {
           var aData = oTable.fnGetData( nTr );
           var sOut = '<table width="100%" height="17%" border="0" cellspacing="0" cellpadding="5">';
@@ -107,17 +107,17 @@ var EditableTable = function () {
           return sOut;
       }
     
-      
-    $('#feedback_table a.edit').live('click', function (e) {
+   		
+		$('#feedback_table a.edit').live('click', function (e) {
         e.preventDefault();
         if (confirm("Are you sure to delete this row ?") == false) {
                     return;
                 }
-        var nTr = $(this).parents('tr')[1];
+				var nTr = $(this).parents('tr')[1];
         //var nRow = $(this).parents('tr')[0];
         //var row_id =nTr.id;
         //var aData = oTable.fnGetData( nTr );
-        //var aData = oTable.fnGetData( nTr );
+				//var aData = oTable.fnGetData( nTr );
                 /* Get the row as a parent of the link that was clicked on */
                var jqTds = $('>td', nTr);
           //     alert(aData[2]);
@@ -127,30 +127,30 @@ var EditableTable = function () {
                
                var final_data = value.substring(4, 7);
                //alert(final_data);
-         jQuery.ajax( {
+			   jQuery.ajax( {
                     dataType: 'html',
                     type: "POST",
                     url: "script/feedback_delete.php",
                     cache: false,
                     data: 'id=' + final_data,
-          success: function(data) {
+					success: function(data) {
             if(data == "success")
             {
-            oTable.fnDeleteRow( nTr );    
-            oTable.fnDraw();
+            //oTable.fnDeleteRow( nTr );    
+            //oTable.fnDraw();
             //alert("Updated");
             location.reload(true);
             }
             else  
             {
-              //location.reload(true);
+              location.reload(true);
             //alert("Error on query");
             }
              }       
                 } );  
-         
-        });
-        
+			   
+				});
+				
  }
 
     };

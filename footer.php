@@ -8,9 +8,9 @@
           //-->
           <div class="col-lg-3 col-md-3">
             <div class="envor-widget">
-              <h3><strong>about</strong></h3>
+              <h3><strong>Précis</strong></h3>
               <div class="envor-widget-inner">
-                <p>Bass Biz specialise in Accounting and Internal Auditing Services.Dynamic team of professionals offering accounting and internal auditing services in Chennai.</p>
+                <p align="justify">Bass Biz offers accounting, internal auditing, tax consulting, auditing, payroll services, business advisory and CFO services. </p>
               </div>
               
               <h3>Business <strong>Hours</strong></h3>
@@ -76,7 +76,7 @@
                       echo $string;
                 ?></a>
                       </div>
-                      <p><?php $content=$row['post_content']; 
+                      <p align="justify"><?php $content=$row['post_content']; 
                       // strip tags to avoid breaking any html
                         $string = strip_tags($content);
 
@@ -138,8 +138,8 @@
               <h3><strong>Contacts</strong></h3>
               <div class="envor-widget-inner">
                 <p>
-                  <i align="left" class="fa fa-map-marker"></i>
-                 No 60/5,Ground Floor, 28th Cross Street
+                  <i class="fa fa-map-marker"></i>
+                  No 60/5,Ground Floor, 28th Cross Street
                   Indira Nagar, Adyar Chennai , Tamilnadu, India Pin : 600020.
                 </p>
                 <p>
@@ -149,7 +149,7 @@
                 </p>
                 <p>
                   <i class="fa fa-envelope"></i>
-                  <a href="">bass@bassbiz.in</a>
+                  <a href="">info@bassbiz.in</a>
                 </p>
               </div>
             </div>
@@ -194,7 +194,7 @@
                     echo ",";
                     echo $data = date('y',strtotime($timestamp));  ?></span>
                       </div>
-                        <a href="expert_single_view.php?qus_id=<?php echo $row['qus_id']; ?>"><?php $content=$row['question']; 
+                        <a href="askxperts/bassbiz-xperts-answers.php?qus_id=<?php echo $row['qus_id']; ?>"><?php $content=$row['question']; 
                       // strip tags to avoid breaking any html
                         $string = strip_tags($content);
 
@@ -209,7 +209,7 @@
                       echo $string;
                 ?></a>
                       </div>
-                      <p><?php $content=$row['answer']; 
+                      <p align="justify"><?php $content=$row['answer']; 
                       // strip tags to avoid breaking any html
                         $string = strip_tags($content);
 
@@ -283,8 +283,8 @@
           <div class="col-lg-12">
             <div class="envor-widget envor-copyright-widget">
               <div class="envor-widget-inner">
-                <p>© Copyright 2014 by <a href="">Bass Biz</a>. All Rights Reserved.</p>
-                
+                <p>© 2011-2014 <a href="http://www.bassbiz.in">Bass Biz</a>. All Rights Reserved.</p>
+                <p>Designed and Maintained by <a href="http://www.bassdesio.com" target="_blank">Bass Desio</a></p>
               </div>
             </div>
           <!--

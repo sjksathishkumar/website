@@ -102,10 +102,10 @@
                       <a href=""><strong>RESOURCES</strong></a>
                         <ul>
                             <li><a href="../askxperts/ask-bassbiz-xperts.php"><strong>Ask Xperts</strong></a></li>
-                            <li><a href="../useful_links.php"><strong>Useful Links</strong></a></li>
-                            <li><a href="../kc_useful_links.php"><strong>Knowledge Center</strong></a></li>
+                            <li><a href="../useful-links/service-tax.php"><strong>Useful Links</strong></a></li>
+                            <li><a href="../knowledge-center/service-tax.php"><strong>Knowledge Center</strong></a></li>
                             <li><a href="index.php"><strong>News &amp; Updates</strong></a></li>
-                            <li><a href="../tools.php"><strong>Tools</strong></a></li>
+                            <li><a href="../tools/simple-calculator.php"><strong>Tools</strong></a></li>
                         </ul>
                       
                     </li>

@@ -13,12 +13,34 @@ $(document).ready(function() {
 			success:       afterSuccess,  // post-submit callback 
 			resetForm: true        // reset the form after successful submit 
 		}; 
-		
-	 $('#MyUploadForm').submit(function() { 
-			$(this).ajaxSubmit(options);  			
+	
+	$('#MyUploadForm').submit(function() { 
+		var form = $("#MyUploadForm");
+        var postData = $("#MyUploadForm").serializeArray();
+        var formURL = $("#MyUploadForm").attr("action");
+		$(this).ajaxSubmit({
+							url : formURL,
+		                    type: "POST",
+		                    data : postData,
+		                    success:function(msg) 
+		                    {
+		                      if(msg == "success")
+		                      {
+		                       alert("success");
+		                     }
+		                     else
+		                     {
+		                     	alert("faild");
+		                     }
+		                      
+		                    }
+
+		});  	
+
+		//return false; 
+	}); 
+			
 			// always return false to prevent standard browser submit and page navigation 
-			return false; 
-		}); 
 		
 
 //function after succesful file upload (when server response)
@@ -42,6 +64,7 @@ function afterSuccess()
 <div align="center">
 <h3>Ajax File Uploader</h3>
 <form action="processupload.php" method="post" enctype="multipart/form-data" id="MyUploadForm">
+Name<input type="text" name="user" id="user" />
 <input name="FileInput" id="FileInput" type="file" />
 <input type="submit"  id="submit-btn" value="Upload" />
 <img src="images/ajax-loader.gif" id="loading-img" style="display:none;" alt="Please Wait"/>

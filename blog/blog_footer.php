@@ -8,9 +8,9 @@
           //-->
           <div class="col-lg-3 col-md-3">
             <div class="envor-widget">
-              <h3>about</h3>
+              <h3><strong>Précis</strong></h3>
               <div class="envor-widget-inner">
-                <p>Bass Biz specialise in Accounting and Internal Auditing Services.Dynamic team of professionals offering accounting and internal auditing services in Chennai.</p>
+                <p align="justify">Bass Biz offers accounting, internal auditing, tax consulting, auditing, payroll services, business advisory and CFO services. </p>
               </div>
               
               <h3>Business <strong>Hours</strong></h3>
@@ -30,7 +30,7 @@
           Footer News Widget start
 
           //-->
-           <div class="col-lg-3 col-md-3">
+          <div class="col-lg-3 col-md-3">
             <div class="envor-widget">
               <h3>latest <strong>news</strong></h3>
               <div class="envor-widget-inner">
@@ -61,7 +61,7 @@
                     echo ",";
                     echo $data = date('y',strtotime($timestamp));  ?></span>
                       </div>
-                        <a href=""><?php $content=$row['post_title']; 
+                        <a href="blog_single_view.php?post_id=<?php echo $row['post_id']; ?>"><?php $content=$row['post_title']; 
                       // strip tags to avoid breaking any html
                         $string = strip_tags($content);
 
@@ -76,7 +76,7 @@
                       echo $string;
                 ?></a>
                       </div>
-                      <p><?php $content=$row['post_content']; 
+                      <p align="justify"><?php $content=$row['post_content']; 
                       // strip tags to avoid breaking any html
                         $string = strip_tags($content);
 
@@ -133,22 +133,14 @@
           Footer News Widget end
 
           //-->
-          
-          
-          
-          <!--
-
-          Footer Contacts Widget start
-
-          //-->
-          <div class="col-lg-3 col-md-3">
+             <div class="col-lg-3 col-md-3">
             <div class="envor-widget envor-contacts-widget">
-              <h3>Contacts</h3>
+              <h3><strong>Contacts</strong></h3>
               <div class="envor-widget-inner">
                 <p>
-                  <i align="left" class="fa fa-map-marker"></i>
-                 No 60/5,Ground Floor, 28th Cross Street
-Indira Nagar, Adyar Chennai , Tamilnadu, India Pin : 600020.
+                  <i class="fa fa-map-marker"></i>
+                  No 60/5,Ground Floor, 28th Cross Street
+                  Indira Nagar, Adyar Chennai , Tamilnadu, India Pin : 600020.
                 </p>
                 <p>
                   <i class="fa fa-phone"></i>
@@ -157,16 +149,14 @@ Indira Nagar, Adyar Chennai , Tamilnadu, India Pin : 600020.
                 </p>
                 <p>
                   <i class="fa fa-envelope"></i>
-                  <a href="">bass@bassbiz.in</a>
+                  <a href="">info@bassbiz.in</a>
                 </p>
               </div>
             </div>
           </div>
-          <!--
-
-          Footer Contacts Widget end
-
-          //-->
+          
+          
+          
           
 
               <!--
@@ -204,7 +194,7 @@ Indira Nagar, Adyar Chennai , Tamilnadu, India Pin : 600020.
                     echo ",";
                     echo $data = date('y',strtotime($timestamp));  ?></span>
                       </div>
-                        <a href="../expert_single_view.php?qus_id=<?php echo $row['qus_id']; ?>"><?php $content=$row['question']; 
+                        <a href="../askxperts/bassbiz-xperts-answers.php?qus_id=<?php echo $row['qus_id']; ?>"><?php $content=$row['question']; 
                       // strip tags to avoid breaking any html
                         $string = strip_tags($content);
 
@@ -219,7 +209,7 @@ Indira Nagar, Adyar Chennai , Tamilnadu, India Pin : 600020.
                       echo $string;
                 ?></a>
                       </div>
-                      <p><?php $content=$row['answer']; 
+                      <p align="justify"><?php $content=$row['answer']; 
                       // strip tags to avoid breaking any html
                         $string = strip_tags($content);
 
@@ -276,14 +266,25 @@ Indira Nagar, Adyar Chennai , Tamilnadu, India Pin : 600020.
           //-->
           <!--
 
+          Footer Contacts Widget start
+
+          //-->
+       
+          <!--
+
+          Footer Contacts Widget end
+
+          //-->
+          <!--
+
           Footer Copyright start
 
           //-->
           <div class="col-lg-12">
             <div class="envor-widget envor-copyright-widget">
-               <div class="envor-widget-inner"  align="left">
+              <div class="envor-widget-inner">
                 <p>© 2011-2014 <a href="http://www.bassbiz.in">Bass Biz</a>. All Rights Reserved.</p>
-                
+                <p>Designed and Maintained by <a href="http://www.bassdesio.com" target="_blank">Bass Desio</a></p>
               </div>
             </div>
           <!--
@@ -303,27 +304,27 @@ Indira Nagar, Adyar Chennai , Tamilnadu, India Pin : 600020.
       <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../js/vendor/jquery-1.11.0.min.js"></script>
+    <script src="/js/vendor/jquery-1.11.0.min.js"></script>
 
-    <script src="../js/vendor/core-1.0.5.js"></script>
+    <script src="/js/vendor/core-1.0.5.js"></script>
 
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
-    <script src="../js/jquery.mousewheel.min.js"></script>
-    <script src="../js/jquery.colorbox-min.js"></script>
-    <script src="../js/preloadCssImages.jQuery_v5.js"></script>
-    <script src="../js/jquery.stellar.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="/js/jquery.mousewheel.min.js"></script>
+    <script src="/js/jquery.colorbox-min.js"></script>
+    <script src="/js/preloadCssImages.jQuery_v5.js"></script>
+    <script src="/js/jquery.stellar.min.js"></script>
     <!--
     * jQuery with jQuery Easing, and jQuery Transit JS
     //-->
-    <script src="../js/layerslider/jquery-easing-1.3.js" type="text/javascript"></script>
-    <script src="../js/layerslider/jquery-transit-modified.js" type="text/javascript"></script>
+    <script src="/js/layerslider/jquery-easing-1.3.js" type="text/javascript"></script>
+    <script src="/js/layerslider/jquery-transit-modified.js" type="text/javascript"></script>
     <!--
     * LayerSlider from Kreatura Media with Transitions
     -->
-    <script src="../js/layerslider/layerslider.transitions.js" type="text/javascript"></script>
-    <script src="../js/layerslider/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
-    <script src="../js/jquery.rivathemes.js"></script>    
+    <script src="/js/layerslider/layerslider.transitions.js" type="text/javascript"></script>
+    <script src="/js/layerslider/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+    <script src="/js/jquery.rivathemes.js"></script>    
       
     <script type="text/javascript">
       $('document').ready(function() {

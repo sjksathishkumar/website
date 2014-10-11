@@ -3,7 +3,7 @@
               <div data-original-title="Toggle Navigation" data-placement="right" class="fa fa-bars tooltips"></div>
           </div>
           <!--logo start-->
-          <a href="home.php" class="logo" ><img alt="" src="img/site-logo.png"></a>
+          <a href="blog_view.php" class="logo" ><img alt="" src="img/site-logo.png"></a>
           <!--logo end-->
          
           <div class="top-nav ">

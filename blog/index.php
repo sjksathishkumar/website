@@ -229,7 +229,7 @@
                     
                     echo $data = date('d-m-Y',strtotime($timestamp)); ?></a> <br> by <a href=""><?php echo $post['author']; ?></a></p>
                 </header>
-                <p><?php $content=$post['post_content']; 
+                <p align="justify"><?php $content=$post['post_content']; 
                       // strip tags to avoid breaking any html
                         $string = strip_tags($content);
 
