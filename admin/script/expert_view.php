@@ -2,7 +2,7 @@
 
 error_reporting();
 include_once("../include/config.php");
-$aColumns = array('qus_id', 'question', 'description', 'answer', 'qus_date', 'ans_rply', 'user_name', 'user_id', 'tag_name', 'tag_id', 'email');
+$aColumns = array('qus_id', 'question', 'description', 'ans_rply', 'qus_date', 'answer', 'user_name', 'user_id', 'tag_name', 'tag_id', 'email');
 
 
 /* Indexed column (used for fast and accurate table cardinality) */
@@ -148,17 +148,17 @@ $output = array(
 while ( $aRow = mysqli_fetch_array( $rResult ) )
 {
     $row = array();
-	//$row['DT_RowId'] = 'row_' . $aRow['id'];
-	$row[]="<img src='assets/advanced-datatable/examples/examples_support/details_open.png'>";
+    //$row['DT_RowId'] = 'row_' . $aRow['id'];
+    $row[]="<img src='assets/advanced-datatable/examples/examples_support/details_open.png'>";
     for ( $i=0 ; $i<count($aColumns) ; $i++ )
     {
             /* General output */
             $row[] = $aRow[ $aColumns[$i] ];
        
     }
-	//$row['DT_RowId'] = 'row_' . $aRow['id'];
-	//$row[] = '<a href="#edit_employee" class="edit" data-toggle="modal"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil"></i> Edit</button></a>';
-	$output['aaData'][] = $row;
+    //$row['DT_RowId'] = 'row_' . $aRow['id'];
+    //$row[] = '<a href="#edit_employee" class="edit" data-toggle="modal"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil"></i> Edit</button></a>';
+    $output['aaData'][] = $row;
 }
 
 

@@ -68,7 +68,7 @@ if (login_check($mysqli) == true) : ?>
                                     <th>ID</th>
                                     <th>Question</th>
                                     <th>Description</th>
-                                    <th>Answer</th>
+                                    <th>Status</th>
                                     <th>Date</th>
                                     </tr>
                                 </thead>
@@ -97,25 +97,25 @@ if (login_check($mysqli) == true) : ?>
                           <form role="form" id="value_detail" method="post" action="script/expert_view_update.php">
                                   <div>
                                     <label for="question"><b>Question</b></label>
-					<input type="text" class="form-control" id="question" name="question" required>
+          <input type="text" class="form-control" id="question" name="question" required>
                                     <input id="qus_id" name="qus_id" type="hidden">
-				</div>
-				<div>
-					<br>
+        </div>
+        <div>
+          <br>
                                     <label for="description"><b>Description</b></label>
-					<input type="text" class="form-control" id="description" name="description" required>
+          <input type="text" class="form-control" id="description" name="description" required>
                                 </div>
                                   <div>
                                     <br>
                                     <label for="post_content"><b>Answer</b></label>
-				    <textarea id="answer" name="answer" class="ckeditor"></textarea>
+            <textarea id="answer" name="answer" class="ckeditor"></textarea>
                                   </div>
-				<div>
-					<br>
+        <div>
+          <br>
                                     <label for="post_title"><b>Status</b></label>
                                     <select id="ans_rply" name="ans_rply">
-                                      <option value="1">Approved</option>
-                                      <option value="0">Disapprove</option>
+                                      <option value="active">Approved</option>
+                                      <option value="inactive">Disapprove</option>
                                     </select>
                                     <!-- <input type="text" class="form-control" id="status" name="status" required> -->
                                   </div>

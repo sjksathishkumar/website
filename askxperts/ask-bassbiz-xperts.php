@@ -194,7 +194,7 @@
 
                   require '../db_connect.php';
 
-                  $query= "select * from questions where ans_rply=1";
+                  $query= "select * from questions where ans_rply='active'";
 
                   $result = $sql->query($query);
                         if($result && $result->num_rows > 0)
