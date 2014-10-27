@@ -136,11 +136,10 @@ if (login_check($mysqli) == true) : ?>
                      </div>
                      <div class="modal-body">
                       <section class="panel">
-                          <form role="form" id="value_detail" method="post" action="script/tag_view_update.php">
+                          <form role="form" id="tag_detail" method="post" action="script/tag_view_update.php">
                                   <div>
                                     <label for="tag_id"><b>Tag Id</b></label>
-          <input type="text" class="form-control" id="tag_id" name="tag_id" required>
-                                    <input id="tag_id" name="tag_id" type="hidden">
+          <input type="text" class="form-control" id="tag_id" name="tag_id" required readonly>
         </div>
         <div>
           <br>
