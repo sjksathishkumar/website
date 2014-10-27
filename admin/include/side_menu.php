@@ -13,6 +13,7 @@
                       <ul class="sub">
                          <li><a  href="expert_view.php">Queries</a></li>
                          <li><a  href="add_value.php">Add Values</a></li>
+                         <li><a  href="tag.php">Tags</a></li>
                       </ul>
                   </li>
 
@@ -27,11 +28,11 @@
                                   <li><a  href="feedback_view.php">Voice It Form</a></li>
                       </ul>
                   </li>
-		  <li class="sub-menu">
-                	<a  href="knowledge_view.php"><i class="fa fa-code-fork"></i><span>Knowledge Center</span></a>
+      <li class="sub-menu">
+                  <a  href="knowledge_view.php"><i class="fa fa-code-fork"></i><span>Knowledge Center</span></a>
                   </li>
                   <li class="sub-menu">
-                	<a  href="jobs_view.php"><i class="fa fa-tasks"></i><span>Jobs</span></a>
+                  <a  href="jobs_view.php"><i class="fa fa-tasks"></i><span>Jobs</span></a>
                   </li>
               </ul>
               <!-- sidebar menu end-->
