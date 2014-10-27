@@ -13,7 +13,7 @@
                       <ul class="sub">
                          <li><a  href="expert_view.php">Queries</a></li>
                          <li><a  href="add_value.php">Add Values</a></li>
-                         <li><a  href="tag.php">Tags</a></li>
+                         <li><a  href="tag_view.php">Tags</a></li>
                       </ul>
                   </li>
 
