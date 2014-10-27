@@ -128,29 +128,41 @@
               </div>
             </div>
           </div>
-          <!--
+                    <!--
 
-          Footer News Widget end
+          Footer Contact Widget
 
           //-->
-             <div class="col-lg-3 col-md-3">
-            <div class="envor-widget envor-contacts-widget">
-              <h3><strong>Contacts</strong></h3>
+          <div class="col-lg-3 col-md-3">
+            <div class="envor-widget">
+              <h3><strong>Contact</strong></h3>
               <div class="envor-widget-inner">
-                <p>
-                  <i class="fa fa-map-marker"></i>
-                  No 60/5,Ground Floor, 28th Cross Street
-                  Indira Nagar, Adyar Chennai , Tamilnadu, India Pin : 600020.
-                </p>
-                <p>
-                  <i class="fa fa-phone"></i>
-                  Mobile : +91 98840 40580 <br>
-                  Phone : 044 64572123
-                </p>
-                <p>
-                  <i class="fa fa-envelope"></i>
-                  <a href="">info@bassbiz.in</a>
-                </p>
+                <div class="envor-wrapper" id="footer-news">
+
+                  <article class="envor-post-preview-contact">
+                    <div class="envor-post-preview-contact-inner">
+                      <div class="header">
+                        <div class="date">
+                         <span class="day"> <i class="fa fa-map-marker"></i></span>
+                        </div>
+                          No 60/5,Ground Floor, 28th Cross Street, Indira Nagar, Adyar Chennai , Tamilnadu, India Pin : 600020.                      
+                      </div>
+                      <div class="header">
+                        <div class="date">
+                         <span class="day"> <i class="fa fa-phone"></i></span>
+                        </div>
+                          Mobile : +91 98840 40580 <br>
+                          Phone : 044 64572123
+                      </div>
+                      <div class="header">
+                        <div class="date">
+                         <span class="day"> <i class="fa fa-envelope"></i></span>
+                        </div>
+                          <a href="mailto:info@bassbiz.in">info@bassbiz.in</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
               </div>
             </div>
           </div>
@@ -176,7 +188,7 @@
                   //-->
                   <?php
                     require '../db_connect.php';
-                     $query= "  select * from questions where ans_rply = '1' ORDER BY qus_date DESC limit 5;";
+                     $query= "  select * from questions where ans_rply = 'active' ORDER BY qus_date DESC limit 5;";
                      $result = $sql->query($query);
                      if($result->num_rows > 0)
                       {

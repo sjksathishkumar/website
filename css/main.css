@@ -1770,7 +1770,7 @@ input[type=submit], input[type=file], input[type=button], button[type=submit], b
 	padding-top: 45px;
 	margin-bottom: 15px;
 }
-.envor-contacts-widget p .fa, .envor-contacts-widget p .glyphicon {
+.envor-contacts-widget p .fa, .envor-contacts-widget div .fa, .envor-contacts-widget p .glyphicon {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -1952,6 +1952,114 @@ input[type=submit], input[type=file], input[type=button], button[type=submit], b
 }
 .envor-footer .envor-widget .envor-post-preview .header a {
 	color: #fff;
+}
+
+
+/*
+	envor-post-preview-contact
+*/
+
+.envor-post-preview-contact {
+	width: 100%;
+	float: left;
+	margin-left: 1px;
+}
+.envor-post-preview-contact, .envor-post-preview-contact .header {
+	width: 100%;
+	float: left;
+	position: relative;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.envor-post-preview-contact .envor-post-preview-contact-inner {
+	width: 100%;
+	float: left;
+}
+.envor-post-preview-contact .envor-post-preview-contact-inner-padding-left {
+}
+.envor-post-preview-contact .header {
+	padding-left: 80px;
+	min-height: 50px;
+	margin-bottom: 15px;
+}
+.envor-post-preview-contact .header a {
+	line-height: 25px;
+	font-size: 14px;
+	float: left;
+	text-align: left;
+}
+.envor-post-preview-contact .header .date {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 60px;
+	height: 50px;
+}
+.envor-post-preview-contact .header .date span {
+	width: 100%;
+	float: left;
+	line-height: 35px;
+	text-align: center;
+}
+.envor-post-preview-contact .header .date span.month {
+	line-height: 15px;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+.envor-post-preview-contact .header .date span.day {
+	font-size: 32px;
+	font-weight: 600;
+	color: #f16829;
+}
+.envor-post-preview-contact figure {
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.envor-post-preview-contact figure img {
+	float: left;
+}
+.envor-post-preview-contact figure figcaption {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	overflow: hidden;
+	display: none;
+}
+.envor-post-preview-contact figure figcaption i {
+	display: inline-block;
+	position: absolute;
+	font-size: 24px;
+	background-color: #fff;
+	text-align: center;
+	line-height: 64px;
+	border-radius: 100px;
+	width: 60px;
+	height: 60px;
+	top: 0;
+	margin-top: -30px;
+	left: 50%;
+	margin-left: -30px;
+}
+.envor-post-preview-contact figure figcaption i:hover {
+	color: #fff;
+	transition-duration: 0.2s;
+	transition-style: linear;
+}
+.envor-footer .envor-widget .envor-post-preview-contact .header span {
+	color: #fff;
+}
+.envor-footer .envor-widget .envor-post-preview-contact .header a {
 }
 
 /*
