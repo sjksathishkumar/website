@@ -177,6 +177,38 @@ var EditableTable = function () {
          
         });
 
+// Add new tag
+
+    $('#new_tag_detail').on('submit',function(e) {
+    e.preventDefault();
+    jQuery.ajax( {
+                type: "POST",
+                url: $(this).attr("action"),
+                cache: false,
+                data: $(this).serialize(),
+              success: function(msg) {
+            if(msg == "success")
+            {$('.close').click()
+              alert("Created Successfully!");
+              oTable.fnDraw();
+            }
+            else if(msg == 'available')
+            {
+              alert("Tag Already Available. Please try another Tag Name !")
+            }
+            else  
+              alert("Failed to Create!");
+          }
+                
+        } );    
+    
+      
+    });
+
+
+
+
+// Update tag details
         
     $('#tag_detail').on('submit',function(e) {
     e.preventDefault();
