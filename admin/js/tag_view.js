@@ -20,18 +20,18 @@ var EditableTable = function () {
           nCloneTd.innerHTML = '<img src="assets/advanced-datatable/examples/examples_support/details_open.png">';
           nCloneTd.className = "center";
 
-          $('#value_table thead tr').each( function () {
+          $('#tag_table thead tr').each( function () {
               this.insertBefore( nCloneTh, this.childNodes[0] );
           } );
 
-          $('#value_table tbody tr').each( function () {
+          $('#tag_table tbody tr').each( function () {
               this.insertBefore(  nCloneTd.cloneNode( true ), this.childNodes[0] );
           } );
 
           /*
            * Initialse DataTables, with no sorting on the 'details' column
            */
-          var oTable = $('#value_table').dataTable( {
+          var oTable = $('#tag_table').dataTable( {
               "aoColumnDefs": [
                   { "bSortable": false, "aTargets": [ 0 ] }
               ],
@@ -81,7 +81,7 @@ var EditableTable = function () {
            * Note that the indicator for showing which row is open is not controlled by DataTables,
            * rather it is done here
            */
-          $('#value_table tbody td img').live('click', function () {
+          $('#tag_table tbody td img').live('click', function () {
               var nTr = $(this).parents('tr')[0];
               if ( oTable.fnIsOpen(nTr) )
               {
@@ -111,7 +111,7 @@ var EditableTable = function () {
       }
     
       
-    $('#value_table a.edit').live('click', function (e) {
+    $('#tag_table a.edit').live('click', function (e) {
                 e.preventDefault();
         var nTr = $(this).parents('tr')[1];
         //var nRow = $(this).parents('tr')[0];
@@ -140,7 +140,7 @@ var EditableTable = function () {
          
         });
 
-    $('#value_table a.delete').live('click', function (e) {
+    $('#tag_table a.delete').live('click', function (e) {
         e.preventDefault();
         if (confirm("Are you sure to delete this row ?") == false) {
                     return;
@@ -152,7 +152,7 @@ var EditableTable = function () {
           jQuery.ajax( {
                     dataType: 'html',
                     type: "POST",
-                    url: "script/expert_delete.php",
+                    url: "script/tag_delete.php",
                     cache: false,
                     data: 'qus_id=' + final_data,
         success: function(data) {
@@ -175,34 +175,29 @@ var EditableTable = function () {
         });
 
         
-    $('#value_detail').on('submit',function(e) {
+    $('#tag_detail').on('submit',function(e) {
     e.preventDefault();
-    var messageLength = CKEDITOR.instances['answer'].getData();
-    if( !messageLength ) {
-        alert( 'Please Enter Contents!');
-    }
-    else
-    {
-      for (instance in CKEDITOR.instances) {
-          CKEDITOR.instances[instance].updateElement();
-      }
-      jQuery.ajax( {
+    jQuery.ajax( {
                 type: "POST",
                 url: $(this).attr("action"),
                 cache: false,
                 data: $(this).serialize(),
-            success: function(msg) {
+              success: function(msg) {
             if(msg == "success")
             {$('.close').click()
-            alert("Updated Successfully!");
-            oTable.fnDraw();
+              alert("Updated Successfully!");
+              oTable.fnDraw();
+            }
+            else if(msg == 'available')
+            {
+              alert("Tag Already Available. Please try another Tag Name !")
             }
             else  
-            alert("Failed to Update!");
+              alert("Failed to Update!");
           }
                 
         } );    
-    }
+    
       
     });
 

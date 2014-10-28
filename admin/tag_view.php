@@ -63,7 +63,7 @@ if (login_check($mysqli) == true) : ?>
                   <div class="panel-body">
                         <a href="#new_tag" class="edit" data-toggle="modal"><button type="button" class="btn btn-success btn-lg">New Tag</button></a>
                         <div class="adv-table">
-                            <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="value_table">
+                            <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="tag_table">
                                 <thead>
                                 <tr>
                                     <th>ID</th>
@@ -91,31 +91,10 @@ if (login_check($mysqli) == true) : ?>
                      </div>
                      <div class="modal-body">
                       <section class="panel">
-                          <form role="form" id="new_post_detail" method="post" action="script/new_post.php">
+                          <form role="form" id="new_tag_detail" method="post" action="script/new_tag.php">
                                   <div>
-                                    <label for="post_title"><b>Title</b></label>
-                                    <input type="text" class="form-control" id="post_title" name="post_title" required>
-                                  </div>
-                                  <div>
-                                    <br>
-                                    <label for="post_content"><b>Contents</b></label>
-                                    <textarea class="ckeditor" cols="120" id="post_content" name="post_content" rows="15">
-                                    </textarea>
-                                  </div>
-          <div>
-          <br>
-                                    <label for="post_title"><b>Keywords</b></label>
-                                    <input type="text" class="form-control" id="post_keywords" name="post_keywords" required>
-                                  </div>
-          <div>
-           <br>
-                                    <label for="post_title"><b>Description</b></label>
-                                    <input type="text" class="form-control" id="post_description" name="post_description" required>
-                                  </div>
-                                  <div>
-                                    <br>
-                                    <label for="post_tag"><b>Tags</b></label>
-                                    <input type="text" class="form-control" id="tag" name="post_tag[]" required>
+                                    <label for="tag_name"><b>Tag Name</b></label>
+                                    <input type="text" class="form-control" id="tag_name" name="tag_name" required>
                                   </div>
                                   <div align="center"><br><button type="submit" class="btn btn-primary btn-sm">Submit</button></div>
                           </form>
