@@ -25,9 +25,9 @@
 
       require '../db_connect.php';
 
-      $post_id = $_GET['post_id'];
+      $url  = $_GET['url'].'.html';
 
-      $query= "select * from article where post_id=$post_id ";
+      $query= "select * from article where url='$url'";
 
       $result = $sql->query($query);
 
@@ -196,14 +196,14 @@
 
                   require 'blog_function.php';
 
-                  $post_id = $_GET['post_id'];
+                  $url  = $_GET['url'].'.html';
 
-                  $query= "select * from article where post_id=$post_id ";
+                  $query= "select * from article where url='$url'";
 
                   $posts = get_posts($query); 
                      foreach($posts as $post)
                       {
-
+                          $post_id = $post['post_id'];
 
                 ?>
 
@@ -234,7 +234,6 @@
                   <?php 
 
                     require '../db_connect.php';
-                    $post_id = $_GET['post_id'];
                     $related_tag_id = '0';
                     $query= mysqli_query($con,"select t.tag_id,t.tag_name from article_tag_map tm join article p on p.post_id = tm.post_id join article_tag t on t.tag_id = tm.tag_id where p.post_id = '$post_id'");
                     while($que = mysqli_fetch_row($query))

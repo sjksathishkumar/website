@@ -221,7 +221,7 @@
                   <figcaption><a href="../img/img1.png" title="Morbi convallis malesuada ante" class="colorbox"><i class="fa fa-plus"></i></a></figcaption>
                 </figure>
  -->                <header>
-                  <h3><i class="fa fa-pencil"></i> <a href="blog_single_view.php?post_id=<?php echo $post['post_id']; ?>"><?php echo $post['post_title']; ?></a></h3>
+                  <h3><i class="fa fa-pencil"></i> <a href="<?php echo $post['url']; ?>"><?php echo $post['post_title']; ?></a></h3>
                   <p>posted on <a href="">
 
                     <?php 

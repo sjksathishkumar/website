@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# For blog_single_view.php file forward to post-name.html.
+
+RewriteRule ^([a-zA-Z0-9-/]+).html$ blog_single_view.php?url=$1
+RewriteRule ^([a-zA-Z0-9-/]+).html/$ blog_single_view.php?url=$1
