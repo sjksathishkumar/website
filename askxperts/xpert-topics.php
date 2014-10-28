@@ -200,7 +200,7 @@
 
                   }
 
-                  $query ="select * from questions where qus_id = any (select qus_id from questions_tag_map where tag_id= $tag_id) and ans_rply=1";
+                  $query ="select * from questions where qus_id = any (select qus_id from questions_tag_map where tag_id= $tag_id) and ans_rply='active'";
 
                   $result = $sql->query($query);
                         if($result && $result->num_rows > 0)
