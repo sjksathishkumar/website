@@ -148,23 +148,26 @@ var EditableTable = function () {
           var nTr = $(this).parents('tr')[1];
                var jqTds = $('>td', nTr);
                var value = jqTds[0].innerText;
-               var final_data = value.substring(4, 7);
+               var final_data = value.substring(8, 11);
+               //alert(final_data);
           jQuery.ajax( {
-                    dataType: 'html',
                     type: "POST",
                     url: "script/tag_delete.php",
                     cache: false,
-                    data: 'qus_id=' + final_data,
-        success: function(data) {
-          if(data == "success")
+                    data: 'tag_id=' + final_data,
+        success: function(msg) {
+          if(msg != 'success')
           {
-          //oTable.fnDeleteRow( nTr );    
+          //oTable.fnDeleteRow( nTr );  
+          alert(msg);
+          //alert("Can't Delete Tag. It mounted with Questions !");
           oTable.fnDraw();
-          //alert("Updated");
           //location.reload(true);
           }
           else  
           {
+          alert(msg);
+          //alert("Deleted Successfully !");
         oTable.fnDraw();
             //location.reload(true);
           //alert("Error on query");
