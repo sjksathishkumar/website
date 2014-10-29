@@ -4,3 +4,7 @@ RewriteEngine On
 
 RewriteRule ^([a-zA-Z0-9-/]+).html$ blog_single_view.php?url=$1
 RewriteRule ^([a-zA-Z0-9-/]+).html/$ blog_single_view.php?url=$1
+
+# Tag view forward to 
+
+RewriteRule ^([a-zA-Z0-9-/]+)$	tag_view.php?tag_name=$1

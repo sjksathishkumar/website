@@ -240,7 +240,7 @@
                     {
                   ?>
                   <i class="fa fa-tag"></i> 
-                    <a href="tag_view.php?tag_id=<?php echo $que['0']; ?>"><?php $related_tag_id = $que['0']; echo ucfirst($que['1']); ?></a> 
+                    <a href="<?php echo $que['1']; ?>"><?php $related_tag_id = $que['0']; echo ucfirst($que['1']); ?></a> 
 
                   <?php
                     }
@@ -287,7 +287,7 @@
                           echo ",";
                           echo $data = date('y',strtotime($timestamp));  ?></span>
                       </div>
-                      <a href="blog_single_view.php?post_id=<?php echo $post['post_id']; ?>"><?php $content=$post['post_title']; 
+                      <a href="<?php echo $post['url']; ?>"><?php $content=$post['post_title']; 
                         $string = strip_tags($content);
 
                         if (strlen($string) > 35) {
@@ -381,7 +381,7 @@
                   ?>
 
                   <li>
-                    <p><a href="tag_view.php?tag_id=<?php echo $post['tag_id']; ?>"><i class="glyphicon glyphicon-folder-open"></i> <?php echo $post['tag_name']; ?></a> <a href="tag_view.php?tag_id=<?php echo $post['tag_id']; ?>">
+                    <p><a href="<?php echo $post['tag_name']; ?>"><i class="glyphicon glyphicon-folder-open"></i> <?php echo $post['tag_name']; ?></a> <a href="tag_view.php?tag_id=<?php echo $post['tag_id']; ?>">
                       <i class="fa fa-rss"></i></a> 
                     </p>
                     
@@ -444,7 +444,7 @@
                                     foreach($_entries as $_entry)
                                     {
                                         echo "<li>";
-                                        echo "<i class='fa fa-angle-double-right'></i>&nbsp;&nbsp;<a href=\"blog_single_view.php?post_id={$_entry['post_id']}\">";
+                                        echo "<i class='fa fa-angle-double-right'></i>&nbsp;&nbsp;<a href=\"{$_entry['url']}\">";
                                                     $content=$_entry['post_title']; 
                                                   // strip tags to avoid breaking any html
                                                     $string = strip_tags($content);
@@ -491,7 +491,7 @@
                           {
                       ?>
                       <div class="envor-sidebar-comment">
-                      <p><a href="blog_single_view.php?post_id=<?php echo $row['post_id']; ?>"><?php $content=$row['post_title']; 
+                      <p><a href="<?php echo $row['url']; ?>"><?php $content=$row['post_title']; 
                       // strip tags to avoid breaking any html
                        $string = strip_tags($content);
 
@@ -533,7 +533,7 @@
                   <article>
                       <?php
                       require '../db_connect.php';
-                      $query= "  select * from questions where ans_rply = '1' ORDER BY qus_date DESC limit 3;";
+                      $query= "  select * from questions where ans_rply = 'active' ORDER BY qus_date DESC limit 3;";
                       $result = $sql->query($query);
                       if($result->num_rows > 0)
                         {

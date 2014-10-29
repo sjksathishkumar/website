@@ -243,7 +243,7 @@
                       }
                       echo $string;
                 ?></p>
-                <p><a href="blog_single_view.php?post_id=<?php echo $post['post_id']; ?>" class="envor-btn envor-btn-small envor-btn-secondary-border">read the rest <i class="fa fa-arrow-circle-right"></i></a></p>
+                <p><a href="<?php echo $post['url']; ?>" class="envor-btn envor-btn-small envor-btn-secondary-border">read the rest <i class="fa fa-arrow-circle-right"></i></a></p>
                 </div>
               <!--
 
@@ -305,7 +305,7 @@
                   ?>
 
                   <li>
-                    <p><a href="tag_view.php?tag_id=<?php echo $post['tag_id']; ?>"><i class="glyphicon glyphicon-folder-open"></i> <?php echo $post['tag_name']; ?></a> <a href="tag_view.php?tag_id=<?php echo $post['tag_id']; ?>">
+                    <p><a href="<?php echo $post['tag_name']; ?>"><i class="glyphicon glyphicon-folder-open"></i> <?php echo $post['tag_name']; ?></a> <a href="<?php echo $post['tag_name']; ?>">
                       <i class="fa fa-rss"></i></a> 
 
                       
@@ -371,7 +371,7 @@
                                     foreach($_entries as $_entry)
                                     {
                                         echo "<li>";
-                                        echo "<i class='fa fa-angle-double-right'></i>&nbsp;&nbsp;<a href=\"blog_single_view.php?post_id={$_entry['post_id']}\">";
+                                        echo "<i class='fa fa-angle-double-right'></i>&nbsp;&nbsp;<a href=\"{$_entry['url']}\">";
                                                     $content=$_entry['post_title']; 
                                                   // strip tags to avoid breaking any html
                                                     $string = strip_tags($content);
@@ -423,7 +423,7 @@
                           {
                       ?>
                       <div class="envor-sidebar-comment">
-                      <p><a href="blog_single_view.php?post_id=<?php echo $row['post_id']; ?>"><?php $content=$row['post_title']; 
+                      <p><a href="<?php echo $row['url']; ?>"><?php $content=$row['post_title']; 
                       // strip tags to avoid breaking any html
                        $string = strip_tags($content);
 
@@ -471,7 +471,7 @@
                     
                       <?php
                       require '../db_connect.php';
-                      $query= "  select * from questions where ans_rply = '1' ORDER BY qus_date DESC limit 3;";
+                      $query= "  select * from questions where ans_rply = 'active' ORDER BY qus_date DESC limit 3;";
                       $result = $sql->query($query);
                       if($result->num_rows > 0)
                         {
