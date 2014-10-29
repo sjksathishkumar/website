@@ -206,7 +206,7 @@
                             <div class="envor-qa">
                               <div class="q">
                                 <span class="lbl">Q:</span>
-                                <p><a href="bassbiz-xperts-answers.php?qus_id=<?php echo $row['qus_id']; ?>"><?php echo $row['question']; ?></a></p>
+                                <p><a href="<?php echo $row['url']; ?>"><?php echo $row['question']; ?></a></p>
                                 <div class="arrow"></div>
                               </div>
                               <div class="a">
@@ -266,7 +266,7 @@
 
                   ?>
                   <li>
-                    <p><a href="xpert-topics.php?tag_id=<?php echo $row['tag_id']; ?>"><i class="glyphicon glyphicon-folder-open"></i> <?php echo $row['tag_name']; ?></a> <a href="xpert-topics.php?tag_id=<?php echo $row['tag_id']; ?>">
+                    <p><a href="<?php echo $row['tag_name']; ?>"><i class="glyphicon glyphicon-folder-open"></i> <?php echo $row['tag_name']; ?></a> <a href="<?php echo $row['tag_name']; ?>">
                       <i class="fa fa-rss"></i></a> 
                     </p>                  
                   </li>

@@ -206,7 +206,7 @@
                     echo ",";
                     echo $data = date('y',strtotime($timestamp));  ?></span>
                       </div>
-                        <a href="bassbiz-xperts-answers.php?qus_id=<?php echo $row['qus_id']; ?>"><?php $content=$row['question']; 
+                        <a href="<?php echo $row['url']; ?>"><?php $content=$row['question']; 
                       // strip tags to avoid breaking any html
                         $string = strip_tags($content);
 

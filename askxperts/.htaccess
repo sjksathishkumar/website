@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# For bassbiz-xperts-answers.php file forward to post-name.html.
+
+RewriteRule ^([a-zA-Z0-9-/]+).html$ bassbiz-xperts-answers.php?url=$1
+RewriteRule ^([a-zA-Z0-9-/]+).html/$ bassbiz-xperts-answers.php?url=$1
+
+# Tag view forward to 
+
+RewriteRule ^([a-zA-Z0-9-/]+)$	xpert-topics.php?tag_name=$1

@@ -188,7 +188,15 @@
               
               <?php
                   require '../db_connect.php';
-                  $tag_id  = $sql->real_escape_string($_GET['tag_id']);
+
+                  $tag_name = $_GET['tag_name'];
+
+                  $query = "SELECT * FROM `questions_tag` WHERE tag_name= '$tag_name'";
+                  $result = $sql->query($query);
+                  while($row = $result->fetch_assoc())
+                  {
+                      $tag_id = $row['tag_id'];
+                  }
 
                   $query = "select tag_name from questions_tag where tag_id=$tag_id";
 
@@ -214,7 +222,7 @@
                             <div class="envor-qa">
                               <div class="q">
                                 <span class="lbl">Q:</span>
-                                <p><a href="bassbiz-xperts-answers.php?qus_id=<?php echo $row['qus_id']; ?>"><?php echo $row['question']; ?></a></p>
+                                <p><a href="<?php echo $row['url']; ?>"><?php echo $row['question']; ?></a></p>
                                 <div class="arrow"></div>
                               </div>
                               <div class="a">
@@ -271,7 +279,7 @@
 
                   ?>
                   <li>
-                    <p><a href="xpert-topics.php?tag_id=<?php echo $row['tag_id']; ?>"><i class="glyphicon glyphicon-folder-open"></i> <?php echo $row['tag_name']; ?></a> <a href="expert_tag_view.php?tag_id=<?php echo $row['tag_id']; ?>">
+                    <p><a href="<?php echo $row['tag_name']; ?>"><i class="glyphicon glyphicon-folder-open"></i> <?php echo $row['tag_name']; ?></a> <a href="<?php echo $row['tag_name']; ?>">
                       <i class="fa fa-rss"></i></a> 
                     </p>                  
                   </li>

@@ -198,8 +198,14 @@ session_start();
 
                 require '../db_connect.php';
 
+                $url  = $_GET['url'].'.html';
 
-                $qus_id  = $sql->real_escape_string($_GET['qus_id']);
+                $query = "SELECT * FROM `questions` WHERE url= '$url'";
+                $result = $sql->query($query);
+                while($row = $result->fetch_assoc())
+                {
+                    $qus_id = $row['qus_id'];
+                }
 
                 $query = " select q.question,q.qus_id,q.description,q.answer,q.qus_date,u.name from questions q,google_login u where q.user_id=u.id and q.ans_rply='active' and q.qus_id=$qus_id";
                 //$query= "select * from questions where qus_id=$qus_id ";
@@ -244,7 +250,7 @@ session_start();
                    while ( $row = $result->fetch_row() ) {
                   ?>
                   <i class="fa fa-tag"></i> 
-                    <a href="xpert-topics.php?tag_id=<?php echo $row['0']; ?>"><?php $related_tag_id = $row['0']; echo ucfirst($row['1']).'&nbsp;'; ?></a> 
+                    <a href="<?php echo $row['1']; ?>"><?php $related_tag_id = $row['0']; echo ucfirst($row['1']).'&nbsp;'; ?></a> 
 
                   <?php
                     }
@@ -342,7 +348,7 @@ session_start();
 
                   ?>
                   <li>
-                    <p><a href="xpert-topics.php?tag_id=<?php echo $row['tag_id']; ?>"><i class="glyphicon glyphicon-folder-open"></i> <?php echo $row['tag_name']; ?></a> <a href="xpert-topics.php?tag_id=<?php echo $row['tag_id']; ?>">
+                    <p><a href="<?php echo $row['tag_name']; ?>"><i class="glyphicon glyphicon-folder-open"></i> <?php echo $row['tag_name']; ?></a> <a href="<?php echo $row['tag_name']; ?>">
                       <i class="fa fa-rss"></i></a> 
                     </p>                  
                   </li>
