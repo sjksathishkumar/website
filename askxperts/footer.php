@@ -61,7 +61,7 @@
                     echo ",";
                     echo $data = date('y',strtotime($timestamp));  ?></span>
                       </div>
-                        <a href="../blog/blog_single_view.php?post_id=<?php echo $row['post_id']; ?>"><?php $content=$row['post_title']; 
+                        <a href="../blog/<?php echo $row['url']; ?>"><?php $content=$row['post_title']; 
                       // strip tags to avoid breaking any html
                         $string = strip_tags($content);
 
