@@ -242,6 +242,10 @@ var EditableTable = function () {
 			    alert("Post Published!");
 			    oTable.fnDraw();
 			    }
+			    else if(msg == 'empty')
+			    {
+			    	alert("Please Enter Tag !");
+			    }
 			    else  
 			    alert("Publish Failed!");
 		    }

@@ -104,13 +104,13 @@ if (login_check($mysqli) == true) : ?>
                                     <textarea class="ckeditor" cols="120" id="post_content" name="post_content" rows="15">
                                     </textarea>
                                   </div>
-				  <div>
-					<br>
+          <div>
+          <br>
                                     <label for="post_title"><b>Keywords</b></label>
                                     <input type="text" class="form-control" id="post_keywords" name="post_keywords" required>
                                   </div>
-				  <div>
-				   <br>
+          <div>
+           <br>
                                     <label for="post_title"><b>Description</b></label>
                                     <input type="text" class="form-control" id="post_description" name="post_description" required>
                                   </div>
@@ -149,13 +149,13 @@ if (login_check($mysqli) == true) : ?>
                                     <label for="post_content"><b>Contents</b></label>
                                     <textarea id="post_contents" name="post_contents" class="ckeditor"></textarea>
                                   </div>
-				<div>
-					<br>
+        <div>
+          <br>
                                     <label for="post_title"><b>Keywords</b></label>
                                     <input type="text" class="form-control" id="post_keywords" name="post_keywords" required>
                                   </div>
-				  <div>
-				   <br>
+          <div>
+           <br>
                                     <label for="post_title"><b>Description</b></label>
                                     <input type="text" class="form-control" id="post_description" name="post_description" required>
                                   </div>
