@@ -112,6 +112,11 @@ if (login_check($mysqli) == true) : ?>
                                   </div>
         <div>
           <br>
+                                    <label for="url"><b>URL</b></label>
+          <input type="text" class="form-control" id="url" name="url" required>
+                                </div>
+        <div>
+          <br>
                                     <label for="post_title"><b>Status</b></label>
                                     <select id="ans_rply" name="ans_rply">
                                       <option value="active">Approved</option>

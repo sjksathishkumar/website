@@ -2,7 +2,7 @@
 
 error_reporting();
 include_once("../include/config.php");
-$aColumns = array('qus_id', 'question', 'description', 'ans_rply', 'answer');
+$aColumns = array('qus_id', 'question', 'description', 'ans_rply', 'answer', 'url');
 
 /* Indexed column (used for fast and accurate table cardinality) */
 $sIndexColumn = "qus_id";
@@ -48,7 +48,7 @@ $rResult = $sql->query( $sQuery) or fatal_error( 'MySQL Error1: ' . mysqli_errno
 while ( $aRow = mysqli_fetch_array( $rResult ) )
 {
     
-	$output = array('qus_id' => $aRow['qus_id'],'question' => $aRow['question'],'answer' => $aRow['answer'],'description' => $aRow['description'],'ans_rply' => $aRow['ans_rply']);
+	$output = array('qus_id' => $aRow['qus_id'],'question' => $aRow['question'],'answer' => $aRow['answer'],'description' => $aRow['description'],'ans_rply' => $aRow['ans_rply'],'url' => $aRow['url']);
 	
 	
 	

@@ -108,8 +108,9 @@ var EditableTable = function () {
           var aData = oTable.fnGetData( nTr );
           var sOut = '<table width="100%" height="17%" border="0" cellspacing="0" cellpadding="5">';
           sOut += '<tr valign="top"><td width="10%"><b>ID: </b>'+aData[1]+'</td><td width="30%"><b>Question : </b>'+aData[2]+'</td><td width="20%"><b>Asked By: </b>'+aData[7]+'</td></tr>';
-          sOut += '<tr valign="top"><td width="10%"><b>Status: </b>'+aData[4]+'</td><td width="30%"><b>Description: </b>'+aData[3]+'</td><td width="20%"><b>Email: </b>'+aData[11]+'</td></tr>';
-          sOut += '<tr valign="top"><td width="10%"></td><td width="30%"><b>Answer: </b>'+aData[6]+'</td><td width="20%"><b>Tags: </b>'+aData[9]+'</td></tr>';
+          sOut += '<tr valign="top"><td width="10%"><b>Status: </b>'+aData[4]+'</td><td width="30%"><b>Description: </b>'+aData[3]+'</td><td width="20%"><b>Email: </b>'+aData[12]+'</td></tr>';
+          sOut += '<tr valign="top"><td width="10%"></td><td width="30%"><b>Answer: </b>'+aData[6]+'</td><td width="20%"><b>Tags: </b>'+aData[10]+'</td></tr>';
+          sOut += '<tr valign="top"><td width="10%"></td><td width="30%"><b>URL: </b>'+aData[7]+'</td><td width="20%"></td></tr>';
           sOut += '<tr valign="top"><td></td><td><a href="#edit_blog" class="edit" data-toggle="modal"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil"></i> Replay</button></a></td><td><a href="" class="delete" data-toggle="modal"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil"></i> Delete</button></a></td></tr>';
           sOut += '</table>';
 
