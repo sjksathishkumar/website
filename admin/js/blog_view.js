@@ -111,6 +111,7 @@ var EditableTable = function () {
           sOut += '<tr valign="top"><td width="10%"><b>Tags</b></td><td width="100%">'+aData[6]+'</td></tr>';
 	  sOut += '<tr valign="top"><td width="10%"><b>Keywords</b></td><td width="100%">'+aData[8]+'</td></tr>';
           sOut += '<tr valign="top"><td width="10%"><b>Description</b></td><td width="100%">'+aData[9]+'</td></tr>';
+          sOut += '<tr valign="top"><td width="10%"><b>URL</b></td><td width="100%">'+aData[10]+'</td></tr>';
           sOut += '<tr valign="top"><td><b>Ref Id - </b>'+aData[1]+'</td><td><a href="#edit_blog" class="edit" data-toggle="modal"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil"></i> Edit</button></a></td><td><a href="" class="delete" data-toggle="modal"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-trash-o"></i> Delete</button></a></td></tr>';
           sOut += '</table>';
 

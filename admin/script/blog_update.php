@@ -5,129 +5,138 @@ include_once("../include/config.php");
 
 //getting all input given from user
 
-$post_id = $_POST['post_id'];
-$post_title = $_POST['post_title'];
-$post_content = $_POST['post_contents'];
-$post_keywords = $_POST['post_keywords'];
-$post_description = $_POST['post_description'];
-$tags = isset($_POST['tags']) ? $_POST['tags'] : array();
 
-$sql->autocommit(FALSE); 
-
-$query_delete = "DELETE FROM `article_tag_map` WHERE `post_id` = $post_id";
-
-$result = $sql->query($query_delete);
-
-$title=htmlentities($post_title);
-
-//Title to friendly URL conversion
-
-function string_limit_words($string, $word_limit)
+/*if(empty($_POST['post_tags']))
 {
-  $words = explode(' ', $string, ($word_limit + 1));
-  if(count($words) > $word_limit)
-  array_pop($words);
-  return implode(' ', $words);
+  echo "empty";
+  break;
 }
-
-$newtitle = string_limit_words($title,6);
-
-$urltitle=preg_replace('/[^a-z0-9]/i',' ', $newtitle);
-
-$newurltitle=str_replace(" ","-",$urltitle);
-
-$newurltitle = rtrim($newurltitle , '-');
-
-$url=$newurltitle.'.html'; // Final URL
-
-$url = strtolower($url);
-
-$query_update = "UPDATE `article` SET `post_title` = '$post_title', `post_content` = '$post_content', `keyword` = '$post_keywords', `description` = '$post_description', `url` = '$url' WHERE `post_id` = $post_id";
-
-$result = $sql->query($query_update); 
-
-foreach ($tags as $tag) 
+else
 {
-  //echo "Tag form foreach - $tag <br>";
+*/
+      $post_id = $_POST['post_id'];
+      $post_title = $_POST['post_title'];
+      $post_content = $_POST['post_contents'];
+      $post_keywords = $_POST['post_keywords'];
+      $post_description = $_POST['post_description'];
+      $url = $_POST['url'];
+      $tags = isset($_POST['tags']) ? $_POST['tags'] : array();
 
-  if(!is_numeric($tag))
-  {
-    $match = false;
+      $sql->autocommit(FALSE); 
 
-    $query= "select * from article_tag";
+      $query_delete = "DELETE FROM `article_tag_map` WHERE `post_id` = $post_id";
 
-        $result = $sql->query($query);
-                    
-        while ( $row = $result->fetch_assoc() ) 
-            {
-                $tag_data = $row['tag_name'];
+      $result = $sql->query($query_delete);
 
-              if($tag == $tag_data)
-              {
-                $query = "SELECT * FROM `article_tag` WHERE `tag_name` = '$tag';";
-                
-                $result = $sql->query($query);
-                
-                while ( $row = $result->fetch_assoc() ) 
-                {
-                  $find_tag_id = $row['tag_id'];
-            
-                  //echo "Find ID - $find_tag_id";
+      /*$title=htmlentities($post_title);
 
-                }
-              
-               /* $query = "INSERT IGNORE INTO `article_tag_map` (`tag_id`, `post_id`) VALUES ('$find_tag_id', '$post_id')";
+      //Title to friendly URL conversion
 
-          $result = $sql->query($query);*/
+      function string_limit_words($string, $word_limit)
+      {
+        $words = explode(' ', $string, ($word_limit + 1));
+        if(count($words) > $word_limit)
+        array_pop($words);
+        return implode(' ', $words);
+      }
 
-              //echo "Find ID - $find_tag_id";
+      $newtitle = string_limit_words($title,6);
 
-              $match = true;
-              }
-              else
-              {
-                $match = false;
-              }
-            }
+      $urltitle=preg_replace('/[^a-z0-9]/i',' ', $newtitle);
 
-        if($match == false)
+      $newurltitle=str_replace(" ","-",$urltitle);
+
+      $newurltitle = rtrim($newurltitle , '-');
+
+      $url=$newurltitle.'.html'; // Final URL
+
+      $url = strtolower($url);*/
+
+      $query_update = "UPDATE `article` SET `post_title` = '$post_title', `post_content` = '$post_content', `keyword` = '$post_keywords', `description` = '$post_description', `url` = '$url' WHERE `post_id` = $post_id";
+
+      $result = $sql->query($query_update); 
+
+      foreach ($tags as $tag) 
+      {
+        //echo "Tag form foreach - $tag <br>";
+
+        if(!is_numeric($tag))
         {
-      $query = "INSERT IGNORE INTO `article_tag` (`tag_id`, `tag_name`) VALUES (NULL, '$tag')";
+          $match = false;
 
-      $result = $sql->query($query);
+          $query= "select * from article_tag";
 
-      $last_tag_id = $sql->insert_id;
+              $result = $sql->query($query);
+                          
+              while ( $row = $result->fetch_assoc() ) 
+                  {
+                      $tag_data = $row['tag_name'];
 
-      $query = "INSERT IGNORE INTO `article_tag_map` (`tag_id`, `post_id`) VALUES ('$last_tag_id', '$post_id')";
+                    if($tag == $tag_data)
+                    {
+                      $query = "SELECT * FROM `article_tag` WHERE `tag_name` = '$tag';";
+                      
+                      $result = $sql->query($query);
+                      
+                      while ( $row = $result->fetch_assoc() ) 
+                      {
+                        $find_tag_id = $row['tag_id'];
+                  
+                        //echo "Find ID - $find_tag_id";
 
-      $result = $sql->query($query);
+                      }
+                    
+                     /* $query = "INSERT IGNORE INTO `article_tag_map` (`tag_id`, `post_id`) VALUES ('$find_tag_id', '$post_id')";
 
-      //echo "$tag";
+                $result = $sql->query($query);*/
+
+                    //echo "Find ID - $find_tag_id";
+
+                    $match = true;
+                    }
+                    else
+                    {
+                      $match = false;
+                    }
+                  }
+
+              if($match == false)
+              {
+                $query = "INSERT IGNORE INTO `article_tag` (`tag_id`, `tag_name`) VALUES (NULL, '$tag')";
+
+                $result = $sql->query($query);
+
+                $last_tag_id = $sql->insert_id;
+
+                $query = "INSERT IGNORE INTO `article_tag_map` (`tag_id`, `post_id`) VALUES ('$last_tag_id', '$post_id')";
+
+                $result = $sql->query($query);
+
+              }
 
         }
+        else
+        {
+          $query = "INSERT IGNORE INTO `article_tag_map` (`tag_id`, `post_id`) VALUES ('$tag', '$post_id')";
 
-  }
-  else
-  {
-    $query = "INSERT IGNORE INTO `article_tag_map` (`tag_id`, `post_id`) VALUES ('$tag', '$post_id')";
+          $result = $sql->query($query);
 
-    $result = $sql->query($query);
-    //echo "$tag";
+        }
+      }
 
-  }
-}
+      if($result)
+      {
+        echo 'success'; 
+        $sql->commit();
+        $sql->close();
+      } 
+      else
+      { 
+        echo 'error';
+        $sql->rollback();
+        $sql->close();
+      }
 
-if($result)
-{
-  echo 'success'; 
-  $sql->commit();
-  $sql->close();
-} 
-else
-{ 
-    echo 'error';
-  $sql->rollback();
-    $sql->close();
-}
+//}
 
 ?>

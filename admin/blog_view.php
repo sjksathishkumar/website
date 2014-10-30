@@ -114,7 +114,7 @@ if (login_check($mysqli) == true) : ?>
                                     <label for="post_title"><b>Description</b></label>
                                     <input type="text" class="form-control" id="post_description" name="post_description" required>
                                   </div>
-                                  <div>
+          <div>
                                     <br>
                                     <label for="post_tag"><b>Tags</b></label>
                                     <input type="text" class="form-control" id="tag" name="post_tag[]" required>
@@ -159,7 +159,11 @@ if (login_check($mysqli) == true) : ?>
                                     <label for="post_title"><b>Description</b></label>
                                     <input type="text" class="form-control" id="post_description" name="post_description" required>
                                   </div>
-                                  <div>
+       <div>
+           <br>
+                                    <label for="url"><b>URL</b></label>
+                                    <input type="text" class="form-control" id="url" name="url" required>
+                                  </div>                                    <div>
                                     <br>
                                     <label for="tags"><b>Tags</b></label>
                                     <!-- <input type="text" class="form-control" id="tags" name="tags[]" required> -->
@@ -236,3 +240,4 @@ if (login_check($mysqli) == true) : ?>
 <?php else : 
         header('Location: index.php');
 endif; ?>
+  
