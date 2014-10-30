@@ -194,7 +194,7 @@
 
                   require '../db_connect.php';
 
-                  $query= "select * from questions where ans_rply='active'";
+                  $query= "select * from questions where ans_rply='active' ORDER BY qus_date DESC limit 5 ;";
 
                   $result = $sql->query($query);
                         if($result && $result->num_rows > 0)

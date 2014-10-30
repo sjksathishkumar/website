@@ -23,7 +23,31 @@ while($row = mysqli_fetch_array($lst_insert_id))
 	$user_id = $row['0'];
 }
 
-$query ="INSERT INTO `questions` (`qus_id`, `question`, `description`, `user_id`, `answer`, `ans_rply`, `qus_date`) VALUES (NULL, '$question', '$description', '$user_id', NULL, '0', CURRENT_TIMESTAMP)";
+$title=htmlentities($question);
+
+//Title to friendly URL conversion
+
+function string_limit_words($string, $word_limit)
+{
+  $words = explode(' ', $string, ($word_limit + 1));
+  if(count($words) > $word_limit)
+  array_pop($words);
+  return implode(' ', $words);
+}
+
+$newtitle = string_limit_words($title,6);
+
+$urltitle=preg_replace('/[^a-z0-9]/i',' ', $newtitle);
+
+$newurltitle=str_replace(" ","-",$urltitle);
+
+$newurltitle = rtrim($newurltitle , '-');
+
+$url=$newurltitle.'.html'; // Final URL
+
+$url = strtolower($url);
+
+$query ="INSERT INTO `questions` (`qus_id`, `question`, `description`, `user_id`, `answer`, `ans_rply`, `url`, `qus_date`) VALUES (NULL, '$question', '$description', '$user_id', NULL, 'inactive', '$url', CURRENT_TIMESTAMP)";
 
 $result = $sql->query($query);
 
