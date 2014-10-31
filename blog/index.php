@@ -479,7 +479,7 @@
                           {
                       ?>
                       <div class="envor-sidebar-comment">
-                      <p><a href="../expert_single_view.php?qus_id=<?php echo $row['qus_id']; ?>"><?php $content=$row['question']; 
+                      <p><a href="../askxperts/<?php echo $row['url']; ?>"><?php $content=$row['question']; 
                       // strip tags to avoid breaking any html
                         $string = strip_tags($content);
 
