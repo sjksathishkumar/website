@@ -58,82 +58,82 @@ else
 
       foreach ($tags as $tag) 
       {
-        //echo "Tag form foreach - $tag <br>";
+      	//echo "Tag form foreach - $tag <br>";
 
-        if(!is_numeric($tag))
-        {
-          $match = false;
+      	if(!is_numeric($tag))
+      	{
+      		$match = false;
 
-          $query= "select * from article_tag";
+      		$query= "select * from article_tag";
 
               $result = $sql->query($query);
                           
               while ( $row = $result->fetch_assoc() ) 
                   {
-                      $tag_data = $row['tag_name'];
+                    	$tag_data = $row['tag_name'];
 
-                    if($tag == $tag_data)
-                    {
-                      $query = "SELECT * FROM `article_tag` WHERE `tag_name` = '$tag';";
-                      
-                      $result = $sql->query($query);
-                      
-                      while ( $row = $result->fetch_assoc() ) 
-                      {
-                        $find_tag_id = $row['tag_id'];
-                  
-                        //echo "Find ID - $find_tag_id";
+                		if($tag == $tag_data)
+                		{
+                			$query = "SELECT * FROM `article_tag` WHERE `tag_name` = '$tag';";
+                			
+                			$result = $sql->query($query);
+                			
+                			while ( $row = $result->fetch_assoc() ) 
+                  		{
+                				$find_tag_id = $row['tag_id'];
+           				
+                				//echo "Find ID - $find_tag_id";
 
-                      }
-                    
-                     /* $query = "INSERT IGNORE INTO `article_tag_map` (`tag_id`, `post_id`) VALUES ('$find_tag_id', '$post_id')";
+                			}
+             				
+            			   /* $query = "INSERT IGNORE INTO `article_tag_map` (`tag_id`, `post_id`) VALUES ('$find_tag_id', '$post_id')";
 
-                $result = $sql->query($query);*/
+      					$result = $sql->query($query);*/
 
-                    //echo "Find ID - $find_tag_id";
+             				//echo "Find ID - $find_tag_id";
 
-                    $match = true;
-                    }
-                    else
-                    {
-                      $match = false;
-                    }
+             				$match = true;
+                		}
+                		else
+                		{
+                			$match = false;
+                		}
                   }
 
               if($match == false)
               {
-                $query = "INSERT IGNORE INTO `article_tag` (`tag_id`, `tag_name`) VALUES (NULL, '$tag')";
+          			$query = "INSERT IGNORE INTO `article_tag` (`tag_id`, `tag_name`) VALUES (NULL, '$tag')";
 
-                $result = $sql->query($query);
+          			$result = $sql->query($query);
 
-                $last_tag_id = $sql->insert_id;
+          			$last_tag_id = $sql->insert_id;
 
-                $query = "INSERT IGNORE INTO `article_tag_map` (`tag_id`, `post_id`) VALUES ('$last_tag_id', '$post_id')";
+          			$query = "INSERT IGNORE INTO `article_tag_map` (`tag_id`, `post_id`) VALUES ('$last_tag_id', '$post_id')";
 
-                $result = $sql->query($query);
+          			$result = $sql->query($query);
 
               }
 
-        }
-        else
-        {
-          $query = "INSERT IGNORE INTO `article_tag_map` (`tag_id`, `post_id`) VALUES ('$tag', '$post_id')";
+      	}
+      	else
+      	{
+      		$query = "INSERT IGNORE INTO `article_tag_map` (`tag_id`, `post_id`) VALUES ('$tag', '$post_id')";
 
-          $result = $sql->query($query);
+      		$result = $sql->query($query);
 
-        }
+      	}
       }
 
       if($result)
       {
-        echo 'success'; 
-        $sql->commit();
-        $sql->close();
-      } 
+      	echo 'success';	
+      	$sql->commit();
+      	$sql->close();
+      }	
       else
       { 
         echo 'error';
-        $sql->rollback();
+      	$sql->rollback();
         $sql->close();
       }
 

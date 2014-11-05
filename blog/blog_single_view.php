@@ -129,17 +129,9 @@
             
           </div>
         </div>
-      <!--
 
-      Page Title end
-
-      //-->
       </section>
-      <!--
 
-      Desktop breadscrubs start
-
-      //-->
       <section class="envor-desktop-breadscrubs">
         <div class="container">
           <div class="row">
@@ -150,17 +142,9 @@
             </div>
           </div>
         </div>
-      <!--
 
-      Desktop breadscrubs end
-
-      //-->
       </section>
-      <!--
 
-      Mobile breadscrubs start
-
-      //-->
       <section class="envor-mobile-breadscrubs">
         <div class="container">
           <div class="row">
@@ -169,28 +153,13 @@
             </div>
           </div>
         </div>
-      <!--
-
-      Mobile breadscrubs end
-
-      //-->
       </section>
-      <!--
 
-      Main Content start
-
-      //-->
       <section class="envor-section">
         <div class="container">
           <div class="row">
             <div class="col-lg-9 col-md-9">
               <div id="resultsDiv"></div><br><br>
-              <!--
-
-              Post start
-
-              //-->
-              
               <article class="envor-post">
                 <?php
 
@@ -210,7 +179,6 @@
                 <header>
                   <h3><i class="fa fa-pencil"></i> <span> <?php echo $post['post_title']; ?></span></h3>
                   <p> by <a href="">admin</a></p>
-                  <!-- Go to your Addthis.com Dashboard to update any options -->
                   <div class="addthis_native_toolbox"></div>
                 </header>
                 <p><?php echo '<div align="justify">'.$post['post_content'].'</div>'; ?></p>
@@ -291,11 +259,8 @@
                         $string = strip_tags($content);
 
                         if (strlen($string) > 35) {
-
-                            // truncate string
                             $stringCut = substr($string, 0, 35);
 
-                            // make sure it ends in a word so assassinate doesn't become ass...
                             $string = substr($stringCut, 0, strrpos($stringCut, ' ')).'....'; 
                         }
                         echo $string;
@@ -361,11 +326,7 @@
                   </form>
                 </div>
               </aside>
-            <!--
 
-            Categories Widget
-
-            //-->
             <aside class="envor-widget envor-category-widget">
               <h3>browse <strong>Categories</strong></h3>
               <div class="envor-widget-inner">
@@ -393,11 +354,7 @@
                 </ul>
               </div>
             </aside>
-            <!--
 
-            Tabs Widget
-
-            //-->
             <aside class="envor-widget envor-search-widget">
               <h3>Blog <strong>Posts</strong></h3>
               <div class="envor-widget-inner">
@@ -408,22 +365,16 @@
                     <span><i class="fa fa-comment"></i></span>
                   </header>
                   <article>
-                    <!--
 
-                    Sidebar Post Item
-
-                    //-->
                     <div class="envor-sidebar-comment">
                       <?php
                         $query = "SELECT * from article ORDER BY post_date DESC;";
                         $result = $sql->query($query);
                         if($result && $result->num_rows > 0)
                         {
-                            // An array to store the data in a more managable order.
 
                                 $data = array();
 
-                            // Add each entry to the $data array, sorted by Year and Month
                             while($row = $result->fetch_assoc())
                             {
                                 $year = date('Y', strtotime($row['post_date']));
@@ -431,7 +382,6 @@
                                 $data[$year][$month][] = $row;
                             }
                             
-                            // Go through each Year and Month and print a list of entries, sorted by month.
                             foreach($data as $_year => $_months)
                             {
                                 echo '<div><ul class="treeview"><li>';
@@ -446,15 +396,12 @@
                                         echo "<li>";
                                         echo "<i class='fa fa-angle-double-right'></i>&nbsp;&nbsp;<a href=\"{$_entry['url']}\">";
                                                     $content=$_entry['post_title']; 
-                                                  // strip tags to avoid breaking any html
                                                     $string = strip_tags($content);
 
                                                   if (strlen($string) > 100) {
 
-                                                      // truncate string
                                                       $stringCut = substr($string, 0, 100);
 
-                                                      // make sure it ends in a word so assassinate doesn't become ass...
                                                       $string = substr($stringCut, 0, strrpos($stringCut, ' ')).'....'; 
                                                   }
                                                   echo $string."</a>";
@@ -475,12 +422,7 @@
 
                   </article>
                   <article>
-                    <!--
 
-                    Sidebar Comment Item
-
-                    //-->
-                    
                       <?php
                       require '../db_connect.php';
                       $query= " select * from article ORDER BY post_date DESC limit 3;";

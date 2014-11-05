@@ -37,9 +37,7 @@
     <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/colorbox-skins/4/colorbox.css" type="text/css">
-        <link href="css/main.css" rel="stylesheet" type="text/css">
-    
-
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/header/h1.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <link href="css/color1.css" rel="stylesheet" type="text/css" id="envor-site-color">
@@ -47,30 +45,10 @@
 
     <!-- LayerSlider styles -->
     <link rel="stylesheet" href="css/layerslider/css/layerslider.css" type="text/css">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="js/vendor/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
 
     <body>
-  
-
-    <!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
-    <!--
-
-    Scroll to the top
-
-    //-->
     <div id="to-the-top"><i class="fa fa-chevron-up"></i></div>
     <!--
 
@@ -89,38 +67,12 @@
     //-->
     <?php
       require 'mobile_header.php';
-      ?>
-    <!--
-
-    Envor mobile shopping cart start
-
-    //-->
-    
-    <!--
-
-    Envor header start
-
-    //-->
-  
-      <!--
-
-      Logo & Menu start
-
-      //-->
-       <?php
       require 'header.php';
       ?>
-    <!--
 
-    Envor header end
+       <?php
+      ?>
 
-    //-->
-
-    <!--
-
-    Envor site content start
-
-    //-->
     <div class="envor-content">
       <!--
 
@@ -300,13 +252,6 @@
               <h2>Other <strong>Services</strong></h2>
 
                <div class="envor-relative" id="our-features">
-            
-            <!--
-
-            Feature
-
-            //-->
-            
                 <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
                   <header>
@@ -317,13 +262,6 @@
                   <div><a href="payroll-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
-            
-            <!--
-
-            Feature
-
-            //-->
-            
                 <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
                   <header>
@@ -334,14 +272,6 @@
                   <div><a href="internal-auditor.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
-            
-
-            <!--
-
-            Feature
-
-            //-->
-            
                 <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
                   <header>
@@ -352,14 +282,6 @@
                   <div><a href="tax-consultant.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
-
-
-            <!--
-
-            Feature
-
-            //-->
-            
                 <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
                   <header>
@@ -370,12 +292,6 @@
                   <div><a href="business-registration-service.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
-                <!--
-
-            Feature
-
-            //-->
-            
                 <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
                   <header>
@@ -386,14 +302,6 @@
                   <div><a href="secretarial-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
-            
-
-            <!--
-
-            Feature
-
-            //-->
-            
                 <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
                   <header>
@@ -404,14 +312,6 @@
                   <div><a href="business-advisory-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
-            
-
-            <!--
-
-            Feature
-
-            //-->
-            
                 <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
                   <header>
@@ -422,13 +322,6 @@
                   <div><a href="cfo-controller-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
-
-                <!--
-
-            Feature
-
-            //-->
-            
                 <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
                   <header>
@@ -439,65 +332,26 @@
                   <div><a href="digital-signature-dsc.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
-            
-            <!--
-
-                Features Navigation start
-
-                //-->
                 <div class="envor-navigation envor-navigation rivaslider-navigation">
                   <a href="" class="back"><i class="glyphicon glyphicon-chevron-left"></i></a>
                   <a href="" class="forward"><i class="glyphicon glyphicon-chevron-right"></i></a>
                 </div>
-                <!--
-
-                Features Navigation end
-
-                //-->
-          
-
           </div>
-
-
         </div>
         </div>
         </div>
-
-      <!--
-
-      Features end
-      
-      //-->
       </section>
-      
-      
-      
-    <!--
-
-    Envor site content end
-
-    //-->
     </div>
-    <!--
-
-    Envor footer start
-
-    //-->
-   <?php
-      require 'footer_top.php';
-      ?>
-
-      <?php
+  <?php
+    require 'footer_top.php';
     require 'footer.php';
-    ?>
+  ?>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the Services load faster -->
-        <script src="js/vendor/jquery-1.11.0.min.js"></script>
-
+    <script src="js/vendor/jquery-1.11.0.min.js"></script>
     <script src="js/vendor/core-1.0.5.js"></script>
-
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.min.js"></script>
     <script src="js/jquery.mousewheel.min.js"></script>
@@ -517,22 +371,11 @@
     <script src="js/jquery.rivathemes.js"></script>
     <script type="text/javascript">
       $('document').ready(function() {
-          /*
-
-         
-
-          Features
-          
-          */
           $('#our-features').rivaSlider({
             visible : 3,
             selector : 'envor-feature'
           });
-          /*
 
-          Testimonials Carousel
-
-          */
           $('#testimonials').rivaCarousel({
             visible : 1,
             selector : 'envor-testimonials-3',

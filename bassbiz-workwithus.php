@@ -8,9 +8,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Envor HTML5/CSS3 Template">
-    <meta name="author" content="Suono Libero ( @rivathemes.com )">
-
     <title>Work with us | Bass Biz guarantees for your career growth if you are committed towards your job</title> 
     <meta name="ROBOTS" content="INDEX,FOLLOW"/>
     <meta name="description" content="Bass Biz has opening in Chennai, Salem, Trichy, Tanjayur for the post of Accounts Executive, Senior Executive, Internal Audit Executive, Sales Executive" />
@@ -40,8 +37,6 @@
     <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/colorbox-skins/4/colorbox.css" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
-    
-
     <link href="css/header/h1.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <link href="css/color1.css" rel="stylesheet" type="text/css" id="envor-site-color">
@@ -49,30 +44,10 @@
 
     <!-- LayerSlider styles -->
     <link rel="stylesheet" href="css/layerslider/css/layerslider.css" type="text/css">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="js/vendor/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
 
     <body>
-  
-
-    <!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
-    <!--
-
-    Scroll to the top
-
-    //-->
     <div id="to-the-top"><i class="fa fa-chevron-up"></i></div>
     <!--
 
@@ -91,32 +66,8 @@
 
     <?php
       require 'mobile_header.php';
-      ?>
-    <!--
-
-    Envor header start
-
-    //-->
- 
-      
-
-
-      <?php
-     
       require 'header.php';
       ?>
-
-    <!--
-
-    Envor header end
-
-    //-->
-  
-    <!--
-
-    Envor site content start
-
-    //-->
     <div class="envor-content">
       <!--
 
@@ -131,17 +82,7 @@
             </div>
           </div>
         </div>
-      <!--
-
-      Page Title end
-
-      //-->
       </section>
-      <!--
-
-      Desktop breadscrubs start
-
-      //-->
       <section class="envor-desktop-breadscrubs">
         <div class="container">
           <div class="row">
@@ -271,14 +212,6 @@
               </div>
             </div>
  			<div class="col-lg-6 col-md-6">
-
-              <!--
-              * Envor Career Item
-              //-->
-
-              <!--
-              * Envor Career Item
-              //-->
 	             <div class="envor-career-1">
 	                <header>
 	                  <i class="fa fa-user"></i>
@@ -328,17 +261,8 @@
             </div>
           </div>
         </div>
-      <!--
-
-      Main Content start
-
-      //-->
       </section>
-    <!--
 
-    Envor site content end
-
-    //-->
     </div>
     
     <!-- footer -->
@@ -349,10 +273,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the tpl load faster -->
-        <script src="js/vendor/jquery-1.11.0.min.js"></script>
-
+    <script src="js/vendor/jquery-1.11.0.min.js"></script>
     <script src="js/vendor/core-1.0.5.js"></script>
-
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.min.js"></script>
     <script src="js/jquery.mousewheel.min.js"></script>
@@ -370,16 +292,6 @@
     <script src="js/layerslider/layerslider.transitions.js" type="text/javascript"></script>
     <script src="js/layerslider/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
     <script src="js/jquery.rivathemes.js"></script>
-    <script type="text/javascript">
-      $('document').ready(function() {
-          /*
-
-          Footer News Slider
-
-          */
-          
-      });
-    </script>
     <script src="js/envor.js"></script>
     <script type="text/javascript">
       $('document').ready(function() {

@@ -148,17 +148,17 @@ $output = array(
 while ( $aRow = mysqli_fetch_array( $rResult ) )
 {
     $row = array();
-    //$row['DT_RowId'] = 'row_' . $aRow['id'];
-    $row[]="<img src='assets/advanced-datatable/examples/examples_support/details_open.png'>";
+	//$row['DT_RowId'] = 'row_' . $aRow['id'];
+	$row[]="<img src='assets/advanced-datatable/examples/examples_support/details_open.png'>";
     for ( $i=0 ; $i<count($aColumns) ; $i++ )
     {
             /* General output */
             $row[] = $aRow[ $aColumns[$i] ];
        
     }
-    //$row['DT_RowId'] = 'row_' . $aRow['id'];
-    //$row[] = '<a href="#edit_employee" class="edit" data-toggle="modal"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil"></i> Edit</button></a>';
-    $output['aaData'][] = $row;
+	//$row['DT_RowId'] = 'row_' . $aRow['id'];
+	//$row[] = '<a href="#edit_employee" class="edit" data-toggle="modal"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-pencil"></i> Edit</button></a>';
+	$output['aaData'][] = $row;
 }
 
 

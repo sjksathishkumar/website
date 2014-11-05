@@ -48,24 +48,11 @@
     <!-- LayerSlider styles -->
     <link rel="stylesheet" href="css/layerslider/css/layerslider.css" type="text/css">
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="js/vendor/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
 
     <body>
-  
-
-    <!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
+ 
     <!--
 
     Scroll to the top
@@ -89,23 +76,9 @@
     //-->
     <?php
     include 'mobile_header.php';
+    include 'header.php';
     ?>
 
-    <!--
-
-    Envor header start
-
-    //-->
-      <!--
-
-      Top bar start
-
-      //-->
-      <?php
-     
-      include 'header.php';
-      ?>
-      
     <!--
 
     Envor site content start
@@ -331,20 +304,9 @@
       <section class="envor-section">
         <div class="container">
           <div class="row">
-            <!--
-
-            Text start
-
-            //-->
             <div class="col-lg-4 col-md-4">
               <h2>Why <strong>us</strong>?</h2>
               <p>Bass Biz offers affordable, customized and Tailor made solutions to your accounting, internal auditing and tax consulting requirements. Bass Biz support allows you to concentrate on your core business.</p>
-             
-            <!--
-
-            Text end
-
-            //-->
             </div>
             <!--
 
@@ -353,75 +315,35 @@
             //-->
             <div class="col-lg-4 col-md-4">
               <div class="envor-toggle">
-                <!--
-
-                Toggle Item
-
-                //-->
                 <article>
                   <header><i class="glyphicon glyphicon-globe"></i>Significant Cost Saving<i class="fa fa-plus"></i></header>
                   <p>When you outsource your accounting, statutory compliance, payroll services and internal auditing to Bass Biz, you would save 40-60% cost.</p>
                 </article>
-                <!--
-
-                Toggle Item
-                
-                //-->
                 <article>
                   <header><i class="glyphicon glyphicon-globe"></i>Experienced Professionals<i class="fa fa-plus"></i></header>
                   <p>All our management team members are 5-10 years of experience in the field of accounting, taxation, payroll and auditing. And we have well framed training session for our employees, so they will be working with experience of us.</p>
                 </article>
-                <!--
-
-                Toggle Item
-                
-                //-->
                 <article>
                   <header><i class="glyphicon glyphicon-globe"></i>Customized Financial Reports<i class="fa fa-plus"></i></header>
                   <p>We produce weekly, fortnight, monthly reports to our clients, as per there requirements. And the report is inclusive profit and loss account, balance sheet, debtors, creditors ageing analysis, cash flow statements. Our chart of accounts is customized to each company.</p>
                 </article>
-                <!--
-
-                Toggle Item
-                
-                //-->
                 <article>
                   <header><i class="glyphicon glyphicon-globe"></i>Transparent System of Accounting<i class="fa fa-plus"></i></header>
                   <p>Transparent financial conditions and sound information should be key priorities for every business owners, because it will help them understand the financial position of the business. And based on this he can take he can take future steps.</p>
                 </article>
-                <!--
-
-                Toggle Item
-                
-                //-->
                 <article>
                   <header><i class="glyphicon glyphicon-globe"></i>Book-Keeping To Tax Returns.<i class="fa fa-plus"></i></header>
                   <p>Bass Biz will be your one stop solution for all financial accounting and  auditing requirement like book-keeping , accounting, internal auditing, statutory auditing, tax consulting, statutory compliance, payroll services, business advisory, and CFO services.</p>
                 </article>
-                <!--
-
-                Toggle Item
-                
-                //-->
                 <article>
                   <header><i class="glyphicon glyphicon-globe"></i>Quick Response Time<i class="fa fa-plus"></i></header>
                   <p>Bass Biz team will respond to all the queries within the stipulated time period. Bass Biz serves the clients with the excellence</p>
                 </article>
-                <!--
-
-                Toggle Item
-                
-                //-->
                 <article>
                   <header><i class="glyphicon glyphicon-globe"></i>Committed Team<i class="fa fa-plus"></i></header>
                   <p>Bass Biz team has been developed with care, when we hire new person into our we train them for three months to learn professional accounting. This training will make to work on their role with accounting knowledge, motivation, commitment.</p>
                 </article>
               </div>
-            <!--
-
-            Toggle end
-
-            //-->
             </div>
             <!--
 
@@ -449,23 +371,7 @@
             </div>
           </div>
         </div>
-      <!--
-
-      Text, Toggle & Skills #2 end
-
-      //-->
       </section>
-      <!--
-
-      Our Team start
-
-      //-->
-      
-        <!--
-
-    Envor site content end
-
-    //-->
     </div>
     <!--
 
@@ -480,10 +386,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the About Company load faster -->
-        <script src="js/vendor/jquery-1.11.0.min.js"></script>
-
+    <script src="js/vendor/jquery-1.11.0.min.js"></script>
     <script src="js/vendor/core-1.0.5.js"></script>
-
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.min.js"></script>
     <script src="js/jquery.mousewheel.min.js"></script>
@@ -503,19 +407,6 @@
     <script src="js/jquery.rivathemes.js"></script>
     <script type="text/javascript">
       $('document').ready(function() {
-          /*
-
-          
-
-          Team Slider
-
-          */
-          
-          /*
-
-          Our Partners Slider
-
-          */
           $('#our-partners').rivaCarousel({
             visible : 3,
             selector : 'envor-partner-logo',

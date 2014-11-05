@@ -97,26 +97,26 @@ if (login_check($mysqli) == true) : ?>
                           <form role="form" id="value_detail" method="post" action="script/expert_view_update.php">
                                   <div>
                                     <label for="question"><b>Question</b></label>
-          <input type="text" class="form-control" id="question" name="question" required>
+					<input type="text" class="form-control" id="question" name="question" required>
                                     <input id="qus_id" name="qus_id" type="hidden">
-        </div>
-        <div>
-          <br>
+				</div>
+				<div>
+					<br>
                                     <label for="description"><b>Description</b></label>
-          <input type="text" class="form-control" id="description" name="description" required>
+					<input type="text" class="form-control" id="description" name="description" required>
                                 </div>
                                   <div>
                                     <br>
                                     <label for="post_content"><b>Answer</b></label>
-            <textarea id="answer" name="answer" class="ckeditor"></textarea>
+				    <textarea id="answer" name="answer" class="ckeditor"></textarea>
                                   </div>
         <div>
           <br>
                                     <label for="url"><b>URL</b></label>
           <input type="text" class="form-control" id="url" name="url" required>
                                 </div>
-        <div>
-          <br>
+				<div>
+					<br>
                                     <label for="post_title"><b>Status</b></label>
                                     <select id="ans_rply" name="ans_rply">
                                       <option value="active">Approved</option>

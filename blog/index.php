@@ -8,10 +8,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Envor HTML5/CSS3 Template">
-    <meta name="author" content="Suono Libero ( @rivathemes.com )">
+    <meta name="ROBOTS" content="INDEX,FOLLOW"/>
+    <meta name="description" content="Dynamic team of professionals offering accounting and internal auditing services in Chennai | Bass Biz Services Private Limited" />
+    <meta name="abstract" content="Bass Biz specialise in Accounting and Internal Auditing Services" />
+    <meta name="keywords" content="Accounting Firm, Chennai, Accountant, Accounts, Auditor, Internal Auditor, Auditing, Service Tax, Bass Biz" />
+    <meta name="author" content="Bass Biz" />
+    <meta name="publisher" content="Bass Desio" />
+    <meta name="copyright" content="Bass Biz" />
+    <meta http-equiv="Reply-to" content="antony@bassbiz.in" />
+    <meta name="creation_Date" content="10/06/2012" />
+    <meta name="expires" content="11 June 2222" />
+    <meta name="language" content="EN" />
+    <meta name="rating" content="general" />
+    <meta name="revisit-after" content="2 days" /> 
     <link rel="shortcut icon" href="../favicon.ico">
- 
 
     <title>Blog | Bass Biz | Accounting, Internal Auditing service provider in Chennai</title>
 
@@ -27,9 +37,8 @@
     <link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
     <link href="../css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/colorbox-skins/4/colorbox.css" type="text/css">
-        <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
     <link href="../css/settings.css" rel="stylesheet" type="text/css">
-
     <link href="../css/header/h1.css" rel="stylesheet" type="text/css">
     <link href="../css/responsive.css" rel="stylesheet" type="text/css">
     <link href="../css/color1.css" rel="stylesheet" type="text/css" id="envor-site-color">
@@ -37,15 +46,6 @@
 
     <!-- LayerSlider styles -->
     <link rel="stylesheet" href="../css/layerslider/css/layerslider.css" type="text/css">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="js/vendor/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
     <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="../js/twitterFetcher_v10_min.js"></script>
@@ -68,65 +68,20 @@
 
     <body>
 
-
-    <!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
-    <!--
-
-    Scroll to the top
-
-    //-->
     <div id="to-the-top"><i class="fa fa-chevron-up"></i></div>
-    <!--
 
-    Image Preload
-
-    //-->
     <div id="envor-preload">
       <span>Now loading.<br>Please wait.</span>
       <i class="fa fa-cog fa-spin"></i>
       <p></p>
     </div>
-    <!--
 
-    Envor mobile menu start
-
-    //-->
   <?php
       require "blog_mobile_header.php";
-      ?>
+      require "blog_header.php";
+  ?>
 
-    <!-- Envor header start -->
-
-    
-  
-      <!--
-
-      Top bar start
-
-      //-->
-     <?php
-        
-        require "blog_header.php";
-      ?>
-    <!--
-
-    Envor header end
-
-    //-->
-   
-    <!--
-
-    Envor site content start
-
-    //-->
     <div class="envor-content">
-      <!--
-
-      Page Title start
-
-      //-->
       <section class="envor-page-title-1" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row">
@@ -135,17 +90,9 @@
             </div>
           </div>
         </div>
-      <!--
 
-      Page Title end
-
-      //-->
       </section>
-      <!--
 
-      Desktop breadscrubs start
-
-      //-->
       <section class="envor-desktop-breadscrubs">
         <div class="container">
           <div class="row">
@@ -156,17 +103,8 @@
             </div>
           </div>
         </div>
-      <!--
-
-      Desktop breadscrubs end
-
-      //-->
       </section>
-      <!--
 
-      Mobile breadscrubs start
-
-      //-->
       <section class="envor-mobile-breadscrubs">
         <div class="container">
           <div class="row">
@@ -175,52 +113,29 @@
             </div>
           </div>
         </div>
-      <!--
-
-      Mobile breadscrubs end
-
-      //-->
       </section>
-      <!--
 
-      Main Content start
-
-      //-->
       <section class="envor-section">
         <div class="container">
           <div class="row">
             <div class="col-lg-9 col-md-9">
               <div id="resultsDiv"></div><br><br>
               <div id="envor-posts-masonry">
-              <!--
 
-              Post start
-
-              //-->
               <?php
                 require 'blog_function.php';
 
                 $query = "Select * FROM article ORDER BY post_date DESC ";
 
-
-
                 $posts = get_posts($query);   
-
 
                 foreach($posts as $post)
                 {
-                  //echo $post['post_id']."<br>";
-                  //echo $post['title']."<br>";
-                  //echo $post['comments']."<br>";
                 
               ?>
               <article class="envor-post envor-post-masonry">
                 <div class="inner">
-<!--                 <figure>
-                  <a href="../img/img1.png" class="colorbox"><img src="../img/img1.png" alt=""></a>
-                  <figcaption><a href="../img/img1.png" title="Morbi convallis malesuada ante" class="colorbox"><i class="fa fa-plus"></i></a></figcaption>
-                </figure>
- -->                <header>
+               <header>
                   <h3><i class="fa fa-pencil"></i> <a href="<?php echo $post['url']; ?>"><?php echo $post['post_title']; ?></a></h3>
                   <p>posted on <a href="">
 
@@ -230,26 +145,19 @@
                     echo $data = date('d-m-Y',strtotime($timestamp)); ?></a> <br> by <a href=""><?php echo $post['author']; ?></a></p>
                 </header>
                 <p align="justify"><?php $content=$post['post_content']; 
-                      // strip tags to avoid breaking any html
+
                         $string = strip_tags($content);
 
                       if (strlen($string) > 500) {
 
-                          // truncate string
                           $stringCut = substr($string, 0, 500);
 
-                          // make sure it ends in a word so assassinate doesn't become ass...
                           $string = substr($stringCut, 0, strrpos($stringCut, ' ')).'....'; 
                       }
                       echo $string;
                 ?></p>
                 <p><a href="<?php echo $post['url']; ?>" class="envor-btn envor-btn-small envor-btn-secondary-border">read the rest <i class="fa fa-arrow-circle-right"></i></a></p>
                 </div>
-              <!--
-
-              Post end
-
-              //-->
               
               </article>
 
@@ -258,24 +166,11 @@
             ?>
               
               </div>
-              <!--
 
-              pagination start
-
-              //-->
-          
             </div>
-            <!--
 
-            Right Sidebar start
-
-            //-->
             <div class="col-lg-3 col-md-3">
-              <!--
-
-              Search Widget
-
-              //-->
+ 
               <aside class="envor-widget envor-search-widget">
                 <h3><strong>Search</strong> Widget</h3>
                 <div class="envor-widget-inner">
@@ -284,11 +179,7 @@
                   </form>
                 </div>
               </aside>
-            <!--
 
-            Categories Widget
-
-            //-->
             <aside class="envor-widget envor-category-widget">
               <h3>browse <strong>Categories</strong></h3>
               <div class="envor-widget-inner">
@@ -308,8 +199,6 @@
                     <p><a href="<?php echo $post['tag_name']; ?>"><i class="glyphicon glyphicon-folder-open"></i> <?php echo $post['tag_name']; ?></a> <a href="<?php echo $post['tag_name']; ?>">
                       <i class="fa fa-rss"></i></a> 
 
-                      
-
                     </p>
                     
                   </li>
@@ -320,11 +209,7 @@
                 </ul>
               </div>
             </aside>
-            <!--
 
-            Tabs Widget
-
-            //-->
             <aside class="envor-widget envor-search-widget">
               <h3>Blog <strong>Posts</strong></h3>
               <div class="envor-widget-inner">
@@ -335,22 +220,15 @@
                     <span><i class="fa fa-comment"></i></span>
                   </header>
                   <article>
-                    <!--
 
-                    Sidebar Post Item
-
-                    //-->
                     <div class="envor-sidebar-comment">
                       <?php
                         $query = "SELECT * from article ORDER BY post_date DESC;";
                         $result = $sql->query($query);
                         if($result && $result->num_rows > 0)
                         {
-                            // An array to store the data in a more managable order.
-
                                 $data = array();
 
-                            // Add each entry to the $data array, sorted by Year and Month
                             while($row = $result->fetch_assoc())
                             {
                                 $year = date('Y', strtotime($row['post_date']));
@@ -358,7 +236,6 @@
                                 $data[$year][$month][] = $row;
                             }
                             
-                            // Go through each Year and Month and print a list of entries, sorted by month.
                             foreach($data as $_year => $_months)
                             {
                                 echo '<div><ul class="treeview"><li>';
@@ -373,15 +250,13 @@
                                         echo "<li>";
                                         echo "<i class='fa fa-angle-double-right'></i>&nbsp;&nbsp;<a href=\"{$_entry['url']}\">";
                                                     $content=$_entry['post_title']; 
-                                                  // strip tags to avoid breaking any html
+
                                                     $string = strip_tags($content);
 
                                                   if (strlen($string) > 100) {
 
-                                                      // truncate string
                                                       $stringCut = substr($string, 0, 100);
 
-                                                      // make sure it ends in a word so assassinate doesn't become ass...
                                                       $string = substr($stringCut, 0, strrpos($stringCut, ' ')).'....'; 
                                                   }
                                                   echo $string."</a>";
@@ -393,26 +268,14 @@
                             }
                         }
                             $result->free();
-
-
-                        /* and close up */
                         $sql->close();
 
                       ?>
-
-                      
                       
                     </div>
-                    
-                    
                   </article>
                   <article>
-                    <!--
 
-                    Sidebar Comment Item
-
-                    //-->
-                    
                       <?php
                       require '../db_connect.php';
                       $query= " select * from article ORDER BY post_date DESC limit 3;";
@@ -424,29 +287,24 @@
                       ?>
                       <div class="envor-sidebar-comment">
                       <p><a href="<?php echo $row['url']; ?>"><?php $content=$row['post_title']; 
-                      // strip tags to avoid breaking any html
                        $string = strip_tags($content);
 
                         if (strlen($string) > 35) {
 
-                          // truncate string
                           $stringCut = substr($string, 0, 35);
 
-                          // make sure it ends in a word so assassinate doesn't become ass...
                           $string = substr($stringCut, 0, strrpos($stringCut, ' ')).'....'; 
                         }
                         echo $string;
                       ?></a></p>
                       <p><?php $content=$row['post_content']; 
-                      // strip tags to avoid breaking any html
+
                         $string = strip_tags($content);
 
                         if (strlen($string) > 100) {
 
-                          // truncate string
-                          $stringCut = substr($string, 0, 100);
+                         $stringCut = substr($string, 0, 100);
 
-                          // make sure it ends in a word so assassinate doesn't become ass...
                           $string = substr($stringCut, 0, strrpos($stringCut, ' ')).'....'; 
                         }
                         echo $string;
@@ -463,12 +321,7 @@
                     
                   </article>
                   <article>
-                    <!--
 
-                    Sidebar Comment Item
-
-                    //-->
-                    
                       <?php
                       require '../db_connect.php';
                       $query= "  select * from questions where ans_rply = 'active' ORDER BY qus_date DESC limit 3;";
@@ -480,29 +333,23 @@
                       ?>
                       <div class="envor-sidebar-comment">
                       <p><a href="../askxperts/<?php echo $row['url']; ?>"><?php $content=$row['question']; 
-                      // strip tags to avoid breaking any html
                         $string = strip_tags($content);
 
                       if (strlen($string) > 35) {
 
-                          // truncate string
                           $stringCut = substr($string, 0, 35);
 
-                          // make sure it ends in a word so assassinate doesn't become ass...
                           $string = substr($stringCut, 0, strrpos($stringCut, ' ')).'....'; 
                       }
                       echo $string;
                       ?></a></p>
                       <p><?php $content=$row['answer']; 
-                      // strip tags to avoid breaking any html
                         $string = strip_tags($content);
 
                       if (strlen($string) > 100) {
 
-                          // truncate string
                           $stringCut = substr($string, 0, 100);
 
-                          // make sure it ends in a word so assassinate doesn't become ass...
                           $string = substr($stringCut, 0, strrpos($stringCut, ' ')).'....'; 
                       }
                       echo $string;
@@ -521,32 +368,15 @@
                 </div>
               </div>
             </aside>
-            
-            <!--
 
-            Right Sidebar end
-
-            //-->
             </div>
           </div>
         </div>
-      <!--
 
-      Main Content start
-
-      //-->
       </section>
-    <!--
 
-    Envor site content end
-
-    //-->
     </div>
-    <!--
 
-    Envor footer start
-
-    //-->
  <?php
   require 'blog_footer_top.php';
   require 'blog_footer.php';

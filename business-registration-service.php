@@ -39,9 +39,7 @@
     <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/colorbox-skins/4/colorbox.css" type="text/css">
-        <link href="css/main.css" rel="stylesheet" type="text/css">
-    
-
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/header/h1.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <link href="css/color1.css" rel="stylesheet" type="text/css" id="envor-site-color">
@@ -50,29 +48,11 @@
     <!-- LayerSlider styles -->
     <link rel="stylesheet" href="css/layerslider/css/layerslider.css" type="text/css">
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="js/vendor/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
 
     <body>
-  
 
-    <!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
-    <!--
-
-    Scroll to the top
-
-    //-->
     <div id="to-the-top"><i class="fa fa-chevron-up"></i></div>
     <!--
 
@@ -84,51 +64,12 @@
       <i class="fa fa-cog fa-spin"></i>
       <p></p>
     </div>
-    <!--
 
-    Envor mobile menu start
-
-    //-->
     <?php
       require 'mobile_header.php';
-      ?>
-    <!--
-
-    Envor mobile shopping cart start
-
-    //-->
-    
-    <!--
-
-    Envor header start
-
-    //-->
-
-      <!--
-
-      Top bar start
-
-      //-->
-      
-      <!--
-
-      Logo & Menu start
-
-      //-->
-       <?php
       require 'header.php';
-      ?>
-    <!--
+    ?>
 
-    Envor header end
-
-    //-->
-   
-    <!--
-
-    Envor site content start
-
-    //-->
     <div class="envor-content">
       <!--
 
@@ -143,17 +84,9 @@
             </div>
           </div>
         </div>
-      <!--
 
-      Page Title end
-
-      //-->
       </section>
-      <!--
 
-      Desktop breadscrubs start
-
-      //-->
       <section class="envor-desktop-breadscrubs">
         <div class="container">
           <div class="row">

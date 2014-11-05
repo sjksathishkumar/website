@@ -30,6 +30,7 @@
                       <a href=""><strong>RESOURCES</strong></a>
                         <ul>
                             <li><a href="/askxperts/ask-bassbiz-xperts.php"><strong>Ask Xperts</strong></a></li>
+                            <li><a href="/events/events.php"><strong>Events</strong></a></li>
                             <li><a href="/useful-links/service-tax.php"><strong>Useful Links</strong></a></li>
                             <li><a href="/knowledge-center/service-tax.php"><strong>Knowledge Center</strong></a></li>
                             <li><a href="/blog/index.php"><strong>News &amp; Updates</strong></a></li>

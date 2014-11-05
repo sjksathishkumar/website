@@ -28,13 +28,15 @@
                                   <li><a  href="feedback_view.php">Voice It Form</a></li>
                       </ul>
                   </li>
-      <li class="sub-menu">
-                  <a  href="knowledge_view.php"><i class="fa fa-code-fork"></i><span>Knowledge Center</span></a>
+		              <li class="sub-menu">
+                	<a  href="knowledge_view.php"><i class="fa fa-code-fork"></i><span>Knowledge Center</span></a>
                   </li>
                   <li class="sub-menu">
-                  <a  href="jobs_view.php"><i class="fa fa-tasks"></i><span>Jobs</span></a>
+                	<a  href="jobs_view.php"><i class="fa fa-tasks"></i><span>Jobs</span></a>
                   </li>
-              </ul>
+                  <li class="sub-menu">
+                  <a  href="event_view.php"><i class="fa fa-plane"></i><span>Events</span></a>
+                  </li>              </ul>
               <!-- sidebar menu end-->
           </div>
       </aside>

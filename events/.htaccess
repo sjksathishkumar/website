@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# For event-view.php file forward to event-name.html.
+
+RewriteRule ^([a-zA-Z0-9-/]+).html$ event-view.php?url=$1
+RewriteRule ^([a-zA-Z0-9-/]+).html/$ event-view.php?url=$1
+
+# Tag view forward to 
+
+RewriteRule ^([a-zA-Z0-9-/]+)$	tag-view.php?tag=$1

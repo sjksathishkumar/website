@@ -37,91 +37,33 @@
     <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/colorbox-skins/4/colorbox.css" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
-    
-
     <link href="css/header/h1.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <link href="css/color1.css" rel="stylesheet" type="text/css" id="envor-site-color">
     <link href="css/rivathemes.css" rel="stylesheet" type="text/css">
 
-  
-
     <!-- LayerSlider styles -->
     <link rel="stylesheet" href="css/layerslider/css/layerslider.css" type="text/css">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="js/vendor/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
 
     <body>
-  
 
-    <!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
-    <!--
-
-    Scroll to the top
-
-    //-->
     <div id="to-the-top"><i class="fa fa-chevron-up"></i></div>
-    <!--
 
-    Image Preload
-
-    //-->
     <div id="envor-preload">
       <span>Now loading.<br>Please wait.</span>
       <i class="fa fa-cog fa-spin"></i>
       <p></p>
     </div>
-    <!--
 
-    Envor mobile menu start
-
-    //-->
-  
     <?php require 'mobile_header.php'; ?>
-
-    <!--
-
-    Envor mobile menu end
-
-    //-->
     
-   
-    <!--
+    <?php require 'header.php'; ?>
 
-    Envor header start
-
-    //-->
-    
-      <?php require 'header.php'; ?>
-      
-    <!--
-
-    Envor header end
-
-    //-->
-    <!--
-
-    Envor site content start
-
-    //-->
     <div class="envor-content">
-      <!--
 
-      LayerSlider start
-
-      //-->
       <section class="envor-section envor-home-slider">
         <div id="layerslider" class="envor-layerslider" style="height: 500px;">
           <!--LayerSlider layer-->
@@ -155,17 +97,9 @@
             </div>
           </div>
         </div>
-      <!--
 
-      LayerSlider end
-
-      //-->
       </section>
-      <!--
 
-      Features start
-      
-      //-->
       <section class="envor-section envor-section-align-center envor-section-st1">
         <div class="container">
           <div class="row">
@@ -173,12 +107,7 @@
               <h2>our main <strong>features</strong></h2>
               
               <div class="envor-relative" id="our-features">
-            <!--
 
-            Feature
-
-            //-->
-            
                 <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
                   
@@ -191,13 +120,7 @@
                   <div><a href="accounting-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
-            
-            <!--
 
-            Feature
-
-            //-->
-            
                 <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
                   <header>
@@ -208,13 +131,7 @@
                   <div><a href="payroll-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
-            
-            <!--
 
-            Feature
-
-            //-->
-            
                 <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
                   <header>
@@ -225,14 +142,7 @@
                   <div><a href="internal-auditor.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
-            
 
-            <!--
-
-            Feature
-
-            //-->
-            
                 <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
                   <header>
@@ -244,13 +154,6 @@
                   </div>
                 </article>
 
-
-            <!--
-
-            Feature
-
-            //-->
-            
                 <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
                   <header>
@@ -261,12 +164,7 @@
                   <div><a href="business-registration-service.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
-                <!--
 
-            Feature
-
-            //-->
-            
                 <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
                   <header>
@@ -277,14 +175,7 @@
                   <div><a href="secretarial-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
-            
-
-            <!--
-
-            Feature
-
-            //-->
-            
+    
                 <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
                   <header>
@@ -295,14 +186,7 @@
                   <div><a href="business-advisory-services.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
-            
 
-            <!--
-
-            Feature
-
-            //-->
-            
                 <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
                   <header>
@@ -314,12 +198,6 @@
                   </div>
                 </article>
 
-                <!--
-
-            Feature
-
-            //-->
-            
                 <article class="envor-feature envor-padding-left-30">
                   <div class="envor-feature-inner">
                   <header>
@@ -330,42 +208,19 @@
                   <div><a href="digital-signature-dsc.php">Details <i class="fa fa-arrow-circle-right"></i></a></div>
                   </div>
                 </article>
-            
-            <!--
 
-                Features Navigation start
-
-                //-->
                 <div class="envor-navigation envor-navigation rivaslider-navigation">
                   <a href="" class="back"><i class="glyphicon glyphicon-chevron-left"></i></a>
                   <a href="" class="forward"><i class="glyphicon glyphicon-chevron-right"></i></a>
                 </div>
-                <!--
-
-                Features Navigation end
-
-                //-->
-          
 
           </div>
-
-
         </div>
         </div>
         </div>
 
-      <!--
-
-      Features end
-      
-      //-->
       </section>
-      
-      <!--
 
-      Projects start
-
-      //-->
       <section class="envor-section envor-section-align-center">
         <div class="container">
           <div class="row">
@@ -374,11 +229,7 @@
               <p class="block-description">Learning and Exploring from our experience</p>
               <p>Our case studies gives you a feel about our work, team strength and experience. The case studies listed below will you give real experience of our team, and the mentioned company names are modified to save privacy of the organization.</p>
               <div class="envor-relative" id="latest-projects">
-                <!--
 
-                Projects Item start
-
-                //-->
                 <article class="envor-project envor-padding-left-30">
                   <div class="envor-project-inner">
                     <figure><img src="img/img1.png" alt="growth-image"></figure>
@@ -388,17 +239,8 @@
                       <p class="filter">web, photo</p>
                     </div>
                   </div>
-                <!--
-
-                Projects Item end
-
-                //-->
                 </article>
-                <!--
 
-                Projects Item start
-
-                //-->
                 <article class="envor-project envor-padding-left-30">
                   <div class="envor-project-inner">
                     <figure><img src="img/img1.png" alt="business-success-image"></figure>
@@ -408,17 +250,8 @@
                       <p class="filter">web, photo</p>
                     </div>
                   </div>
-                <!--
-
-                Projects Item end
-
-                //-->
                 </article>
-                <!--
 
-                Projects Item start
-
-                //-->
                 <article class="envor-project envor-padding-left-30">
                   <div class="envor-project-inner">
                     <figure><img src="img/img1.png" alt="becoming-star-image"></figure>
@@ -428,17 +261,8 @@
                       <p class="filter">css, media</p>
                     </div>
                   </div>
-                <!--
-
-                Projects Item end
-
-                //-->
                 </article>
-                <!--
-
-                Projects Item start
-
-                //-->
+ 
                 <article class="envor-project envor-padding-left-30">
                   <div class="envor-project-inner">
                     <figure><img src="img/img1.png" alt="say-hi"></figure>
@@ -448,17 +272,8 @@
                       <p class="filter">html, photo</p>
                     </div>
                   </div>
-                <!--
-
-                Projects Item end
-
-                //-->
                 </article>
-                <!--
 
-                Projects Item start
-
-                //-->
                 <article class="envor-project envor-padding-left-30">
                   <div class="envor-project-inner">
                     <figure><img src="img/img1.png" alt=""></figure>
@@ -468,17 +283,8 @@
                       <p class="filter">javascript, design</p>
                     </div>
                   </div>
-                <!--
-
-                Projects Item end
-
-                //-->
                 </article>
-                <!--
 
-                Projects Item start
-
-                //-->
                 <article class="envor-project envor-padding-left-30">
                   <div class="envor-project-inner">
                     <figure><img src="img/img1.png" alt=""></figure>
@@ -488,52 +294,24 @@
                       <p class="filter">develpopment, css</p>
                     </div>
                   </div>
-                <!--
-
-                Projects Item end
-
-                //-->
                 </article>
-                <!--
-
-                Projects Navigation start
-
-                //-->
+ 
                 <div class="envor-navigation rivaslider-navigation">
                   <a href="" class="back"><i class="glyphicon glyphicon-chevron-left"></i></a>
                   <a href="" class="forward"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                <!--
-
-                Projects Navigation end
-
-                //-->
                 </div>
               </div>
             </div>
           </div>
         </div>
-      <!--
-
-      Projects end
-
-      //-->
       </section>
-      <!--
 
-      Testimonials #1 start
-
-      //-->
       <section class="envor-section envor-section-st1 envor-section-align-center">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
               <h2>clients <strong>testimonials</strong></h2>
               <div class="envor-wrapper" id="clients-testimonials">
-                <!--
-
-                Testimonials #1 Item start
-
-                //-->
                 <article class="envor-testimonials-1">
                   <div class="envor-testimonials-inner">
                     <p><em>Bass Biz has young dynamic people to support in terms of Accounting, Internal Auditing and Payroll. Myself has learning lot while working with Bass Biz team. I admire the relationship has been maintained by board members.</em></p>
@@ -541,17 +319,8 @@
                     <i class="fa fa-quote-left"></i>
                     <i class="fa fa-quote-right"></i>
                   </div>
-                <!--
-
-                Testimonials #1 Item end
-
-                //-->
                 </article>
-                <!--
 
-                Testimonials #1 Item start
-
-                //-->
                 <article class="envor-testimonials-1">
                   <div class="envor-testimonials-inner">
                     <p><em>Bass Biz in one of the best reliable Payroll Service provider in Chennai. They Helped us in the right time. I can strongly recommend them to anyone..</em></p>
@@ -559,17 +328,8 @@
                     <i class="fa fa-quote-left"></i>
                     <i class="fa fa-quote-right"></i>
                   </div>
-                <!--
-
-                Testimonials #1 Item end
-
-                //-->
                 </article>
-                <!--
 
-                Testimonials #1 Item start
-
-                //-->
                 <article class="envor-testimonials-1">
                   <div class="envor-testimonials-inner">
                     <p><em>Nice support in terms of book-keeping and accounting services... After approaching Bass Biz, I'm not worrying about my company financial's...</em></p>
@@ -577,45 +337,14 @@
                     <i class="fa fa-quote-left"></i>
                     <i class="fa fa-quote-right"></i>
                   </div>
-                <!--
-
-                Testimonials #1 Item end
-
-                //-->
                 </article>
-                <!--
-
-                Testimonials #1 Item start
-
-                //-->
-                
-                <!--
-
-                Testimonials #1 Item start
-
-                //-->
-               
-                <!--
-
-                Testimonials #1 Controls end
-
-                //-->
                 <div class="envor-controls rivaslider-controls"></div>
               </div>
             </div>
           </div>
         </div>
-      <!--
-
-      Testimonials #1 end
-
-      //-->
       </section>
-      <!--
 
-      Partners start
-
-      //-->
       <section class="envor-section envor-section-align-center">
         <div class="container">
           <div class="row">
@@ -627,61 +356,27 @@
                 <div class="envor-partner-logo"><div class="inner"><img src="img/basspris.png" alt=""><span class="helper"></span></div></div>
                 <div class="envor-partner-logo"><div class="inner"><img src="img/vgrow_monger.png" alt=""><span class="helper"></span></div></div>
                 <div class="envor-partner-logo"><div class="inner"><img src="img/yatraguide.png" alt=""><span class="helper"></span></div></div>
-                <!--
-                * Our Partners Controls
-                //-->
                 <div class="envor-controls rivaslider-controls"></div>
               </div>
             </div>
           </div>
         </div>
-      <!--
-
-      Partners end
-
-      //-->
       </section>
-      <!--
 
-      Call To Action #2 start
-
-      //-->
       <?php
       require 'footer_top.php';
       ?>
-      <!--
-
-      Call To Action #2 end
-
-      //-->
-     
-    <!--
-
-    Envor site content end
-
-    //-->
     </div>
-    <!--
 
-    Envor footer start
-
-    //-->
     <?php
     require 'footer.php';
     ?>
-    <!--
-
-    Envor footer end
-
-    //-->
-
+ 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/vendor/jquery-1.11.0.min.js"></script>
-
     <script src="js/vendor/core-1.0.5.js"></script>
-
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.min.js"></script>
     <script src="js/jquery.mousewheel.min.js"></script>
@@ -701,11 +396,7 @@
     <script src="js/jquery.rivathemes.js"></script>
     <script type="text/javascript">
       $('document').ready(function() {
-          /*
 
-          Home Page Layer Slider
-
-          */
           $('#layerslider').layerSlider({
             skinsPath               : 'css/layerslider/skins/',
             skin : 'fullwidth',
@@ -715,57 +406,23 @@
             responsiveUnder : 1170,
             sublayerContainer : 1170
           });
-          /*
 
-          Latest Projects Slider
-          
-          */
           $('#latest-projects').rivaSlider({
             visible : 4,
             selector : 'envor-project'
           });
-          /*
 
-          Our Partners Slider
-
-          */
           $('#our-partners').rivaCarousel({
             visible : 3,
             selector : 'envor-partner-logo',
             mobile_visible : 1
           });
-          /*
 
-          Footer News Slider
-
-          */
-          /*$('#footer-news').rivaSlider({
-            visible : 1,
-            selector : 'envor-post-preview'
-          });*/
-          /*
-
-          Footer Questions Slider
-
-          */
-          /*$('#footer-question').rivaSlider({
-            visible : 1,
-            selector : 'envor-post-preview'
-          });*/
-          /*
-
-          Features Slider
-
-          */
           $('#our-features').rivaSlider({
             visible : 3,
             selector : 'envor-feature'
           });
-          /*
 
-          Testimonials #1 Carousel
-
-          */
           $('#clients-testimonials').rivaCarousel({
             visible : 1,
             selector : 'envor-testimonials-1',

@@ -6,7 +6,7 @@ include_once("../include/config.php");
 
 $qus_id = $_REQUEST['qus_id'];
 
-echo $qus_id;
+//echo $qus_id;
 
 $sql->autocommit(FALSE); 
 

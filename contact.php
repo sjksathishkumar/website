@@ -37,28 +37,13 @@
     <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/colorbox-skins/4/colorbox.css" type="text/css">
-        <link href="css/main.css" rel="stylesheet" type="text/css">
-    
-
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/header/h1.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <link href="css/color1.css" rel="stylesheet" type="text/css" id="envor-site-color">
     <link href="css/rivathemes.css" rel="stylesheet" type="text/css">
-
-  
-
     <!-- LayerSlider styles -->
     <link rel="stylesheet" href="css/layerslider/css/layerslider.css" type="text/css">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="js/vendor/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
 
@@ -75,20 +60,12 @@
       <i class="fa fa-cog fa-spin"></i>
       <p></p>
     </div>
-    <!--
 
-    Envor mobile menu start
+    <?php 
+       require 'header.php';
+       require 'mobile_header.php';
+    ?>
 
-    //-->
-          <?php 
-             require 'header.php';
-             require 'mobile_header.php';
-      ?>
-        <!--
-
-    Envor site content start
-
-    //-->
     <div class="envor-content">
 
       <section class="envor-page-title-1" data-stellar-background-ratio="0.5">
@@ -291,25 +268,10 @@ Salem, Tamilnadu-636010, India</p>
             </div>
           </div>
         </div>
-      <!--
-
-      Main Content start
-
-      //-->
       </section>
-    <!--
-
-    Envor site content end
-
-    //-->
     </div>
     
-     <?php require 'footer_top.php'; ?>
-    <!--
-
-    Envor footer start
-
-    //-->
+    <?php require 'footer_top.php'; ?>
     <?php require 'footer.php'; ?>
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7UVgXP06OTuy0rph5IbnWi9w9UJCASBM&sensor=false"></script>
@@ -317,9 +279,7 @@ Salem, Tamilnadu-636010, India</p>
     ================================================== -->
     <!-- Placed at the end of the document so the Contacts Advanced load faster -->
     <script src="js/vendor/jquery-1.11.0.min.js"></script>
-
     <script src="js/vendor/core-1.0.5.js"></script>
-
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.min.js"></script>
     <script src="js/jquery.mousewheel.min.js"></script>
@@ -638,11 +598,6 @@ Salem, Tamilnadu-636010, India</p>
           var $container = $('body');
           $container.imagesLoaded( function() {
           $('#rivaToggleTabs').rivaToggleTabs();
-          /*
-
-          Footer News Slider
-
-          */
 
             $('#envor-preload').hide();
        });
