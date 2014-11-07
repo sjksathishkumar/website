@@ -2,7 +2,7 @@
 
 error_reporting();
 include_once("../include/config.php");
-$aColumns = array('qus_id', 'question', 'description', 'ans_rply', 'qus_date', 'answer', 'url', 'user_name', 'user_id', 'tag_name', 'tag_id', 'email');
+$aColumns = array('qus_id', 'question', 'description', 'ans_rply', 'qus_date', 'answer', 'url', 'user_name', 'user_id', 'tag_name', 'tag_id', 'email', 'keywords');
 
 
 /* Indexed column (used for fast and accurate table cardinality) */
@@ -24,7 +24,7 @@ function fatal_error ( $sErrorMessage = '' )
     die( $sErrorMessage );
 }
 
-$query = "CREATE TEMPORARY TABLE IF NOT EXISTS qus_temp AS (select q.qus_id,q.question,q.description,q.qus_date,q.url,q.answer,q.ans_rply,u.email,u.name as user_name,u.id as user_id,GROUP_CONCAT(DISTINCT t.tag_name) as tag_name, GROUP_CONCAT(DISTINCT t.tag_id) as tag_id from questions_tag_map tm join questions q on q.qus_id = tm.qus_id join questions_tag t on t.tag_id = tm.tag_id join google_login u on u.id=q.user_id GROUP BY q.qus_id)";
+$query = "CREATE TEMPORARY TABLE IF NOT EXISTS qus_temp AS (select q.qus_id,q.question,q.description,q.qus_date,q.url,q.keywords,q.answer,q.ans_rply,u.email,u.name as user_name,u.id as user_id,GROUP_CONCAT(DISTINCT t.tag_name) as tag_name, GROUP_CONCAT(DISTINCT t.tag_id) as tag_id from questions_tag_map tm join questions q on q.qus_id = tm.qus_id join questions_tag t on t.tag_id = tm.tag_id join google_login u on u.id=q.user_id GROUP BY q.qus_id)";
 //$query = "CREATE TEMPORARY TABLE IF NOT EXISTS post_temp AS ( select DISTINCT p.post_id,p.post_title,p.author,p.post_date,p.post_content,GROUP_CONCAT(DISTINCT t.tag_name) as tag_name, GROUP_CONCAT(DISTINCT t.tag_id) as tag_id from tag_map tm join article p on p.post_id = tm.post_id join tag t on t.tag_id = tm.tag_id GROUP BY p.post_id)";
 $rResult = $sql->query($query);
 /* 

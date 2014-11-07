@@ -91,6 +91,7 @@
                         <li><a href="../payroll-services.php"><strong>Payroll</strong></a></li>
                         <li><a href="../internal-auditor.php"><strong>Internal Auditing</strong></a></li>
                         <li><a href="../tax-consultant.php"><strong>Tax Consulting</strong></a></li>
+                        <li><a href="../business-registration-service.php"><strong>Business Registration</strong></a></li>
                         <li><a href="../secretarial-services.php"><strong>Legal &amp; Secretarial</strong></a></li>
                         <li><a href="../business-advisory-services.php"><strong>Business Advisory</strong></a></li>
                         <li><a href="../cfo-controller-services.php"><strong>CFO &amp; Controller</strong></a></li>
@@ -100,12 +101,12 @@
                     <li>
                       <a href=""><strong>RESOURCES</strong></a>
                         <ul>
-                            <li><a href="ask-bassbiz-xperts.php"><strong>Ask Xperts</strong></a></li>
-                            <li><a href="../events/events.php"><strong>Events</strong></a></li>
-                            <li><a href="../useful_links.php"><strong>Useful Links</strong></a></li>
-                            <li><a href="../kc_useful_links.php"><strong>Knowledge Center</strong></a></li>
-                            <li><a href="../blog/index.php"><strong>News &amp; Updates</strong></a></li>
-                            <li><a href="../tools.php"><strong>Tools</strong></a></li>
+                            <li><a href="/askxperts/ask-bassbiz-xperts.php"><strong>Ask Xperts</strong></a></li>
+                            <li><a href="/events/events.php"><strong>Events</strong></a></li>
+                            <li><a href="/useful-links/service-tax.php"><strong>Useful Links</strong></a></li>
+                            <li><a href="/knowledge-center/service-tax.php"><strong>Knowledge Center</strong></a></li>
+                            <li><a href="/blog/index.php"><strong>News &amp; Updates</strong></a></li>
+                            <li><a href="/tools/simple-calculator.php"><strong>Tools</strong></a></li>
                         </ul>
                       
                     </li>

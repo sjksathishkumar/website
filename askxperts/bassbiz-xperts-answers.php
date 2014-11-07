@@ -11,11 +11,38 @@ session_start();
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Envor HTML5/CSS3 Template">
-    <meta name="author" content="Suono Libero ( @rivathemes.com )">
+    <meta name="ROBOTS" content="INDEX,FOLLOW"/>
+    <meta name="abstract" content="Bass Biz specialise in Accounting and Internal Auditing Services" />
+    <meta name="author" content="Bass Biz" />
+    <meta name="publisher" content="Bass Desio" />
+    <meta name="copyright" content="Bass Biz" />
+    <meta http-equiv="Reply-to" content="antony@bassbiz.in" />
+    <meta name="creation_Date" content="10/06/2012" />
+    <meta name="expires" content="11 June 2222" />
+    <meta name="language" content="EN" />
+    <meta name="rating" content="general" />
+    <meta name="revisit-after" content="2 days" /> 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    <title>Ask Xperts | Bass Biz | Accounting, Internal Auditing service provider in Chennai</title>
+ <?php
+
+      require '../db_connect.php';
+
+      $url  = $_GET['url'].'.html';
+
+      $query= "select * from questions where url='$url'";
+
+      $result = $sql->query($query);
+
+      $row = $result->fetch_assoc();
+
+      echo "<meta name='description' content='".$row['description']."'/>";
+
+      echo "<meta name='keywords' content='".$row['keywords']."'/>";
+
+      echo "<title>".$row['question']."</title>";
+
+?> 
 
     <!--
     * Google Fonts

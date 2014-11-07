@@ -107,7 +107,7 @@ if (login_check($mysqli) == true) : ?>
                                 </div>
                                   <div>
                                     <br>
-                                    <label for="post_content"><b>Answer</b></label>
+                                    <label for="answer"><b>Answer</b></label>
 				    <textarea id="answer" name="answer" class="ckeditor"></textarea>
                                   </div>
         <div>
@@ -115,6 +115,16 @@ if (login_check($mysqli) == true) : ?>
                                     <label for="url"><b>URL</b></label>
           <input type="text" class="form-control" id="url" name="url" required>
                                 </div>
+        <div>
+          <br>
+                                    <label for="keyword"><b>Keywords</b></label>
+          <input type="text" class="form-control" id="keyword" name="keyword" required>
+                                </div>   
+        <div>
+          <br>
+                                    <label for="tags"><b>Tag</b></label>
+          <input type="text" class="form-control" id="tags" name="tags[]" required>
+                                </div>                                                              
 				<div>
 					<br>
                                     <label for="post_title"><b>Status</b></label>
@@ -172,7 +182,7 @@ if (login_check($mysqli) == true) : ?>
     <!-- Script for magic fill -->
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>  -->
     <script src="js/magicsuggest.js"></script>
-    <script src="js/magic_script.js"></script> 
+    <script src="js/magic_script_xpert.js"></script> 
 
     
     <script type="text/javascript">
